@@ -1,0 +1,157 @@
+.jms_ajax_search .right-info a{
+    line-height: 1.5;
+}
+#jms_ajax_search{
+    line-height: 2;
+}
+.jms_ajax_search .dropdown-menu {
+    margin-top: 20px;
+    padding: 0;
+}
+.jms_ajax_search .search-box {
+    min-width: 283px;
+    right: -46px;
+}
+#ajax_search {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #979797;
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    height: 48px;
+    margin: 0;
+    padding-left: 21px;
+    width: 100%;
+}
+#searchbox .icon-magnifier {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    font-size: 21px;
+    left: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    z-index: 2;
+}
+#search_result {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+#search_result .nbcomments {
+    display: none;
+}
+#search_result .review {
+    padding: 16px 0;
+}
+#search_result .result_div {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+#search_result .result_div .item {
+    display:flex;
+    padding:15px 0;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    align-items:center;
+}
+#search_result .result_div .item:first-child{
+    padding-top: 0;
+}
+#search_result .result_div .item:last-child{
+    border: none;
+    padding-bottom: 0;
+}
+#search_result .result_div .item .left-img {
+    float: left;
+    margin-right: 5%;
+    width: 28%;
+}
+#search_result .result_div .item .left-img img{
+    max-width:100%;
+    border:1px solid #ebebeb;
+}
+#search_result .result_div .right-info {
+    float: left;
+    width: 67%;
+}
+.jms_ajax_search form#searchbox {
+    display: table;
+    position: relative;
+    width: 100%;
+}
+#search_result .result_div h3.title {
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+#search_result .result_div .right-info a{
+    color:#111;
+}
+#search_result .result_div .price {
+    color: #111;
+    float: left;
+    font-weight: 600;
+    line-height: 30px;
+    width: 100%;
+}
+#search_result .result_div .price .label {
+    color: #777;
+    float: left;
+    line-height: 22px;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+#search_result .result_div .price .value{}
+#search_result .result_div .desc {
+    color: #999;
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+}
+#search_result .result_div .desc p{
+    padding:0;
+    margin:0;
+}
+#search_result .result_div .right-info.full{
+    width:100%;
+}
+.jms_ajax_search input[type="text"]:-moz-placeholder{
+  color: #818181;
+}
+.jms_ajax_search input[type="text"]::-moz-placeholder{
+ color: #818181;
+}
+.jms_ajax_search input[type="text"]:-ms-input-placeholder{
+   color: #818181;
+}
+.jms_ajax_search input[type="text"]::-webkit-input-placeholder{
+  color: #818181;
+}
+.jms_ajax_search .dropdown-menu{
+    position: absolute;
+}
+.button-search.ajaxsearchicon {
+    border: 0;
+    right: 0;
+    position: absolute;
+    top: 14px;
+    right: 21px;
+}
+@media (max-width: 481px){  
+    .jms_ajax_search .search-box {
+        min-width: 210px;
+    }
+
+}

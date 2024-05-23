@@ -1,0 +1,28 @@
+#cms #center_column img {
+
+    max-width: 100%;
+    width: 100%;
+}
+.meet-team{
+	 margin-top:30px;
+ }
+ .aboutusPeople {
+    margin-top: 12px;
+}
+.personInfo {
+    background: #fff none repeat scroll 0 0;
+     padding: 26px 0;
+    position: relative;
+    text-align: center;
+}
+.personInfo > h4 {
+    font-size: 16px;
+    font-weight:600;
+}
+.personAvatar .img-responsive, .img_aboutus img {
+    width: 100%;
+}
+#cms #content-wrapper .container{
+  padding-left: 0;
+  padding-right: 0;
+}

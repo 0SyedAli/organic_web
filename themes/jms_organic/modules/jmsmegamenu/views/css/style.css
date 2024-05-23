@@ -1,0 +1,404 @@
+
+#jms-megamenu-container {
+    border: medium none;
+    margin-bottom: 0;
+    min-height: auto;
+    position:static;
+}
+.image-menu img {
+    width: 100%;
+}
+.image-menu {
+    position: relative;
+}
+.image-menu .flex-wrapper {
+    align-items: center;
+    color: #111111;
+    display: flex;
+    font-size: 16px;
+    height: 100%;
+    left: 0;
+    padding-left: 30px;
+    position: absolute;
+    text-transform: capitalize;
+    top: 0;
+    width: 100%;
+}
+.jms-megamenu .nav a {
+    transition: all 400ms ease 0s;
+    -webkit-transition: all 400ms ease 0s;
+    -moz-transition: all 400ms ease 0s;
+    -ms-transition: all 400ms ease 0s;
+    -o-transition: all 400ms ease 0s;
+}
+.jms-megamenu img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.jms-megamenu .img-first img {
+    padding: 0;
+}
+.jms-megamenu .nav > li {
+    display: inline-block;
+    float: inherit;
+    margin: 0;
+    padding: 0 9px;
+    vertical-align: top;
+    position: relative;
+}
+.jms-megamenu .nav > li > a {
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 61px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.jms-megamenu .nav > li:hover, .jms-megamenu .nav > li.open {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.jms-megamenu .nav > li > a > .caret {
+    display: none;
+}
+.jms-megamenu .nav a, .jms-megamenu .nav a:hover, .jms-megamenu .nav a:focus {
+    background-color: transparent;
+}
+.jms-megamenu .dropdown-menu {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    display: block;
+    left: 0;
+    margin-top: 0;
+    min-width: 228px;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+     -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+     transition: all 400ms ease 0s;
+    -webkit-transition: all 400ms ease 0s;
+    -moz-transition: all 400ms ease 0s;
+    -ms-transition: all 400ms ease 0s;
+    -o-transition: all 400ms ease 0s;
+    visibility: hidden;
+    z-index: 9999;
+    border:0;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.2);
+    padding:0 13px;
+    font-size: 15px;
+}
+.jms-megamenu .mega-nav > .mega > .dropdown-menu{
+  box-shadow: 0 0px 4px rgba(0,0,0,0.2);
+}
+.jms-megamenu .open > .dropdown-menu {
+    opacity: 1;
+     -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+      transition: all 400ms ease 0s;
+    -webkit-transition: all 400ms ease 0s;
+    -moz-transition: all 400ms ease 0s;
+    -ms-transition: all 400ms ease 0s;
+    -o-transition: all 400ms ease 0s;
+       visibility: visible;
+}
+.jms-megamenu .nav .open .mega-nav .dropdown-menu {
+    top: -5px;
+}
+
+.jms-megamenu .dropdown-menu.fullwidth {
+    padding: 20px 28px 20px;
+    width: 100%;
+}
+.jms-megamenu .row .mega-inner {
+    border-radius: 0;
+}
+.jms-megamenu .mega-nav, .jms-megamenu .dropdown-menu .mega-nav {
+    background: #fff none repeat scroll 0 0;
+    list-style: outside none none;
+    margin: 0;
+    min-height: 20px;
+    padding: 19px 0 21px;
+}
+.jms-megamenu .item-fullwidth .mega-nav, .jms-megamenu .item-fullwidth .dropdown-menu .mega-nav {
+    padding: 0;
+}
+.jms-megamenu .mega-nav li > a {
+    color: #444444;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.jms-megamenu .mega-nav li:last-child > a {
+    border: medium none;
+}
+
+.jms-megamenu .mega-nav li > a:hover {
+    padding-left:10px;
+    color:#90bc79;
+}
+.jms-megamenu .nav > .item-fullwidth .mega-nav li > a:hover{
+    padding-left:15px;
+}
+.jms-megamenu .mega-nav li:last-child > a:hover {
+    border: medium none;
+}
+.jms-megamenu .caret {
+    margin-left: 5px;
+}
+.jms-megamenu .mega-nav li.selected > a {
+    color: #333;
+}
+.jms-megamenu .mega-nav li.selected, .mega-dropdown-menu.selected, .mega-col-nav.selected > .mega-inner {
+    border: 1px solid #07b !important;
+}
+.jms-megamenu .mega-nav .mega > a::after {
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 12px);
+    content: '\f105';
+}
+.jms-megamenu .item-fullwidth .mega-nav > li > ul > li.group, .jms-megamenu .item-fullwidth .mega-nav > li.group {
+    margin-bottom: 9px;
+    vertical-align: top;
+}
+.jms-megamenu .nav [class^="icon-"], .jms-megamenu .nav [class*=" icon-"], .jms-megamenu .nav .fa {
+    margin-right: 5px;
+}
+.mega-nav > .mega > .dropdown-menu {
+    left: calc(100% + 28px);
+    margin: 0;
+    top: 0;
+    right:auto !important;
+}
+.megamenu-custom.first .menu-item.group {
+    margin-bottom: 7px;
+}
+.jms-megamenu .dropdown-menu .dropdown-menu {
+    margin-left: 0;
+}
+.mega-nav > .mega {
+    position: relative;
+}
+.jms-megamenu .menu-align-justify > .dropdown-menu {
+    left: 0;
+    margin-left: 0;
+}
+.jms-megamenu .menu-align-left > .dropdown-menu {
+    left: -21px;
+}
+.jms-megamenu .menu-align-right > .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.menustyle1, .megamenu.style2 .layout-column , .menustyle3{
+    position: static;
+}
+.menu-item.mega.item-fullwidth {
+    position: static;
+}
+.jms-megamenu .menu-align-center > .dropdown-menu {
+    left:0px;
+    right:0;
+    top:auto;
+    margin:auto;
+}
+.menustyle3 .jms-megamenu .menu-align-center > .dropdown-menu{
+    top:66px;
+    left:-10px;
+}
+.mega-nav .mega > a::after {
+    margin-right: 2px !important;
+}
+.jms-megamenu .mega-nav > .mega.menu-align-left > .dropdown-menu {
+    left: 100%;
+}
+.jms-megamenu .mega-nav > .mega.menu-align-right > .dropdown-menu {
+    left: auto;
+    right: 100%;
+}
+.jms-megamenu .menu-align-justify {
+    position: static;
+}
+.jms-megamenu .menu-align-justify > .dropdown-menu {
+    left: 0;
+    margin-left: 0;
+}
+.jms-megamenu .open .mega.open .dropdown-menu {
+    top: -17px !important;
+}
+.jms-megamenu .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.first .nav-child.dropdown-menu.mega-dropdown-menu.fullwidth {
+    padding: 35px 15px 25px;
+}
+.jms-megamenu .open > .dropdown-menu::after {
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.jms-megamenu .nav > .item-fullwidth .mega-nav li {
+    border-bottom: medium none;
+}
+.col-bottom {
+    margin-top: 40px;
+}
+.jms-vermegamenu .nav > li:hover a {
+    border-bottom: 1px solid #e1e1e1;
+}
+.jms-megamenu .nav > .item-fullwidth .mega-nav li > a {
+    border-bottom: medium none;
+    line-height: 32px;
+    padding: 0;
+}
+.jms-megamenu .nav .mega-nav li.group > a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+}
+.jms-megamenu .nav .item-fullwidth .mega-nav li.group > a{
+    padding-left:0;
+}
+.jms-megamenu .nav > .item-fullwidth .mega-nav li.group > a::before {
+    content: none;
+}
+.jms-megamenu .nav > .item-fullwidth .img-menu {
+    overflow: hidden;
+    position: relative;
+}
+#jms-megamenu-container .jms-megamenu ul  a{
+    position: relative;
+    display: block;
+}
+#jms-megamenu-container .jms-megamenu ul a::after {
+    background-color: #fff;
+    border: medium solid transparent;
+    bottom: -20px;
+    box-shadow:-1px -1px 2px rgba(0, 0, 0, 0.2);
+    content: " ";
+    height: 10px;
+    left: calc(50% - 8px);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: auto;
+      width: 10px;
+      transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 50002;
+ -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+
+}
+#jms-megamenu-container .jms-megamenu .dropdown-menu ul a::after{
+    display: none;
+}
+#jms-megamenu-container .jms-megamenu ul li.open a::after{
+    opacity: 1;
+    bottom: -5px;
+     -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.mod-content {
+    background-color: #f0efee;
+}
+.mod-content .box-left {
+     display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; 
+    float: left;
+    padding: 23px 0 23px 34px;
+    width: 60%;
+    background-color: #f0efee;
+}
+.mod-content .box-left ul li {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+.mod-content .box-left ul li::after {
+    content: "-";
+    position: absolute;
+    right: -4px;
+    top: 2px;
+}
+.mod-content .box-left ul li a {
+    color: #4c4a4b;
+}
+.mod-content .box-left ul li:last-child::after{
+    display: none;
+}
+.box-right {
+     background-color: #f0efee;
+    color: #ff0101;
+    float: right;
+    padding: 27px 34px 25px 0;
+    text-align: right;
+    width: 40%;
+    margin-bottom: 0;
+}
+.box-left span {
+    padding-right: 6px;
+      
+      font-size: 18px;
+}
+.box-left p{
+     margin-bottom: 0;
+}
+.menu-item.linkpage a {
+    color: #ff3e3e !important;
+    font-size: 18px;
+    font-weight: 700;
+}
+.jms-megamenu .mega-nav .mega > a::before {
+    content: "";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 0;
+    top: calc(50% - 12px);
+}
+
+@media (max-width: 991px) {
+    #jms-megamenu-container {
+        display: none;
+    }
+    .open-button:hover {
+        color: #fff;
+    }
+}
+@media (min-width: 992px) {
+.responsive #off-canvas-menu {
+    display: none;
+}
+
+}

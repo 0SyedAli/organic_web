@@ -1,0 +1,58 @@
+
+.jms-slider-wrapper {
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	margin:0px auto;
+}
+
+.jms-slider-wrapper .slider{
+	position:relative;
+	width:100%; 
+/*	height:400px; when responsive, comment this out */
+	margin:0 auto;
+	background:#1b1b1b;
+	max-width: 100% !important;
+}
+.jms-slider-wrapper .slide {
+	overflow: hidden;
+	position: absolute;
+}
+
+.shopnow span{
+	font-size: 1.4em;
+	vertical-align: middle;
+	padding-left: 1em;
+	line-height: 1;
+}
+.text-large {
+    font-weight:700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.text-small {
+    font-weight:300;
+    line-height: 2;
+}
+
+.text-small.style2{
+	font-weight: 400;
+}
+.button-slider .btn-white {
+    margin-right: 10px;
+}
+@media (max-width: 1199px){
+.btn-shopnow {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+}
+}
+@media (max-width: 600px){
+	.btn-shopnow {
+	    padding: 1.7vw 2vw;
+	    font-size: 2.2vw;
+	}
+}
+/*# sourceMappingURL=New%20Text%20Document.css.map */
+
+
