@@ -51,7 +51,335 @@
 	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/off-canvas.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/theme-responsive.css" type="text/css" media="all">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+		.header_logo {
+			width: 100%;
+			text-align: center;
+			display: block;
+			font-family: "Poppins";
+			font-size: 24px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			text-decoration: underline;
+			color: rgb(13, 13, 202);
+		}
+		.header_logo:hover {
+			color: rgb(13, 13, 202);
+			text-decoration: underline;
+		}
+
+		.header_logo img {
+			width: 100px !important;
+
+		}
+		.jms-row.category_tab {
+			display:none;	
+		}
+		#testimonial {
+			display:none;
+		}
+		.fraction-slider {
+			height: 500px!important;
+		}
+		.fraction-slider .fs_obj {
+			object-fit: contain;
+		}
+		.jms-slide-content span {
+			color: #ef71acc7!important;
+		}
+		.btn-shopnow {
+			background: #f70071 !important;
+			color: #FFF!important;
+			border: 2px solid #f70071 !important;
+		}
+		.btn-shopnow:hover {
+			background: transparent!important;
+			color: #f70071 !important;
+			border: 2px solid #f70071 !important;
+		}
+		.jms-slide-content .text-medium	 {
+			font-size:19px;
+			padding-left: 50px;
+		}
+
+		.jms-megamenu ul li a::before {
+			content: "";
+    background: #f70071;
+    position: absolute;
+    left: 7px;
+    height: 2px;
+    width: 0;
+    bottom: 7px;
+    transition: 0.7s;
+}
+.jms-megamenu ul li:hover a::before {
+	width: 80%;
+}
+		/* new slider  */
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.slider__navi {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	z-index: 999;
+}
+
+.slider__navi a {
+	display: block;
+	height: 6px;
+	width: 20px;
+	margin: 20px 0;
+	text-indent: -9999px;
+	box-shadow: none;
+	border: none;
+	background: rgba(0,0,0,0.2);
+}
+
+.slider__navi a.active {
+	background: rgba(255,255,255,1);
+}
+
+body {
+	position: relative;
+	font-size: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	min-height: 100vh;
+}
+
+.flex__container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap; 
+	-webkit-justify-content: flex-start;
+	-moz-justify-content: flex-start;
+	-ms-justify-content: flex-start;
+	-o-justify-content: flex-start;
+	justify-content: flex-start;
+	height: 600px;
+	width: 100%;
+	z-index: 1;
+}
+
+.flex__container.flex--active {
+	z-index: 2;
+}
+
+.text--sub {
+	font-size: 12px;
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.text--big {
+	font-family: 'Poppins', sans-serif;
+	font-size: 7.5em;
+	font-weight: 700;
+	line-height: 110px;
+  margin-left: -8px;
+}
+.flex--pikachu .text--big, .flex--blaziken .text--big {
+	color: #FFF;
+}
+.flex--zekrom .text--big, .flex--zekrom .text--sub, .flex--zekrom .text--normal {
+color: #000;
+}
+.flex--dialga .text--big, .flex--dialga .text--sub, .flex--dialga .text--normal {
+	color: #000;
+}
+.text--normal {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 22px;
+	margin-top: 25px;
+}
+.flex--pikachu .text__background {
+	color:  rgb(0 0 0 / 17%);
+}
+
+.text__background {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	left: 72px;
+	bottom: -60px;
+	color: rgba(0,0,0,0.05);
+	font-size: 170px;
+	font-weight: 700;
+}
+
+.flex__item {
+	height: 600px;
+	color: #fff;
+	transition: transform 0.1s linear;
+}
+
+.flex__item--left {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	width: 60%;
+	transform-origin: left bottom;
+	transition: transform 0.1s linear 0.4s;
+	opacity: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.flex__item--right {
+	width: 40%;
+	transform-origin: right center;
+	transition: transform 0.1s linear 0s;
+	opacity: 0;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--preStart .flex__item--left,
+.flex--preStart .flex__item--right,
+.flex--active .flex__item--left,
+.flex--active .flex__item--right {
+	opacity: 1;
+}
+
+/* Piplup */
+
+.flex--piplup .flex__item--left {
+	background: #3e9fe6;
+}
+
+.flex--piplup .flex__item--right {
+	background: #d3eaef;
+}
+
+/* Pikachu */
+
+.flex--pikachu .flex__item--left {
+    background: #4a2600cf;
+}
+
+.flex--pikachu .flex__item--right {
+	background: #ae7b5247;
+}
+
+/* Blaziken */
+
+.flex--blaziken .flex__item--left {
+	background: #f64f37;
+}
+
+.flex--blaziken .flex__item--right {
+	background: #ffebcd;
+}
+
+/* Dialga */
+
+.flex--dialga .flex__item--left {
+	background: #c0c0c0;
+}
+
+.flex--dialga .flex__item--right {
+	background: #c0c0c038;
+}
+
+/* Zekrom */
+
+.flex--zekrom .flex__item--left {
+	background: #FFD700;
+}
+
+.flex--zekrom .flex__item--right {
+	background: #FAFAD2;
+}
+
+.flex__content {
+	margin-left: 80px;
+	width: 55%;
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+}
+
+.pokemon__img {
+	/* position: absolute;
+	bottom: 20px;
+	right: 15%; */
+	max-height: 40vw;
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+}
+
+/* Animate-START point */
+
+.flex__container.animate--start .flex__content {
+	transform: translate3d(0,-200%,0);
+	opacity: 0;
+}
+
+.flex__container.animate--start .pokemon__img {
+	transform: translate3d(-200px,0,0);
+	opacity: 0;
+}
+
+/* Animate-END point */
+
+.flex__container.animate--end .flex__item--left {
+	transform: scaleY(0);
+}
+
+.flex__container.animate--end .flex__item--right {
+	transform: scaleX(0);
+}
+
+.flex__container.animate--end .flex__content {
+	transform: translate3d(0,200%,0);
+	opacity: 0;
+}
+
+.flex__container.animate--end .pokemon__img {
+	transform: translate3d(200px,0,0);
+	opacity: 0;
+}
+
+.my_own_slider {
+	height: 600px;
+}
+.my_own_slider .addon-box{
+	height: 600px;
+}
+	</style>
 
 
 
@@ -380,13 +708,12 @@
 
 
 			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_header.tpl -->
-			<div class="jms-row pt_8  pb_20 headertop navtopo">
+			<div class="jms-row pt_8 pb_8 headertop navtopo">
 				<div class="container">
-					<div class="row">
-						<div class="layout-column col-lg-2 col-md-2 col-sm-2 col-xs-2 headertop-left pt_33" style="">
-							<div class="addon-box">
+					<div class="row align-items-center">
+						<div class="layout-column col-lg-3 col-md-2 col-sm-2 col-xs-2 headertop-left" style="">
+							<!-- <div class="addon-box">
 
-								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsajaxsearch/views/templates/hook/jmsajaxsearch.tpl -->
 								<div class="btn-group compact-hidden jms_ajax_search dropdown" id="jms_ajax_search">
 									<a href="#" class="btn-xs icon dropdown-toggle" title="Search"
 										data-toggle="dropdown">
@@ -409,22 +736,51 @@
 										</div>
 									</div>
 								</div>
-								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsajaxsearch/views/templates/hook/jmsajaxsearch.tpl -->
-							</div>
-						</div>
-						<div class="layout-column col-lg-8 col-md-8 col-sm-8 col-xs-8 logo-center center pt_15 "
-							style="">
+							</div> -->
 							<div class="addon-box">
-								<a href="index-2.html" title="Jms_Organic"><img class="logo img-responsive"
-										src="assets/img/demo/logo.png" alt="Jms_Organic" /></a>
+								<a href="index-2.html" class="header_logo" title="Jms_Organic"><img
+										class="logo img-responsive" src="assets/img/logo.png" alt="Jms_Organic" />
+								</a>
 							</div>
 						</div>
-						<div class="layout-column col-lg-2 col-md-2 col-sm-2 col-xs-2 headertop-right pt_24" style="">
+						<div class="layout-column col-lg-7 col-md-8 col-sm-8 col-xs-8 logo-center center" style="">
+							<div class="jms-megamenu-wrap">
+								<!-- <a id="open-button" class="open-button hidden-lg hidden-md" href="javascript:;">
+									<span class="hamburger-icon-inner">
+										<span class="line line-1"></span>
+										<span class="line line-2"></span>
+										<span class="line line-3"></span>
+									</span>
+								</a> -->
+								<div id="jms-megamenu-container" class="navbar clearfix">
+									<div class="jms-megamenu">
+										<ul class="nav level0">
+											<li class="menu-item mega menu-align-left" data-id="1" data-level="0"
+												data-title="1" data-align="left"><a href="javascript:;"
+													target="_self"><span>Home</span><em class="caret"></em></a>
+											</li>
+											<li class="menu-item mega " data-id="5" data-level="0" data-title="1"
+												data-class=""><a
+													href="javascript:;"
+													target="_self"><span>Blog</span><em class="caret"></em></a>
+											</li>
+											<li class="menu-item mega" data-id="6" data-level="0" data-title="1"><a
+													href="javascript:;"
+													target="_self"><span>Pages</span><em class="caret"></em></a>
+									
+											</li>
+											<li class="menu-item" data-id="7" data-level="0" data-title="1"><a
+													href="javascript:;"
+													target="_self"><span>Contact</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layout-column col-lg-2 col-md-2 col-sm-2 col-xs-2 headertop-right " style="">
 							<div class="addon-box">
 
-								<!-- begin module:ps_shoppingcart/ps_shoppingcart.tpl -->
-								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_shoppingcart/ps_shoppingcart.tpl -->
-								<div class="btn-group compact-hidden blockcart cart-preview inactive dropdown js-dropdown  "
+								<!-- <div class="btn-group compact-hidden blockcart cart-preview inactive dropdown js-dropdown  "
 									id="cart_block"
 									data-refresh-url="index22d1.php?fc=module&amp;module=ps_shoppingcart&amp;controller=ajax&amp;id_lang=1">
 									<a href="#" class="dropdown-toggle cart-icon" data-toggle="dropdown">
@@ -471,13 +827,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_shoppingcart/ps_shoppingcart.tpl -->
-								<!-- end module:ps_shoppingcart/ps_shoppingcart.tpl -->
+								</div> -->
 							</div>
 							<div class="addon-box">
-
-								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonmodulegroup.tpl -->
 								<div class="btn-group module-group-box dropdown">
 									<a title="Search" data-toggle="dropdown" class="dropdown-toggle" href="#">
 										<i class="modulegroup"></i>
@@ -592,7 +944,6 @@
 
 									</div>
 								</div>
-								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonmodulegroup.tpl -->
 							</div>
 						</div>
 					</div>
@@ -606,297 +957,7 @@
 
 								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsmegamenu/views/templates/hook/jmsmegamenu.tpl -->
 
-								<div class="jms-megamenu-wrap">
-									<a id="open-button" class="open-button hidden-lg hidden-md" href="#">
-										<span class="hamburger-icon-inner">
-											<span class="line line-1"></span>
-											<span class="line line-2"></span>
-											<span class="line line-3"></span>
-										</span>
-									</a>
-									<div id="jms-megamenu-container" class="navbar clearfix">
-										<div class="jms-megamenu">
-											<ul class="nav level0">
-												<li class="menu-item mega menu-align-left" data-id="1" data-level="0"
-													data-title="1" data-align="left"><a href="#"
-														target="_self"><span>Home</span><em class="caret"></em></a>
-													<div class="nav-child dropdown-menu mega-dropdown-menu">
-														<div class="mega-dropdown-inner">
-															<div class="row">
-																<div class="mega-col-nav col-sm-12" data-width="12">
-																	<div class="mega-inner">
-																		<ul class="mega-nav">
-																			<li class="menu-item" data-id="232"
-																				data-level="1" data-title="1"><a
-																					href="index-2.html?settingpanel=1&amp;jpb_homepage=1&amp;jpb_skin=default"
-																					target="_self"><span>Home 1
-																					</span></a></li>
-																			<li class="menu-item" data-id="233"
-																				data-level="1" data-title="1"><a
-																					href="index-2.html?settingpanel=1&amp;jpb_homepage=2&amp;jpb_skin=color2"
-																					target="_self"><span>Home 2
-																					</span></a></li>
-																			<li class="menu-item" data-id="234"
-																				data-level="1" data-title="1"><a
-																					href="index1169.php?settingpanel=1&amp;jpb_homepage=3&amp;jpb_skin=color3"
-																					target="_self"><span>Home
-																						3</span></a></li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="menu-item mega item-fullwidth  menu-align-center" data-id="3"
-													data-level="0" data-fullwidth="1" data-title="1" data-class=""
-													data-align="center"><a
-														href="indexfa90.html?id_category=3&amp;controller=category&amp;id_lang=1"
-														target="_self"><span>Shop</span><em class="caret"></em></a>
-													<div class="nav-child dropdown-menu mega-dropdown-menu fullwidth"
-														data-fullwidth="1" data-width="612" style="width:612px">
-														<div class="mega-dropdown-inner">
-															<div class="row">
-																<div class="mega-col-nav col-sm-4" data-width="4">
-																	<div class="mega-inner">
-																		<ul class="mega-nav">
-																			<li class="menu-item group" data-id="260"
-																				data-level="1" data-group="1"
-																				data-title="1"><a
-																					href="indexe734.html?id_category=12&amp;controller=category&amp;id_lang=1"
-																					target="_self"><span>Organic
-																						Skin</span></a></li>
-																			<li class="menu-item" data-id="261"
-																				data-level="1" data-title="1"><a
-																					href="#"
-																					target="_self"><span>Suspend
-																						Tempor</span></a></li>
-																			<li class="menu-item" data-id="262"
-																				data-level="1" data-title="1"><a
-																					href="#"
-																					target="_self"><span>Vestibulum
-																						Quam</span></a></li>
-																			<li class="menu-item" data-id="263"
-																				data-level="1" data-title="1"><a
-																					href="#" target="_self"><span>Dolor
-																						Elementum</span></a></li>
-																			<li class="menu-item" data-id="264"
-																				data-level="1" data-title="1"><a
-																					href="#" target="_self"><span>Aenean
-																						Auctor</span></a></li>
-																		</ul>
-																	</div>
-																</div>
-																<div class="mega-col-nav col-sm-4" data-width="4">
-																	<div class="mega-inner">
-																		<ul class="mega-nav">
-																			<li class="menu-item group" data-id="266"
-																				data-level="1" data-group="1"
-																				data-title="1"><a
-																					href="indexd9ce.html?id_category=13&amp;controller=category&amp;id_lang=1"
-																					target="_self"><span>organic hair
-																					</span></a></li>
-																			<li class="menu-item" data-id="267"
-																				data-level="1" data-title="1"><a
-																					href="#"
-																					target="_self"><span>Blandit
-																						Viverra</span></a></li>
-																			<li class="menu-item" data-id="268"
-																				data-level="1" data-title="1"><a
-																					href="#" target="_self"><span>Porta
-																						Cursus</span></a></li>
-																			<li class="menu-item" data-id="269"
-																				data-level="1" data-title="1"><a
-																					href="#"
-																					target="_self"><span>Praesent
-																						Enim</span></a></li>
-																			<li class="menu-item" data-id="270"
-																				data-level="1" data-title="1"><a
-																					href="#" target="_self"><span>Nunc
-																						Aliquam</span></a></li>
-																		</ul>
-																	</div>
-																</div>
-																<div class="mega-col-nav col-sm-4" data-width="4">
-																	<div class="mega-inner">
-																		<ul class="mega-nav">
-																			<li class="menu-item group" data-id="272"
-																				data-level="1" data-group="1"
-																				data-title="1"><a
-																					href="indexd9ce.html?id_category=13&amp;controller=category&amp;id_lang=1"
-																					target="_self"><span>organic
-																						other</span></a></li>
-																			<li class="menu-item" data-id="273"
-																				data-level="1" data-title="1"><a
-																					href="#" target="_self"><span>Varius
-																						Lobortis</span></a></li>
-																			<li class="menu-item" data-id="274"
-																				data-level="1" data-title="1"><a
-																					href="#" target="_self"><span>Diam
-																						Rhoncus</span></a></li>
-																			<li class="menu-item" data-id="275"
-																				data-level="1" data-title="1"><a
-																					href="#" target="_self"><span>Congue
-																						Tellus</span></a></li>
-																			<li class="menu-item" data-id="276"
-																				data-level="1" data-title="1"><a
-																					href="#"
-																					target="_self"><span>Malesua
-																						Fames</span></a></li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="menu-item mega " data-id="5" data-level="0" data-title="1"
-													data-class=""><a
-														href="index1977.html?fc=module&amp;module=jmsblog&amp;controller=post&amp;post_id=1"
-														target="_self"><span>Blog</span><em class="caret"></em></a>
-													<div class="nav-child dropdown-menu mega-dropdown-menu">
-														<div class="mega-dropdown-inner">
-															<div class="row">
-																<div class="mega-col-nav col-sm-12" data-width="12">
-																	<div class="mega-inner">
-																		<ul class="mega-nav">
-																			<li class="menu-item" data-id="287"
-																				data-level="1" data-title="1"><a
-																					href="indexb3e5.html?fc=module&amp;module=jmsblog&amp;controller=category&amp;category_id=1"
-																					target="_self"><span>Blog
-																						Category</span></a></li>
-																			<li class="menu-item" data-id="294"
-																				data-level="1" data-title="1"><a
-																					href="index1977.html?fc=module&amp;module=jmsblog&amp;controller=post&amp;post_id=1"
-																					target="_self"><span>Blog Single
-																						Post</span></a></li>
-																			<li class="menu-item" data-id="298"
-																				data-level="1" data-title="1"><a
-																					href="indexd0b5.html?fc=module&amp;module=jmsblog&amp;controller=categories"
-																					target="_self"><span>Blog
-																						Categories</span></a></li>
-																			<li class="menu-item" data-id="305"
-																				data-level="1" data-title="1"><a
-																					href="indexff52.html?fc=module&amp;module=jmsblog&amp;controller=tag&amp;tag=organic"
-																					target="_self"><span>Blog
-																						Tags</span></a></li>
-																			<li class="menu-item" data-id="306"
-																				data-level="1" data-title="1"><a
-																					href="indexc1c9.html?fc=module&amp;module=jmsblog&amp;controller=archive&amp;archive=2018"
-																					target="_self"><span>Blog
-																						Archives</span></a></li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="menu-item mega" data-id="6" data-level="0" data-title="1"><a
-														href="indexfa90.html?id_category=3&amp;controller=category&amp;id_lang=1"
-														target="_self"><span>Pages</span><em class="caret"></em></a>
-													<div class="nav-child dropdown-menu mega-dropdown-menu">
-														<div class="mega-dropdown-inner">
-															<div class="row">
-																<div class="mega-col-nav col-sm-12" data-width="12">
-																	<div class="mega-inner">
-																		<ul class="mega-nav">
-																			<li class="menu-item" data-id="249"
-																				data-level="1" data-title="1"><a
-																					href="index30e7.html?id_cms=6&amp;controller=cms&amp;id_lang=1"
-																					target="_self"><span>Typography</span></a>
-																			</li>
-																			<li class="menu-item mega" data-id="250"
-																				data-level="1" data-title="1"><a
-																					href="indexe734.html?id_category=12&amp;controller=category&amp;id_lang=1"
-																					target="_self"><span>Product
-																						Pages</span></a>
-																				<div
-																					class="nav-child dropdown-menu mega-dropdown-menu">
-																					<div class="mega-dropdown-inner">
-																						<div class="row">
-																							<div class="mega-col-nav col-sm-12"
-																								data-width="12">
-																								<div class="mega-inner">
-																									<ul
-																										class="mega-nav">
-																										<li class="menu-item"
-																											data-id="251"
-																											data-level="2"
-																											data-title="1">
-																											<a href="indexe734.html?id_category=12&amp;controller=category&amp;id_lang=1"
-																												target="_self"><span>Product
-																													List</span></a>
-																										</li>
-																										<li class="menu-item"
-																											data-id="252"
-																											data-level="2"
-																											data-title="1">
-																											<a href="indexc27f.html?id_product=13&amp;id_product_attribute=0&amp;rewrite=demo-default-product-&amp;controller=product&amp;id_lang=1"
-																												target="_self"><span>Product
-																													Details</span></a>
-																										</li>
-																									</ul>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</li>
-																			<li class="menu-item" data-id="253"
-																				data-level="1" data-title="1"><a
-																					href="indexac29.html?id_cms=4&amp;controller=cms&amp;id_lang=1"
-																					target="_self"><span>About
-																						Us</span></a></li>
-																			<li class="menu-item" data-id="378"
-																				data-level="1" data-title="1"><a
-																					href="indexcc05.html?controller=sitemap"
-																					target="_self"><span>Site
-																						map</span></a></li>
-																			<li class="menu-item" data-id="372"
-																				data-level="1" data-title="1"><a
-																					href="index11f6.html?controller=stores"
-																					target="_self"><span>Our
-																						Store</span></a></li>
-																			<li class="menu-item" data-id="254"
-																				data-level="1" data-title="1"><a
-																					href="index6237.html?controller=new-products"
-																					target="_self"><span>New
-																						Products</span></a></li>
-																			<li class="menu-item" data-id="256"
-																				data-level="1" data-title="1"><a
-																					href="index8bf5.html?controller=search&amp;orderby=position&amp;orderway=desc&amp;search_query=fresh"
-																					target="_self"><span>Search
-																						Page</span></a></li>
-																			<li class="menu-item" data-id="307"
-																				data-level="1" data-title="1"><a
-																					href="index7e4b.html?controller=best-sales"
-																					target="_self"><span>Best
-																						Sales</span></a></li>
-																			<li class="menu-item" data-id="257"
-																				data-level="1" data-title="1"><a
-																					href="indexc485.html?controller=prices-drop"
-																					target="_self"><span>Prices
-																						drop</span></a></li>
-																			<li class="menu-item" data-id="258"
-																				data-level="1" data-title="1"><a
-																					href="index6a2f.html?controller=404"
-																					target="_self"><span>404
-																						Page</span></a></li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="menu-item" data-id="7" data-level="0" data-title="1"><a
-														href="index0684.html?controller=contact"
-														target="_self"><span>Contact</span></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
+								
 								<script type="text/javascript">
 									var jmmm_event = 'hover';
 									var jmmm_duration = 200;	
@@ -939,52 +1000,129 @@
 
 
 						<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_body.tpl -->
-						<div class="jms-row">
+						<div class="jms-row my_own_slider">
 							<div class="container-fluid">
 								<div class="row">
 									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12" style="">
 										<div class="addon-box">
+											<div class="slider__warpper">
+												<div class="flex__container flex--pikachu flex--active" data-slide="1">
+												  <div class="flex__item flex__item--left">
+													<div class="flex__content">
+													  <p class="text--sub">THICK AND LONG HAIR CONDITIONING SHAMPOO</p>
+													  <h1 class="text--big">Valvet</h1>
+													  <p class="text--normal">Valvet is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p>
+													</div>
+													<p class="text__background">Valvet</p>
+												  </div>
+												  <div class="flex__item flex__item--right">
+													<img class="pokemon__img" src="assets/img/shampoo1.png" />
 
+												  </div>
+												</div>
+												<div class="flex__container flex--piplup animate--start" data-slide="2">
+												  <div class="flex__item flex__item--left">
+													<div class="flex__content">
+													  <p class="text--sub">ANTI DANDRUFF CONDITIONING SHAMPOO</p>
+													  <h1 class="text--big">Valvet</h1>
+													  <p class="text--normal">Valvet is the Water-type Starter Pokémon of the Sinnoh region. It was introduced in Generation IV. Piplup has a strong sense of self-esteem. It seldom accepts food that people give because of its pride.</p>
+													</div>
+													<p class="text__background">Valvet</p>
+												  </div>
+												  <div class="flex__item flex__item--right">
+													<img class="pokemon__img" src="assets/img/shampoo3.png" />
+
+												  </div>
+												</div>
+												<div class="flex__container flex--blaziken animate--start" data-slide="3">
+												  <div class="flex__item flex__item--left">
+													<div class="flex__content">
+													  <p class="text--sub">HAIR DAMAGE REPAIR CONDITIONING SHAMPOO</p>
+													  <h1 class="text--big">Valvet</h1>
+													  <p class="text--normal">Valvet is the Fire/Fighting-type Starter Pokémon of the Hoenn region, introduced in Generation III. Blaziken is a large, bipedal, humanoid bird-like Pokémon that resembles a rooster.</p>
+													</div>
+													<p class="text__background">Valvet</p>
+												  </div>
+												  <div class="flex__item flex__item--right">
+													<img class="pokemon__img" src="assets/img/shampoo2.png" />
+
+												  </div>
+												</div>
+												<div class="flex__container flex--dialga animate--start" data-slide="4">
+												  <div class="flex__item flex__item--left">
+													<div class="flex__content">
+													  <p class="text--sub">HERBAL TREATMENT CONDITIONING SHAMPOO</p>
+													  <h1 class="text--big">Valvet</h1>
+													  <p class="text--normal">Valvet is a Steel/Dragon-type Legendary Pokémon. Valvet is a sauropod-like Pokémon. It is mainly blue with some gray, metallic portions, such as its chest plate, which has a diamond in the center. It also has various, light blue lines all over
+														its body.</p>
+													</div>
+													<p class="text__background">Valvet</p>
+												  </div>
+												  <div class="flex__item flex__item--right">
+													<img class="pokemon__img" src="assets/img/shampoo5.png" />
+
+												  </div>
+												</div>
+												<div class="flex__container flex--zekrom animate--start" data-slide="5">
+												  <div class="flex__item flex__item--left">
+													<div class="flex__content">
+													  <p class="text--sub">HAIR FALL SOLUTION CONDITIONING SHAMPOO</p>
+													  <h1 class="text--big">Valvet</h1>
+													  <p class="text--normal">Valvet is a Dragon/Electric-type Legendary Pokémon. It is part of the Tao Trio, along with Reshiram and Kyurem. Valvet is a large, black draconian Pokémon that seems to share its theme with its counterpart, Reshiram. It has piercing red eyes and
+														dark gray to black skin that seems to be armor-like.</p>
+													</div>
+													<p class="text__background">Valvet</p>
+												  </div>
+												  <div class="flex__item flex__item--right">
+													<img class="pokemon__img" src="assets/img/shampoo4.png" />
+
+												  </div>
+												</div>
+											  </div>
+											  
+											  <div class="slider__navi">
+												<a href="#" class="slide-nav active" data-slide="1">pikachu</a>
+												<a href="#" class="slide-nav" data-slide="2">piplup</a>
+												<a href="#" class="slide-nav" data-slide="3">blaziken</a>
+												<a href="#" class="slide-nav" data-slide="4">dialga</a>
+												<a href="#" class="slide-nav" data-slide="5">zekrom</a>
+											  </div>
 											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonsliderlayer.tpl -->
-											<div class="jms-slider-wrapper">
+											<!-- <div class="jms-slider-wrapper">
 												<div class="responisve-container">
 													<div class="slider">
 														<div class="fs_loader"></div>
 														<div class="slide "
-															style="background: url(modules/jmsslider/views/img/slides/e4e88556da75cfa11e1a76670ecc351f.jpg) no-repeat left top;background-size:cover;">
+															style="background: url(assets/img/cover_bg1.webp) no-repeat left top;background-size:cover;">
 															<div class=" jms-slide-content" data-position="343,450"
 																data-fontsize="60" data-lineheight="78px"
 																data-in="right" data-out="right" data-delay="1000"
 																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="1700"
+																data-step="0" data-special="" data-time="1300"
 																style="font-size: 60px; font-style:normal; color: #ffffff; line-height:78px;">
-																<span class="text-large">organic store</span>
+																<span class="text-large">Valvet Shampoo</span>
 															</div>
-															<div class=" jms-slide-content" data-position="429,434"
+															<div class=" jms-slide-content py-3" data-position="429,434"
 																data-fontsize="16" data-lineheight="45px"
 																data-in="right" data-out="right" data-delay="1500"
 																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="2200"
+																data-step="0" data-special="" data-time="2000"
 																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-small center">World's finest luxury
-																	natural and organic hair care productstreatments
-																	and<br /> styling all in one online store in
-																	Australia.</span>
+																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
 															</div>
-															<div class=" jms-slide-content" data-position="517,638"
+															<div class=" jms-slide-content pt-4" data-position="517,638"
 																data-fontsize="14" data-lineheight="26px"
 																data-in="right" data-out="left" data-delay="2200"
 																data-ease-in="linear" data-ease-out="linear"
 																data-step="0" data-special="" data-time="2700"
 																style="font-size: 14px; font-style:normal; color: #ffffff; line-height:26px;">
-																<a href="#" title="Shop now"
-																	class="btn-shopnow btn">Shop Now
+																<a href="#" title="Contact us"
+																	class="btn-shopnow btn">Contact us
 																</a>
-
 															</div>
 
 															<img class=" jms-slide-content"
-																src="modules/jmsslider/views/img/layers/organie11.png"
+																src="assets/img/shampoo1.png"
 																alt="" data-position="143,1089" data-in="fade"
 																data-out="fade" data-delay="200" data-ease-in="linear"
 																data-ease-out="linear" data-time="900" data-step="0"
@@ -998,7 +1136,7 @@
 																data-ease-in="linear" data-ease-out="linear"
 																data-step="0" data-special="" data-time="700"
 																style="font-size: 60px; font-style:normal; color: #ffffff; line-height:78px;">
-																<span class="text-large">organic beauty</span>
+																<span class="text-large">Valvet Shampoo</span>
 															</div>
 															<div class=" jms-slide-content" data-position="433,333"
 																data-fontsize="16" data-lineheight="45px"
@@ -1006,11 +1144,7 @@
 																data-ease-in="linear" data-ease-out="linear"
 																data-step="0" data-special="" data-time="1200"
 																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-small center">Want good hair care
-																	products without the icky ingredients. Look no
-																	further <br />
-																	than these finds from natural and organic
-																	brands.</span>
+																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
 															</div>
 															<div class=" jms-slide-content" data-position="517,537"
 																data-fontsize="15" data-lineheight="26px"
@@ -1018,8 +1152,8 @@
 																data-ease-in="linear" data-ease-out="linear"
 																data-step="0" data-special="" data-time="1700"
 																style="font-size: 15px; font-style:normal; color: #111111; line-height:26px;">
-																<a href="#" title="Shop now"
-																	class="btn-shopnow btn">Shop Now
+																<a href="#" title="Contact us"
+																	class="btn-shopnow btn">Contact Us
 																</a>
 
 
@@ -1050,11 +1184,7 @@
 																data-ease-out="linear" data-step="0" data-special=""
 																data-time="1200"
 																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-small center">Want good hair care
-																	products without the icky ingredients. Look no
-																	further <br />
-																	than these finds from natural and organic
-																	brands.</span>
+																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
 															</div>
 															<div class=" jms-slide-content" data-position="517,638"
 																data-fontsize="15" data-lineheight="26px"
@@ -1062,8 +1192,8 @@
 																data-ease-in="linear" data-ease-out="linear"
 																data-step="0" data-special="" data-time="1700"
 																style="font-size: 15px; font-style:normal; color: #111111; line-height:26px;">
-																<a href="#" title="Shop now"
-																	class="btn-shopnow btn">Shop Now
+																<a href="#" title="Contact us"
+																	class="btn-shopnow btn">Contact Us
 																</a>
 
 															</div>
@@ -1092,11 +1222,7 @@
 																data-ease-in="linear" data-ease-out="linear"
 																data-step="0" data-special="" data-time="2200"
 																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-small center">Organic Skin Care offers
-																	effective and professional natural, organic and
-																	<br />
-																	Biodynamic skin care products to leading
-																	worldwide.</span>
+																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
 															</div>
 															<div class=" jms-slide-content" data-position="517,638"
 																data-fontsize="15" data-lineheight="26px"
@@ -1104,8 +1230,46 @@
 																data-ease-in="linear" data-ease-out="linear"
 																data-step="0" data-special="" data-time="2700"
 																style="font-size: 15px; font-style:normal; color: #111111; line-height:26px;">
-																<a href="#" title="Shop now"
-																	class="btn-shopnow btn">Shop Now
+																<a href="#" title="Contact us"
+																	class="btn-shopnow btn">Contact us	
+																</a>
+
+
+															</div>
+
+															<img class=" jms-slide-content"
+																src="modules/jmsslider/views/img/layers/img2.png" alt=""
+																data-position="277,1000" data-in="left" data-out="right"
+																data-delay="200" data-ease-in="linear"
+																data-ease-out="linear" data-time="700" data-step="0"
+																data-special="" width="548" height="365" />
+														</div>
+														<div class="slide "
+															style="background: url(modules/jmsslider/views/img/slides/a676cfbdcf7d965f89414a03a703ad2c.jpg) no-repeat left top;background-size:cover;">
+															<div class=" jms-slide-content" data-position="343,450"
+																data-fontsize="60" data-lineheight="78px"
+																data-in="right" data-out="right" data-delay="1000"
+																data-ease-in="linear" data-ease-out="linear"
+																data-step="0" data-special="" data-time="1700"
+																style="font-size: 60px; font-style:normal; color: #ffffff; line-height:78px;">
+																<span class="text-large">organic skin</span>
+															</div>
+															<div class=" jms-slide-content" data-position="429,434"
+																data-fontsize="16" data-lineheight="45px"
+																data-in="bottom" data-out="bottom" data-delay="1500"
+																data-ease-in="linear" data-ease-out="linear"
+																data-step="0" data-special="" data-time="2200"
+																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
+																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
+															</div>
+															<div class=" jms-slide-content" data-position="517,638"
+																data-fontsize="15" data-lineheight="26px"
+																data-in="bottom" data-out="bottom" data-delay="2200"
+																data-ease-in="linear" data-ease-out="linear"
+																data-step="0" data-special="" data-time="2700"
+																style="font-size: 15px; font-style:normal; color: #111111; line-height:26px;">
+																<a href="#" title="Contact us"
+																	class="btn-shopnow btn">Contact us	
 																</a>
 
 
@@ -1120,10 +1284,10 @@
 														</div>
 													</div>
 												</div>
-											</div>
+											</div> -->
 
 
-											<script type="text/javascript">
+											<!-- <script type="text/javascript">
 												var jmsslider_trans = "fade";
 												var jmsslider_end_animate = "fade";
 												var jmsslider_trans_in = "fade";
@@ -1148,7 +1312,7 @@
 												var jmsslider_responsive = true;
 
 												var jmsslider_dimensions = "1920,970";
-											</script>
+											</script> -->
 											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonsliderlayer.tpl -->
 										</div>
 									</div>
@@ -1436,8 +1600,8 @@
 																	00:00:00</div>
 
 																<div class="hotdeal-viewall">
-																	<a href="index8ede.php?fc=module&amp;module=hotdeals&amp;controller=allproduct&amp;id_lang=1"
-																		class="btn btn-other">Shop Now</a>
+																	<a href="#;	"
+																		class="btn btn-other">Contact Now</a>
 																</div>
 															</div>
 														</div>
@@ -7541,7 +7705,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="jmstools" class="jmsclose hidden-xs hidden-sm">
+			<!-- <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
 				<a id="jmstools-arrow" class="pull-right"><i class="fa fa-cog"></i></a>
 				<div id="jmstools-content" class="pull-left">
 					<form action="http://prestashop17.joommasters.com/organicshop/index.php" method="POST">
@@ -7589,7 +7753,7 @@
 						<input type="hidden" name="settingpanel" value="1" />
 					</form>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_footer.tpl -->
 
@@ -7598,7 +7762,6 @@
 		</footer>
 
 	</div>
-
 
 	<script type="text/javascript" src="themes/core.js"></script>
 	<script type="text/javascript" src="assets/js/theme.js"></script>
@@ -7630,7 +7793,72 @@
 	<script type="text/javascript" src="themes/jms_organic/modules/ps_shoppingcart/ps_shoppingcart.js"></script>
 	<script type="text/javascript" src="themes/jms_organic/modules/jmspagebuilder/views/js/off-canvas.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+<script> 
 
+$('.slide-nav').on('click', function(e) {
+  e.preventDefault();
+  // get current slide
+  var current = $('.flex--active').data('slide'),
+    // get button data-slide
+    next = $(this).data('slide');
+
+  $('.slide-nav').removeClass('active');
+  $(this).addClass('active');
+
+  if (current === next) {
+    return false;
+  } else {
+    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+    $('.flex--active').addClass('animate--end');
+    setTimeout(function() {
+      $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+      $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+    }, 800);
+  }
+});
+
+// Autoslide feature
+var autoSlideInterval = setInterval(function() {
+  var current = $('.flex--active').data('slide');
+  var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+  $('.slide-nav[data-slide=' + next + ']').click();
+}, 5000); // Change slide every 5 seconds
+
+// Pause autoslide on hover
+$('.slider__warpper, .slide-nav').hover(function() {
+  clearInterval(autoSlideInterval);
+}, function() {
+  autoSlideInterval = setInterval(function() {
+    var current = $('.flex--active').data('slide');
+    var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+    $('.slide-nav[data-slide=' + next + ']').click();
+  }, 5000); // Change slide every 5 seconds
+});
+
+// $('.slide-nav').on('click', function(e) {
+//   e.preventDefault();
+//   // get current slide
+//   var current = $('.flex--active').data('slide'),
+//     // get button data-slide
+//     next = $(this).data('slide');
+
+//   $('.slide-nav').removeClass('active');
+//   $(this).addClass('active');
+
+//   if (current === next) {
+//     return false;
+//   } else {
+//     $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+//     $('.flex--active').addClass('animate--end');
+//     setTimeout(function() {
+//       $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+//       $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+//     }, 800);
+//   }
+// });
+</script>
 
 
 

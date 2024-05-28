@@ -813,7 +813,7 @@ input[type="color"]:focus,
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-color: #90bc79;
+  border-color: #ef71acc7;
 }
 
 select:-moz-placeholder,
@@ -1763,7 +1763,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #90bc79;
+  color: #ef71acc7;
   text-decoration: none;
 }
 
@@ -1824,7 +1824,7 @@ a:focus {
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   z-index: -1;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .nav.nav-tabs li a:hover::before,
@@ -1843,8 +1843,8 @@ a:focus {
 .nav.nav-tabs li a:focus,
 .nav.nav-tabs li a.active {
   color: #fff;
-  border: 3px solid #90bc79;
-  background-color: #90bc79;
+  border: 3px solid #ef71acc7;
+  background-color: #ef71acc7;
   -webkit-transition: all 500ms ease 0s;
   -moz-transition: all 500ms ease 0s;
   -o-transition: all 500ms ease 0s;
@@ -1903,18 +1903,18 @@ button:focus {
   border: 2px solid #222;
   border-radius: 0;
   position: relative;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   color: #fff;
 }
 
 .btn-active {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   color: #fff;
 }
 
@@ -1949,13 +1949,13 @@ button:focus {
 }
 
 .btn-primary {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .btn-effect::before,
@@ -2040,16 +2040,16 @@ button:focus {
   text-align: center;
   letter-spacing: 0.1em;
   border-radius: 30px;
-  border: 2px solid #90bc79;
+  border: 2px solid #ef71acc7;
   color: #222;
   position: relative;
   z-index: 1;
 }
 
 #button_order_cart:hover {
-  border: 2px solid #90bc79;
+  border: 2px solid #ef71acc7;
   color: #fff;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   -webkit-transition: all 500ms ease 0s;
   -moz-transition: all 500ms ease 0s;
   -o-transition: all 500ms ease 0s;
@@ -2065,7 +2065,7 @@ button:focus {
 }
 
 .btn-other {
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
   border-radius: 30px;
   color: #222;
   position: relative;
@@ -2109,7 +2109,7 @@ button:focus {
 }
 
 .btn-other::before {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .btn-shopnow:hover::before,
@@ -2129,7 +2129,7 @@ button:focus {
 .btn-shopnow:active,
 .btn-shopnow:focus {
   border: 3px solid #fff;
-  color: #90bc79;
+  color: #ef71acc7;
   background-color: #fff;
   -webkit-transition: all 500ms ease 0s;
   -moz-transition: all 500ms ease 0s;
@@ -2140,9 +2140,9 @@ button:focus {
 .btn-other:hover,
 .btn-other:active,
 .btn-other:focus {
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
   color: #fff;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   -webkit-transition: all 500ms ease 0s;
   -moz-transition: all 500ms ease 0s;
   -o-transition: all 500ms ease 0s;
@@ -3127,7 +3127,7 @@ button:focus {
 
 .dropdown-item.active,
 .dropdown-item:active {
-  color: #90bc79;
+  color: #ef71acc7;
   background-color: transparent;
 }
 
@@ -3194,7 +3194,7 @@ button:focus {
 
 .close-button,
 #off-canvas-title {
-  background: #90bc79 none repeat scroll 0 0;
+  background: #ef71acc7 none repeat scroll 0 0;
   color: #ffffff;
   font-weight: 600;
   padding: 16px 34px;
@@ -3250,7 +3250,7 @@ button:focus {
 }
 
 .ajax_cart_quantity {
-  background: #90bc79;
+  background: #ef71acc7;
   border-radius: 50%;
   color: #ffffff;
   display: block;
@@ -4463,7 +4463,7 @@ img.logo.img-responsive {
 }
 
 .green {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .black {
@@ -4505,11 +4505,11 @@ footer {
 }
 
 .feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers1.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers1.png") no-repeat center center;
   display: block;
   height: 130px;
   width: 130px;
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
   margin: 0 auto;
   border-radius: 50%;
   position: absolute;
@@ -4544,19 +4544,20 @@ footer {
 
 .feature-boxstyle2:hover h4,
 .feature-boxstyle2:hover a {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .feature-boxstyle2:hover a::before {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   color: #fff;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .feature-boxstyle2 .image img {
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
   border-radius: 50%;
+  filter: brightness(0) saturate(100%) invert(71%) sepia(27%) saturate(4607%) hue-rotate(293deg) brightness(98%) contrast(91%);
 }
 
 .feature-boxstyle2 p {
@@ -4587,7 +4588,7 @@ footer {
   content: " + ";
   right: -30px;
   position: absolute;
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
   top: 4px;
   border-radius: 50%;
   font-size: 11px;
@@ -4595,17 +4596,17 @@ footer {
   width: 17px;
   height: 17px;
   line-height: 15px;
-  color: #90bc79;
+  color: #ef71acc7;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .box-2 .feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers2.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers2.png") no-repeat center center;
 }
 
 .box-3 .feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers3.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers3.png") no-repeat center center;
 }
 
 .feature-box {
@@ -4726,7 +4727,7 @@ footer {
   left: -72px;
   z-index: -1;
   border-radius: 50%;
-  border: 1px dashed #90bc79;
+  border: 1px dashed #ef71acc7;
 }
 
 .service_center .jms-banner>a::after,
@@ -4749,11 +4750,11 @@ footer {
 }
 
 .box-2 .feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers2.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers2.png") no-repeat center center;
 }
 
 .box-3 .feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers3.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers3.png") no-repeat center center;
 }
 
 .style3 .feature-boxstyle2 .hover-image {
@@ -4775,7 +4776,7 @@ footer {
 
 .style3 .feature-boxstyle2 .image img {
   border: 2px solid transparent;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .style3 .feature-boxstyle2:hover .hover-image {
@@ -4795,23 +4796,23 @@ footer {
 .style3 .feature-boxstyle2:hover .image img {
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #90bc79;
+  border: 2px solid #ef71acc7;
 }
 
 .box-1.feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers1h3.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers1h3.png") no-repeat center center;
 }
 
 .box-2.feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers2h3.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers2h3.png") no-repeat center center;
 }
 
 .box-3.feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers3h3.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers3h3.png") no-repeat center center;
 }
 
 .box-4.feature-boxstyle2 .hover-image {
-  background: #90bc79 url("../img/demo/hovers4h3.png") no-repeat center center;
+  background: #ef71acc7 url("../img/demo/hovers4h3.png") no-repeat center center;
 }
 
 .feature-boxstyle2.box-1,
@@ -4892,7 +4893,7 @@ footer {
 }
 
 .product-preview:hover {
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
   -webkit-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -4938,7 +4939,7 @@ footer {
   display: inline-block;
   border-radius: 52px;
   line-height: 52px;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   text-align: center;
   width: 52px;
   height: 52px;
@@ -5000,7 +5001,7 @@ footer {
 }
 
 .label-box.label-new {
-  background: #90bc79 none repeat scroll 0 0;
+  background: #ef71acc7 none repeat scroll 0 0;
   top: 10px;
   position: relative;
   right: auto;
@@ -5070,7 +5071,7 @@ footer {
 
 .addToWishlist .fa-heart-o {
   opacity: 1;
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .addToWishlist .fa-heart {
@@ -5086,13 +5087,13 @@ footer {
 }
 
 .product-preview:hover .addToWishlist .fa-heart {
-  color: #90bc79;
+  color: #ef71acc7;
   opacity: 1;
 }
 
 .product-preview:hover .addToWishlist .fa-heart-o {
   opacity: 1;
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .quick-view {
@@ -5118,7 +5119,7 @@ footer {
 .product-btn.cart-button.checking,
 .product-btn.cart-button.checked {
   background: none;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .product-link {
@@ -5291,12 +5292,12 @@ footer {
 
 #product .flex-box .product-preview:hover .replace-2x,
 #category .flex-box .product-preview:hover .replace-2x {
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
 }
 
 #product .flex-box .product-preview:hover .product-link,
 #category .flex-box .product-preview:hover .product-link {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 /**************************************************ADDON HOTDEAL********************************************/
@@ -5328,7 +5329,7 @@ footer {
 .hotdeal .content_price {
   position: absolute;
   top: 154px;
-  background: #90bc79;
+  background: #ef71acc7;
   border-radius: 50%;
   text-align: center;
   padding: 13px 9px;
@@ -5436,7 +5437,7 @@ footer {
 .hotdeal .product-btn.cart-button:active,
 .hotdeal .product-btn.cart-button:focus {
   background-color: #fff;
-  color: #90bc79;
+  color: #ef71acc7;
   -webkit-transition: all 500ms ease 0s;
   -moz-transition: all 500ms ease 0s;
   -o-transition: all 500ms ease 0s;
@@ -5467,13 +5468,13 @@ footer {
 .hotdeal .addToWishlist.product-btn:active,
 .hotdeal .addToWishlist.product-btn:focus {
   background-color: #fff;
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .hotdeal .addToWishlist.product-btn:hover .fa,
 .hotdeal .addToWishlist.product-btn:active .fa,
 .hotdeal .addToWishlist.product-btn:focus .fa {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .hotdeal .addToWishlist .fa {
@@ -5488,7 +5489,7 @@ footer {
 }
 
 .hotdeal .product-preview:hover .addToWishlist:hover .fa {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .countdown-section {
@@ -5673,7 +5674,7 @@ footer {
   margin: 0 auto;
   width: auto;
   border-radius: 50%;
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
   cursor: pointer;
 }
 
@@ -5773,7 +5774,7 @@ button.slick-arrow.slick-next {
 }
 
 .style3 button.slick-arrow:hover {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .html_block {
@@ -5842,7 +5843,7 @@ button.slick-arrow.slick-next {
 }
 
 .style3 #testimonial .slider-nav .testimonial-img.slick-center img {
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
 }
 
 .service_testi {
@@ -5904,7 +5905,7 @@ button.slick-arrow.slick-next {
   width: 62px;
   height: 62px;
   border-radius: 62px;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   padding-top: 12px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
@@ -5933,7 +5934,7 @@ button.slick-arrow.slick-next {
   content: " + ";
   right: -30px;
   position: absolute;
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
   top: 4px;
   border-radius: 50%;
   font-size: 11px;
@@ -5941,13 +5942,13 @@ button.slick-arrow.slick-next {
   width: 17px;
   height: 17px;
   line-height: 14px;
-  color: #90bc79;
+  color: #ef71acc7;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .read-more:hover::before {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   color: #fff;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -6087,13 +6088,13 @@ button.slick-arrow.slick-next {
 .style2 #newsletter_block_left .newsletter-btn.btn-shopnow:hover,
 .style2 #newsletter_block_left .newsletter-btn.btn-shopnow:active,
 .style2 #newsletter_block_left .newsletter-btn.btn-shopnow:focus {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   color: #fff;
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
 }
 
 .style2 #newsletter_block_left .newsletter-btn.btn-shopnow:before {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 /***addon banner********/
@@ -6150,7 +6151,7 @@ button.slick-arrow.slick-next {
 
 .jms-banner a:hover::before {
   background-color: #fff;
-  color: #90bc79;
+  color: #ef71acc7;
   -webkit-box-shadow: 0 2px 5px rgba(255, 255, 255, 0.6);
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.6);
 }
@@ -6249,8 +6250,8 @@ button.slick-arrow.slick-next {
 }
 
 .style2 .jms-banner a::before {
-  background-color: #90bc79;
-  border: 1px solid #90bc79;
+  background-color: #ef71acc7;
+  border: 1px solid #ef71acc7;
 }
 
 .style2 .jms-banner a:hover::before {
@@ -6283,7 +6284,7 @@ button.slick-arrow.slick-next {
   width: 17px;
   height: 17px;
   line-height: 14px;
-  color: #90bc79;
+  color: #ef71acc7;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
@@ -6299,13 +6300,13 @@ button.slick-arrow.slick-next {
 }
 
 .viewall:hover {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .viewall:hover::before {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   color: #fff;
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
 }
 
 /*******product list*****************/
@@ -6347,16 +6348,16 @@ button.slick-arrow.slick-next {
 }
 
 .view-grid.active {
-  background: #90bc79 url("../img/icon/gridac.png") no-repeat scroll center center;
+  background: #ef71acc7 url("../img/icon/gridac.png") no-repeat scroll center center;
 }
 
 .view-list.active {
-  background: #90bc79 url("../img/icon/listac.png") no-repeat scroll center center;
+  background: #ef71acc7 url("../img/icon/listac.png") no-repeat scroll center center;
 }
 
 .view-list.active,
 .view-grid.active {
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
 }
 
 /****************custom html*****************/
@@ -6415,7 +6416,7 @@ footer ul li::before {
   -ms-transform: scaleX(0);
   transform: scaleX(0);
   margin-right: 10px;
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 footer ul li a {
@@ -6432,7 +6433,7 @@ footer ul li:hover a {
   -moz-transition: all 400ms ease 0s;
   -o-transition: all 400ms ease 0s;
   transition: all 400ms ease 0s;
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 footer ul li:hover::before {
@@ -6492,9 +6493,9 @@ footer .lnk_wishlist {
 }
 
 #social_block ul li:hover {
-  border: 1px solid #90bc79;
-  background-color: #90bc79;
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
+  background-color: #ef71acc7;
+  border: 1px solid #ef71acc7;
 }
 
 #social_block ul li:hover a {
@@ -6529,7 +6530,7 @@ footer .lnk_wishlist {
 }
 
 .footer_bottom a {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 .style2.footer_bottom {
@@ -6570,7 +6571,7 @@ footer .lnk_wishlist {
 }
 
 .style2 #social_block ul li:hover {
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
 }
 
 .style2 #social_block ul li::before {
@@ -6599,7 +6600,7 @@ footer .lnk_wishlist {
   height: 50px;
   border-radius: 50%;
   font-size: 24px;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   text-align: center;
   line-height: 50px;
   color: #fff;
@@ -6682,7 +6683,7 @@ footer .lnk_wishlist {
 }
 
 footer .style3 li:hover a {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 footer .style3 ul li a {
@@ -6732,7 +6733,7 @@ footer .style3 #social_block ul li:hover {
 }
 
 footer .style3 #social_block ul li:hover a {
-  color: #90bc79;
+  color: #ef71acc7;
 }
 
 footer .style3 #social_block ul li a {
@@ -6789,12 +6790,12 @@ footer .style3 .contact-block::after {
 
 .btn-group li.current a,
 .btn-group li.current a span {
-  color: #90bc79 !important;
+  color: #ef71acc7 !important;
 }
 
 /*breadcumb*/
 .breadcrumb {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   position: relative;
   border-radius: 0;
   text-align: center;
@@ -6984,7 +6985,7 @@ footer .style3 .contact-block::after {
 }
 
 .checkout-info .value {
-  color: #90bc79;
+  color: #ef71acc7;
   font-size: 15px;
   font-weight: 400;
   padding-left: 17px;
@@ -8114,7 +8115,7 @@ ul.footer_links li:last-child {
   z-index: 2;
   cursor: pointer;
   right: auto;
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
   height: 50px;
   width: 50px;
   line-height: 43px;
@@ -8123,7 +8124,7 @@ ul.footer_links li:last-child {
 }
 
 .products-list-in-row .list_info .addToWishlist:hover {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
 }
 
 .products-list-in-row .list_info .addToWishlist:hover .fa {
@@ -8146,13 +8147,13 @@ ul.footer_links li:last-child {
   padding: 8px 29px;
   letter-spacing: 0.1em;
   display: inline-block;
-  border: 3px solid #90bc79;
+  border: 3px solid #ef71acc7;
   text-transform: uppercase;
   border-radius: 30px;
 }
 
 .add-to-cart:hover {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   color: #fff;
 }
 
@@ -8215,8 +8216,8 @@ ul.footer_links li:last-child {
 .pagination .current a,
 .pagination .current a:focus,
 .pagination .current a:hover {
-  background-color: #90bc79;
-  border: 2px solid #90bc79;
+  background-color: #ef71acc7;
+  border: 2px solid #ef71acc7;
   color: #fff;
 }
 
@@ -8224,9 +8225,9 @@ ul.footer_links li:last-child {
 .pagination li a:hover,
 .pagination li span:focus,
 .pagination li span:hover {
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   color: #fff;
-  border: 1px solid #90bc79;
+  border: 1px solid #ef71acc7;
 }
 
 .pagination li i {
@@ -8691,7 +8692,7 @@ ul.footer_links li:last-child {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -8748,7 +8749,7 @@ ul.footer_links li:last-child {
 .spinner4 .bounce3 {
   width: 18px;
   height: 18px;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 100%;
@@ -8777,7 +8778,7 @@ ul.footer_links li:last-child {
   height: 40px;
   margin-top: -20px;
   margin-left: -20px;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 100%;
@@ -8804,7 +8805,7 @@ ul.footer_links li:last-child {
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: #90bc79;
+  background-color: #ef71acc7;
   border-radius: 100%;
   -webkit-animation: tp-bounce 2s infinite ease-in-out;
   animation: tp-bounce 2s infinite ease-in-out;
