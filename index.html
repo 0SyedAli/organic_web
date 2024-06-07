@@ -51,8 +51,274 @@
 	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/off-canvas.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/theme-responsive.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+		@font-face {
+			font-family: 'Lunema';
+			src: url(./assets/font/LunemaRegular.otf);
+		}
+
+		a {
+			color: #ef71acc7;
+			text-decoration: none;
+		}
+
+		#social_block ul li a {
+			font-size: 20px !important;
+			color: #FFF !important;
+		}
+
+		.btn-other {
+			font-family: "Poppins";
+		}
+
+		.btn-group.module-group-box .dropdown-toggle::after {
+			display: none !important;
+		}
+
+		.feature-boxstyle2 a::before {
+			right: 20px !important;
+		}
+
+		.hotdeal .description_short p {
+			margin-bottom: 6px;
+			font-weight: 400;
+			font-size: 14px;
+			padding: 10px 0;
+			color: #000;
+			font-family: 'Poppins';
+		}
+
+		.block-hotdeal .addon-box {
+			border-radius: 10px;
+			border: 2px solid #ef71acc7;
+			box-shadow: -2px 0px 20px rgb(255 151 255) !important;
+		}
+
+		.hotdeal .product-info .addon-desc {
+			color: #ef71acc7 !important;
+			font-family: "Poppins", sans-serif !important;
+			font-weight: 600;
+			text-transform: uppercase !important;
+		}
+
+		.hotdeal .addon-title h3 {
+			padding-bottom: 10px;
+		}
+
+		#newsletter_block_left .newsletter-btn.btn-shopnow {
+			padding: 10px 30px;
+			border-radius: 30px;
+		}
+
+		.svg-inline--fa {
+			display: inline-block;
+			font-size: inherit;
+			height: 1em;
+			overflow: visible;
+			vertical-align: -.125em;
+		}
+
+		#nav-icon4 {
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position: relative;
+			margin: 0;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+			transition: .5s ease-in-out;
+			cursor: pointer;
+			z-index: 999999;
+			background: #000;
+		}
+
+		#nav-icon4 .bars {
+			width: 20px;
+			display: block;
+			position: relative;
+			top: 18px;
+			left: 15px;
+			height: 20px;
+		}
+
+		#nav-icon4 span {
+			display: block;
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: #fff;
+			border-radius: 0;
+			opacity: 1;
+			right: 0;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+		}
+
+		#nav-icon4 span:nth-child(1) {
+			top: 0;
+			-webkit-transform-origin: left center;
+			-moz-transform-origin: left center;
+			-o-transform-origin: left center;
+			transform-origin: right center;
+		}
+
+		#nav-icon4 span:nth-child(2) {
+			top: 10px;
+			width: 50%;
+			-webkit-transform-origin: left center;
+			-moz-transform-origin: left center;
+			-o-transform-origin: left center;
+			transform-origin: right center;
+		}
+
+		#nav-icon4:hover {
+			background: rgba(180, 180, 180, .8);
+			transform: translate(0, -3px);
+		}
+
+		/* modal start */
+		#modal1 .btn-close {
+			position: absolute;
+			top: -6px;
+			right: -2px;
+			background: #00f0ff;
+			opacity: 1;
+			color: #000;
+			z-index: 1;
+			border-radius: 50%;
+			height: 13px;
+			width: 13px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.modal-header {
+			border-bottom: unset;
+		}
+
+		.modal-content {
+			background: #0E0E0E;
+			padding: 0 30px;
+		}
+
+		div#modal1 form textarea {
+			resize: none;
+		}
+
+		div#modal1 form input,
+		div#modal1 form textarea {
+			margin: 0 0 10px 0;
+			border: 2px solid #b5b3b3;
+			padding: 10px 10px;
+			background: #2e2e2e;
+			color: #000;
+			background-color: #FFF;
+			font-size: 16px;
+			font-family: "Poppins";
+			border-radius: 6px;
+			padding: 12px 17px;
+			height: unset;
+		}
+
+		div#modal1 form .btn-other {
+			padding: 8px 30px;
+			margin: 12px 0 20px;
+		}
+
+		div#modal1 form input::placeholder,
+		div#modal1 form textarea::placeholder {
+			color: #b5b3b3;
+		}
+
+		div#modal1 p {
+			margin: 0;
+			padding: 10px 0 0 0;
+			color: #898989;
+		}
+
+		div#modal1 h2 {
+			font-size: 33px;
+			line-height: 40px;
+			margin: 20px 0 -20px 0;
+			font-weight: 700;
+		}
+
+		div#modal1 .btn3 {
+			margin: 20px 0 20px 0;
+		}
+
+
+		div#modal1 .modal-content {
+			background: #FFF;
+			box-shadow: #ef71acc7 0px -1px 14px 2px;
+		}
+
+		/* modal end */
+		.contact-info ul li {
+			color: #FFF;
+		}
+
+		footer h3 {
+			color: #FFF;
+		}
+
+		footer ul li:hover a {
+			color: #FFF;
+			font-weight: 600;
+		}
+
+		footer ul li a {
+			color: #FFF;
+		}
+
+		.footer_bottom a {
+			color: #FFF;
+			font-weight: 600;
+		}
+
+		#newsletter_block_left h3,
+		#newsletter_block_left p {
+			color: #000;
+		}
+
+		.block-hotdeal::after,
+		.newsletter-block::before,
+		.newsletter-block::after {
+			display: none;
+		}
+
+		.addon-box.serv .feature-boxstyle2 a {
+			margin-top: 0;
+		}
+
+		.addon-box.serv {
+			height: 100%;
+		}
+
+		.addon-box.serv .feature-boxstyle2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
 
 		.header_logo {
 			width: 100%;
@@ -67,318 +333,507 @@
 			text-decoration: underline;
 			color: rgb(13, 13, 202);
 		}
+
 		.header_logo:hover {
 			color: rgb(13, 13, 202);
 			text-decoration: underline;
 		}
 
 		.header_logo img {
-			width: 100px !important;
+			width: 70px !important;
 
 		}
+
 		.jms-row.category_tab {
-			display:none;	
+			display: none;
 		}
+
 		#testimonial {
-			display:none;
+			display: none;
 		}
+
 		.fraction-slider {
-			height: 500px!important;
+			height: 500px !important;
 		}
+
 		.fraction-slider .fs_obj {
 			object-fit: contain;
 		}
+
 		.jms-slide-content span {
-			color: #ef71acc7!important;
+			color: #ef71acc7 !important;
 		}
+
 		.btn-shopnow {
 			background: #f70071 !important;
-			color: #FFF!important;
+			color: #FFF !important;
 			border: 2px solid #f70071 !important;
 		}
+
 		.btn-shopnow:hover {
-			background: transparent!important;
+			background: transparent !important;
 			color: #f70071 !important;
 			border: 2px solid #f70071 !important;
 		}
-		.jms-slide-content .text-medium	 {
-			font-size:19px;
+
+		.jms-slide-content .text-medium {
+			font-size: 19px;
 			padding-left: 50px;
 		}
 
 		.jms-megamenu ul li a::before {
 			content: "";
-    background: #f70071;
-    position: absolute;
-    left: 7px;
-    height: 2px;
-    width: 0;
-    bottom: 7px;
-    transition: 0.7s;
-}
-.jms-megamenu ul li:hover a::before {
-	width: 80%;
-}
+			background: #f70071;
+			position: absolute;
+			left: 7px;
+			height: 2px;
+			width: 0;
+			bottom: 7px;
+			transition: 0.7s;
+		}
+
+		.jms-megamenu ul li:hover a::before {
+			width: 80%;
+		}
+
+		.slider__warpper .flex__content .text--sub {
+			font-weight: 600;
+			font-family: 'Neue Einstellung';
+			padding-right: 70px;
+			letter-spacing: 3px;
+			font-size: 15px;
+		}
+
+		.slider__warpper .flex__content .text--normal {
+			font-family: "Poppins";
+			color: #FFF;
+		}
+
+		/* btn header start */
+
+
+		.cta-btn {
+			height: 50px;
+			display: inline-block;
+			padding: 10px 34px 10px 34px;
+			position: relative;
+			font-size: 17px;
+			line-height: 30px;
+			letter-spacing: .6px;
+			text-decoration: none;
+			background: transparent;
+			overflow: hidden;
+			border-radius: 25px;
+			border: 0;
+			font-family: 'Lunema';
+			text-align: center;
+			-webkit-transition: all .25s ease-in-out;
+			-moz-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			-o-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out
+		}
+
+		.nav-cta-btn {
+			position: absolute;
+			right: 64px;
+			top: 0;
+			z-index: 22;
+			-webkit-box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
+			box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
+			z-index: 999999;
+			color: #000;
+			margin-right: 20px;
+		}
+
+		.cta-btn span {
+			z-index: 1;
+			position: relative;
+			color: #000
+		}
+
+		.cta-btn-bg,
+		.btn span,
+		.nav-cta-btn span {
+			-webkit-transition: all .25s ease-in-out;
+			-moz-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			-o-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out
+		}
+
+		.cta-btn:hover {
+			cursor: pointer;
+			transform: translate(0, -3px);
+		}
+
+		.cta-btn:active,
+		.cta-btn:hover {
+			outline: 0
+		}
+
+		.cta-btn:hover span,
+		.nav-cta-btn:hover span {
+			color: #fff
+		}
+
+		@keyframes btnHover {
+			0% {
+				background-position-x: 0
+			}
+
+			100% {
+				background-position-x: 600%
+			}
+		}
+
+		.cta-btn.nav-cta-btn:hover {
+			background: transparent;
+			-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			transform: scale(1.1);
+			-webkit-transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
+			-o-transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
+			transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
+			background-color: #e8e8e842;
+		}
+
+		/* btn header end */
+
 		/* new slider  */
 
-*, *:before, *:after {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
+		*,
+		*:before,
+		*:after {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
 
-.slider__navi {
-	position: absolute;
-	top: 50%;
-	right: 20px;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	z-index: 999;
-}
+		.slider__navi {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			z-index: 999;
+		}
 
-.slider__navi a {
-	display: block;
-	height: 6px;
-	width: 20px;
-	margin: 20px 0;
-	text-indent: -9999px;
-	box-shadow: none;
-	border: none;
-	background: rgba(0,0,0,0.2);
-}
+		.slider__navi a {
+			display: block;
+			height: 6px;
+			width: 20px;
+			margin: 20px 0;
+			text-indent: -9999px;
+			box-shadow: none;
+			border: none;
+			background: rgba(0, 0, 0, 0.2);
+		}
 
-.slider__navi a.active {
-	background: rgba(255,255,255,1);
-}
+		.slider__navi a.active {
+			background: rgba(255, 255, 255, 1);
+		}
 
-body {
-	position: relative;
-	font-size: 100%;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	min-height: 100vh;
-}
+		body {
+			position: relative;
+			font-size: 100%;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;
+			min-height: 100vh;
+		}
 
-.flex__container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	-webkit-flex-flow: row wrap;
-	-moz-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
-	-o-flex-flow: row wrap;
-	flex-flow: row wrap; 
-	-webkit-justify-content: flex-start;
-	-moz-justify-content: flex-start;
-	-ms-justify-content: flex-start;
-	-o-justify-content: flex-start;
-	justify-content: flex-start;
-	height: 600px;
-	width: 100%;
-	z-index: 1;
-}
+		.flex__container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			-webkit-flex-flow: row wrap;
+			-moz-flex-flow: row wrap;
+			-ms-flex-flow: row wrap;
+			-o-flex-flow: row wrap;
+			flex-flow: row wrap;
+			-webkit-justify-content: flex-start;
+			-moz-justify-content: flex-start;
+			-ms-justify-content: flex-start;
+			-o-justify-content: flex-start;
+			justify-content: flex-start;
+			height: 600px;
+			width: 100%;
+			z-index: 1;
+		}
 
-.flex__container.flex--active {
-	z-index: 2;
-}
+		.flex__container.flex--active {
+			z-index: 2;
+		}
 
-.text--sub {
-	font-size: 12px;
-	letter-spacing: 0.5rem;
-	text-transform: uppercase;
-	margin-bottom: 40px;
-}
+		.text--sub {
+			font-size: 12px;
+			letter-spacing: 0.5rem;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+		}
 
-.text--big {
-	font-family: 'Poppins', sans-serif;
-	font-size: 7.5em;
-	font-weight: 700;
-	line-height: 110px;
-  margin-left: -8px;
-}
-.flex--pikachu .text--big, .flex--blaziken .text--big {
-	color: #FFF;
-}
-.flex--zekrom .text--big, .flex--zekrom .text--sub, .flex--zekrom .text--normal {
-color: #000;
-}
-.flex--dialga .text--big, .flex--dialga .text--sub, .flex--dialga .text--normal {
-	color: #000;
-}
-.text--normal {
-	font-size: 13px;
-	color: rgba(255, 255, 255, 0.8);
-	line-height: 22px;
-	margin-top: 25px;
-}
-.flex--pikachu .text__background {
-	color:  rgb(0 0 0 / 17%);
-}
+		.text--big {
+			font-family: 'Poppins', sans-serif;
+			font-size: 7.5em;
+			font-weight: 700;
+			line-height: 110px;
+			margin-left: -8px;
+		}
 
-.text__background {
-	font-family: 'Poppins', sans-serif;
-	position: absolute;
-	left: 72px;
-	bottom: -60px;
-	color: rgba(0,0,0,0.05);
-	font-size: 170px;
-	font-weight: 700;
-}
+		.flex--pikachu .text--big,
+		.flex--blaziken .text--big {
+			color: #FFF;
+		}
 
-.flex__item {
-	height: 600px;
-	color: #fff;
-	transition: transform 0.1s linear;
-}
+		.flex--zekrom .text--big,
+		.flex--zekrom .text--sub,
+		.flex--zekrom .text--normal {
+			color: #000;
+		}
 
-.flex__item--left {
-	display: flex;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	align-items: center;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
-	width: 60%;
-	transform-origin: left bottom;
-	transition: transform 0.1s linear 0.4s;
-	opacity: 0;
-	position: relative;
-	overflow: hidden;
-}
+		.flex--dialga .text--big,
+		.flex--dialga .text--sub,
+		.flex--dialga .text--normal {
+			color: #000;
+		}
 
-.flex__item--right {
-	width: 40%;
-	transform-origin: right center;
-	transition: transform 0.1s linear 0s;
-	opacity: 0;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+		.text--normal {
+			font-size: 13px;
+			color: rgba(255, 255, 255, 0.8);
+			line-height: 22px;
+			margin-top: 25px;
+		}
 
-.flex--preStart .flex__item--left,
-.flex--preStart .flex__item--right,
-.flex--active .flex__item--left,
-.flex--active .flex__item--right {
-	opacity: 1;
-}
+		.flex--pikachu .text__background {
+			color: rgb(0 0 0 / 17%);
+		}
 
-/* Piplup */
+		.text__background {
+			font-family: 'Poppins', sans-serif;
+			position: absolute;
+			left: 72px;
+			bottom: -60px;
+			color: rgba(0, 0, 0, 0.05);
+			font-size: 170px;
+			font-weight: 700;
+		}
 
-.flex--piplup .flex__item--left {
-	background: #3e9fe6;
-}
+		.flex__item {
+			height: 600px;
+			color: #fff;
+			transition: transform 0.1s linear;
+		}
 
-.flex--piplup .flex__item--right {
-	background: #d3eaef;
-}
+		.flex__item--left {
+			display: flex;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			align-items: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			width: 60%;
+			transform-origin: left bottom;
+			transition: transform 0.1s linear 0.4s;
+			opacity: 0;
+			position: relative;
+			overflow: hidden;
+		}
 
-/* Pikachu */
+		.flex__item--right {
+			width: 40%;
+			transform-origin: right center;
+			transition: transform 0.1s linear 0s;
+			opacity: 0;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-.flex--pikachu .flex__item--left {
-    background: #4a2600cf;
-}
+		.flex--preStart .flex__item--left,
+		.flex--preStart .flex__item--right,
+		.flex--active .flex__item--left,
+		.flex--active .flex__item--right {
+			opacity: 1;
+		}
 
-.flex--pikachu .flex__item--right {
-	background: #ae7b5247;
-}
+		/* Piplup */
 
-/* Blaziken */
+		.flex--piplup .flex__item--left {
+			background: #3e9fe6;
+		}
 
-.flex--blaziken .flex__item--left {
-	background: #f64f37;
-}
+		.flex--piplup .flex__item--right {
+			background: #d3eaef;
+		}
 
-.flex--blaziken .flex__item--right {
-	background: #ffebcd;
-}
+		/* Pikachu */
 
-/* Dialga */
+		.flex--pikachu .flex__item--left {
+			background: #4a2600cf;
+		}
 
-.flex--dialga .flex__item--left {
-	background: #c0c0c0;
-}
+		.flex--pikachu .flex__item--right {
+			background: #ae7b5247;
+		}
 
-.flex--dialga .flex__item--right {
-	background: #c0c0c038;
-}
+		/* Blaziken */
 
-/* Zekrom */
+		.flex--blaziken .flex__item--left {
+			background: #f64f37;
+		}
 
-.flex--zekrom .flex__item--left {
-	background: #FFD700;
-}
+		.flex--blaziken .flex__item--right {
+			background: #ffebcd;
+		}
 
-.flex--zekrom .flex__item--right {
-	background: #FAFAD2;
-}
+		/* Dialga */
 
-.flex__content {
-	margin-left: 80px;
-	width: 55%;
-	opacity: 1;
-	transform: translate3d(0,0,0);
-	transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
-}
+		.flex--dialga .flex__item--left {
+			background: #c0c0c0;
+		}
 
-.pokemon__img {
-	/* position: absolute;
+		.flex--dialga .flex__item--right {
+			background: #c0c0c038;
+		}
+
+		/* Zekrom */
+
+		.flex--zekrom .flex__item--left {
+			background: #FFD700;
+		}
+
+		.flex--zekrom .flex__item--right {
+			background: #FAFAD2;
+		}
+
+		.flex__content {
+			margin-left: 80px;
+			width: 55%;
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+			transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+		}
+
+		.addon-box.serv .feature-boxstyle2 a {
+			color: #696969 !important;
+			text-decoration: none;
+		}
+
+		.pokemon__img {
+			/* position: absolute;
 	bottom: 20px;
 	right: 15%; */
-	max-height: 40vw;
-	opacity: 1;
-	transform: translate3d(0,0,0);
-	transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
-}
+			max-height: 40vw;
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+			transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+		}
 
-/* Animate-START point */
+		/* Animate-START point */
 
-.flex__container.animate--start .flex__content {
-	transform: translate3d(0,-200%,0);
-	opacity: 0;
-}
+		.flex__container.animate--start .flex__content {
+			transform: translate3d(0, -200%, 0);
+			opacity: 0;
+		}
 
-.flex__container.animate--start .pokemon__img {
-	transform: translate3d(-200px,0,0);
-	opacity: 0;
-}
+		.flex__container.animate--start .pokemon__img {
+			transform: translate3d(-200px, 0, 0);
+			opacity: 0;
+		}
 
-/* Animate-END point */
+		/* Animate-END point */
 
-.flex__container.animate--end .flex__item--left {
-	transform: scaleY(0);
-}
+		.flex__container.animate--end .flex__item--left {
+			transform: scaleY(0);
+		}
 
-.flex__container.animate--end .flex__item--right {
-	transform: scaleX(0);
-}
+		.flex__container.animate--end .flex__item--right {
+			transform: scaleX(0);
+		}
 
-.flex__container.animate--end .flex__content {
-	transform: translate3d(0,200%,0);
-	opacity: 0;
-}
+		.flex__container.animate--end .flex__content {
+			transform: translate3d(0, 200%, 0);
+			opacity: 0;
+		}
 
-.flex__container.animate--end .pokemon__img {
-	transform: translate3d(200px,0,0);
-	opacity: 0;
-}
+		.flex__container.animate--end .pokemon__img {
+			transform: translate3d(200px, 0, 0);
+			opacity: 0;
+		}
 
-.my_own_slider {
-	height: 600px;
-}
-.my_own_slider .addon-box{
-	height: 600px;
-}
+		.my_own_slider {
+			height: 600px;
+		}
+
+		.my_own_slider .addon-box {
+			height: 600px;
+		}
+
+		.product-image {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.product-img1 {
+			width: 160px !important;
+			margin-top: 60px;
+			margin-bottom: 60px;
+		}
+
+		@media only screen and (max-width: 991px) {
+			.flex__content {
+				width: 75%;
+			}
+
+			.slider__warpper .text--big {
+				font-size: 70px;
+				padding-bottom: 0px;
+			}
+
+			.slider__warpper .flex__content .text--sub {
+				padding-right: 0;
+			}
+		}
+
+		@media only screen and (max-width: 767px) {
+
+			.slider__warpper .flex__content .text--sub {
+				padding-right: 0;
+				margin: 0 0 20px 0;
+			}
+
+			.slider__warpper .text--big {
+				font-size: 50px;
+				line-height: 100%;
+			}
+
+			.slider__warpper .flex__content .text--normal {
+				margin-top: 25px;
+			}
+		}
+
+		@media only screen and (max-width: 630px) {}
+
+		@media only screen and (max-width: 575px) {}
+
+		@media only screen and (max-width: 450px) {}
+
+		@media only screen and (max-width: 415px) {}
+
+		@media only screen and (max-width: 360px) {}
+
+		@media only screen and (max-width: 330px) {}
 	</style>
 
 
@@ -488,7 +943,7 @@ color: #000;
 			<ul class="nav nav-pills nav-stacked level0">
 				<li class="menu-item mega menu-align-left" data-id="1" data-level="0" data-title="1" data-align="left">
 					<a href="#" target="_self">Home<em class="fa fa-angle-right"></em></a>
-					<ul class="dropdown-menu">
+					<!-- <ul class="dropdown-menu">
 						<li class="menu-item" data-id="232" data-level="1" data-title="1"><a
 								href="index-2.html?settingpanel=1&amp;jpb_homepage=1&amp;jpb_skin=default"
 								target="_self">Home 1 </a></li>
@@ -498,9 +953,9 @@ color: #000;
 						<li class="menu-item" data-id="234" data-level="1" data-title="1"><a
 								href="index-2.html?settingpanel=1&amp;jpb_homepage=3&amp;jpb_skin=color3"
 								target="_self">Home 3</a></li>
-					</ul>
+					</ul> -->
 				</li>
-				<li class="menu-item mega  menu-align-center" data-id="3" data-level="0" data-title="1" data-class=""
+				<!-- <li class="menu-item mega  menu-align-center" data-id="3" data-level="0" data-title="1" data-class=""
 					data-align="center"><a href="indexfa90.html?id_category=3&amp;controller=category&amp;id_lang=1"
 						target="_self">Shop<em class="fa fa-angle-right"></em></a>
 					<ul class="dropdown-menu">
@@ -600,7 +1055,7 @@ color: #000;
 					</ul>
 				</li>
 				<li class="menu-item" data-id="7" data-level="0" data-title="1"><a
-						href="index0684.html?controller=contact" target="_self">Contact</a></li>
+						href="index0684.html?controller=contact" target="_self">Contact</a></li> -->
 			</ul>
 
 			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsmegamenu/views/templates/hook/jmsmegamenu-mobile.tpl -->
@@ -738,12 +1193,12 @@ color: #000;
 								</div>
 							</div> -->
 							<div class="addon-box">
-								<a href="index-2.html" class="header_logo" title="Jms_Organic"><img
-										class="logo img-responsive" src="assets/img/logo.png" alt="Jms_Organic" />
+								<a href="/" class="header_logo" title="Jms_Organic"><img class="logo img-responsive"
+										src="assets/img/logo.png" alt="Jms_Organic" />
 								</a>
 							</div>
 						</div>
-						<div class="layout-column col-lg-7 col-md-8 col-sm-8 col-xs-8 logo-center center" style="">
+						<div class="layout-column col-lg-6 col-md-8 col-sm-8 col-xs-8 logo-center center" style="">
 							<div class="jms-megamenu-wrap">
 								<!-- <a id="open-button" class="open-button hidden-lg hidden-md" href="javascript:;">
 									<span class="hamburger-icon-inner">
@@ -752,7 +1207,7 @@ color: #000;
 										<span class="line line-3"></span>
 									</span>
 								</a> -->
-								<div id="jms-megamenu-container" class="navbar clearfix">
+								<!-- <div id="jms-megamenu-container" class="navbar clearfix">
 									<div class="jms-megamenu">
 										<ul class="nav level0">
 											<li class="menu-item mega menu-align-left" data-id="1" data-level="0"
@@ -760,24 +1215,22 @@ color: #000;
 													target="_self"><span>Home</span><em class="caret"></em></a>
 											</li>
 											<li class="menu-item mega " data-id="5" data-level="0" data-title="1"
-												data-class=""><a
-													href="javascript:;"
-													target="_self"><span>Blog</span><em class="caret"></em></a>
+												data-class=""><a href="javascript:;" target="_self"><span>Blog</span><em
+														class="caret"></em></a>
 											</li>
 											<li class="menu-item mega" data-id="6" data-level="0" data-title="1"><a
-													href="javascript:;"
-													target="_self"><span>Pages</span><em class="caret"></em></a>
-									
+													href="javascript:;" target="_self"><span>Pages</span><em
+														class="caret"></em></a>
+
 											</li>
 											<li class="menu-item" data-id="7" data-level="0" data-title="1"><a
-													href="javascript:;"
-													target="_self"><span>Contact</span></a></li>
+													href="javascript:;" target="_self"><span>Contact</span></a></li>
 										</ul>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
-						<div class="layout-column col-lg-2 col-md-2 col-sm-2 col-xs-2 headertop-right " style="">
+						<div class="layout-column col-lg-3 col-md-2 col-sm-2 col-xs-2 headertop-right " style="">
 							<div class="addon-box">
 
 								<!-- <div class="btn-group compact-hidden blockcart cart-preview inactive dropdown js-dropdown  "
@@ -828,16 +1281,20 @@ color: #000;
 										</div>
 									</div>
 								</div> -->
+								<a href="javascript:;" class="cta-btn nav-cta-btn">Contact Us</a>
 							</div>
 							<div class="addon-box">
-								<div class="btn-group module-group-box dropdown">
+								<div id="nav-icon4" class="open svg-inline--fa">
+									<div class="bars">
+										<span></span><span></span>
+									</div>
+								</div>
+								<!-- <div class="btn-group module-group-box dropdown">
 									<a title="Search" data-toggle="dropdown" class="dropdown-toggle" href="#">
 										<i class="modulegroup"></i>
 									</a>
 									<div role="menu" class="dropdown-menu">
 
-										<!-- begin module:ps_customersignin/ps_customersignin.tpl -->
-										<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_customersignin/ps_customersignin.tpl -->
 										<div class="user-info btn-group ">
 											<span class="btn-name">Customer signin</span>
 
@@ -856,14 +1313,6 @@ color: #000;
 
 											</ul>
 										</div>
-
-										<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_customersignin/ps_customersignin.tpl -->
-										<!-- end module:ps_customersignin/ps_customersignin.tpl -->
-
-
-										<!-- begin module:ps_languageselector/ps_languageselector.tpl -->
-										<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_languageselector/ps_languageselector.tpl -->
-										<!-- Block languages module -->
 
 										<div class="btn-group compact-hidden languages-info">
 											<span class="btn-name">Languages</span>
@@ -911,14 +1360,6 @@ color: #000;
 
 											</ul>
 										</div>
-
-										<!-- /Block languages module -->
-										<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_languageselector/ps_languageselector.tpl -->
-										<!-- end module:ps_languageselector/ps_languageselector.tpl -->
-
-
-										<!-- begin module:ps_currencyselector/ps_currencyselector.tpl -->
-										<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_currencyselector/ps_currencyselector.tpl -->
 										<div id="_desktop_currency_selector"
 											class="btn-group compact-hidden currency-info">
 											<span class="btn-name">Currency</span>
@@ -938,12 +1379,8 @@ color: #000;
 												</li>
 											</ul>
 										</div>
-
-										<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_currencyselector/ps_currencyselector.tpl -->
-										<!-- end module:ps_currencyselector/ps_currencyselector.tpl -->
-
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -957,7 +1394,7 @@ color: #000;
 
 								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsmegamenu/views/templates/hook/jmsmegamenu.tpl -->
 
-								
+
 								<script type="text/javascript">
 									var jmmm_event = 'hover';
 									var jmmm_duration = 200;	
@@ -1001,92 +1438,127 @@ color: #000;
 
 						<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_body.tpl -->
 						<div class="jms-row my_own_slider">
-							<div class="container-fluid">
+							<div class="container-fluid px-0">
 								<div class="row">
 									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12" style="">
 										<div class="addon-box">
 											<div class="slider__warpper">
 												<div class="flex__container flex--pikachu flex--active" data-slide="1">
-												  <div class="flex__item flex__item--left">
-													<div class="flex__content">
-													  <p class="text--sub">THICK AND LONG HAIR CONDITIONING SHAMPOO</p>
-													  <h1 class="text--big">Valvet</h1>
-													  <p class="text--normal">Valvet is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p>
+													<div class="flex__item flex__item--left">
+														<div class="flex__content">
+															<p class="text--sub">THICK AND LONG HAIR CONDITIONING
+																SHAMPOO</p>
+															<h1 class="text--big">VELVET</h1>
+															<p class="text--normal">Introducing VELVET Thick and Long
+																Hair Shampoo. Our premium formula is designed to nourish
+																and strengthen hair, promoting growth and vitality.
+																Crafted with quality ingredients, our shampoo supports
+																thicker, longer locks with each use. Experience the
+																difference with Second Face, where quality meets
+																excellence for your dream hair goals.</p>
+														</div>
+														<p class="text__background">VELVET</p>
 													</div>
-													<p class="text__background">Valvet</p>
-												  </div>
-												  <div class="flex__item flex__item--right">
-													<img class="pokemon__img" src="assets/img/shampoo1.png" />
+													<div class="flex__item flex__item--right">
+														<img class="pokemon__img" src="assets/img/shampoo1.png" />
 
-												  </div>
+													</div>
 												</div>
 												<div class="flex__container flex--piplup animate--start" data-slide="2">
-												  <div class="flex__item flex__item--left">
-													<div class="flex__content">
-													  <p class="text--sub">ANTI DANDRUFF CONDITIONING SHAMPOO</p>
-													  <h1 class="text--big">Valvet</h1>
-													  <p class="text--normal">Valvet is the Water-type Starter Pokémon of the Sinnoh region. It was introduced in Generation IV. Piplup has a strong sense of self-esteem. It seldom accepts food that people give because of its pride.</p>
+													<div class="flex__item flex__item--left">
+														<div class="flex__content">
+															<p class="text--sub">ANTI DANDRUFF CONDITIONING SHAMPOO</p>
+															<h1 class="text--big">VELVET</h1>
+															<p class="text--normal">Introducing VELVET Anti-Dandruff
+																Shampoo. Formulated with premium ingredients, our
+																shampoo effectively targets and eliminates dandruff
+																while nourishing the scalp. Experience relief from
+																flakes and itchiness with our high-quality solution.
+																Trust Second Face for a healthier, flake-free scalp and
+																revitalized hair.</p>
+														</div>
+														<p class="text__background">VELVET</p>
 													</div>
-													<p class="text__background">Valvet</p>
-												  </div>
-												  <div class="flex__item flex__item--right">
-													<img class="pokemon__img" src="assets/img/shampoo3.png" />
+													<div class="flex__item flex__item--right">
+														<img class="pokemon__img" src="assets/img/shampoo3.png" />
 
-												  </div>
+													</div>
 												</div>
-												<div class="flex__container flex--blaziken animate--start" data-slide="3">
-												  <div class="flex__item flex__item--left">
-													<div class="flex__content">
-													  <p class="text--sub">HAIR DAMAGE REPAIR CONDITIONING SHAMPOO</p>
-													  <h1 class="text--big">Valvet</h1>
-													  <p class="text--normal">Valvet is the Fire/Fighting-type Starter Pokémon of the Hoenn region, introduced in Generation III. Blaziken is a large, bipedal, humanoid bird-like Pokémon that resembles a rooster.</p>
+												<div class="flex__container flex--blaziken animate--start"
+													data-slide="3">
+													<div class="flex__item flex__item--left">
+														<div class="flex__content">
+															<p class="text--sub">HAIR DAMAGE REPAIR CONDITIONING SHAMPOO
+															</p>
+															<h1 class="text--big">VELVET</h1>
+															<p class="text--normal">Introducing VELVET Hair Damage
+																Repair Shampoo, crafted to restore and rejuvenate
+																damaged hair. Enriched with high-quality, natural
+																ingredients, it ensures deep nourishment and repair.
+																Strengthen and revitalize your hair with each wash for
+																healthier, smoother, and more resilient locks.
+																Experience the transformative power of quality care with
+																Second Face.</p>
+														</div>
+														<p class="text__background">VELVET</p>
 													</div>
-													<p class="text__background">Valvet</p>
-												  </div>
-												  <div class="flex__item flex__item--right">
-													<img class="pokemon__img" src="assets/img/shampoo2.png" />
+													<div class="flex__item flex__item--right">
+														<img class="pokemon__img" src="assets/img/shampoo2.png" />
 
-												  </div>
+													</div>
 												</div>
 												<div class="flex__container flex--dialga animate--start" data-slide="4">
-												  <div class="flex__item flex__item--left">
-													<div class="flex__content">
-													  <p class="text--sub">HERBAL TREATMENT CONDITIONING SHAMPOO</p>
-													  <h1 class="text--big">Valvet</h1>
-													  <p class="text--normal">Valvet is a Steel/Dragon-type Legendary Pokémon. Valvet is a sauropod-like Pokémon. It is mainly blue with some gray, metallic portions, such as its chest plate, which has a diamond in the center. It also has various, light blue lines all over
-														its body.</p>
+													<div class="flex__item flex__item--left">
+														<div class="flex__content">
+															<p class="text--sub">HERBAL TREATMENT CONDITIONING SHAMPOO
+															</p>
+															<h1 class="text--big">VELVET</h1>
+															<p class="text--normal">Introducing Second Face Herbal
+																Shampoo, crafted with premium herbal extracts for a
+																nourishing and gentle cleansing experience. Our
+																high-quality formula revitalizes your hair while
+																maintaining its natural balance. Experience the purity
+																of nature with Second Face, where quality meets
+																botanical excellence for healthier, more vibrant hair.
+															</p>
+														</div>
+														<p class="text__background">VELVET</p>
 													</div>
-													<p class="text__background">Valvet</p>
-												  </div>
-												  <div class="flex__item flex__item--right">
-													<img class="pokemon__img" src="assets/img/shampoo5.png" />
+													<div class="flex__item flex__item--right">
+														<img class="pokemon__img" src="assets/img/shampoo5.png" />
 
-												  </div>
+													</div>
 												</div>
 												<div class="flex__container flex--zekrom animate--start" data-slide="5">
-												  <div class="flex__item flex__item--left">
-													<div class="flex__content">
-													  <p class="text--sub">HAIR FALL SOLUTION CONDITIONING SHAMPOO</p>
-													  <h1 class="text--big">Valvet</h1>
-													  <p class="text--normal">Valvet is a Dragon/Electric-type Legendary Pokémon. It is part of the Tao Trio, along with Reshiram and Kyurem. Valvet is a large, black draconian Pokémon that seems to share its theme with its counterpart, Reshiram. It has piercing red eyes and
-														dark gray to black skin that seems to be armor-like.</p>
+													<div class="flex__item flex__item--left">
+														<div class="flex__content">
+															<p class="text--sub">HAIR FALL SOLUTION CONDITIONING SHAMPOO
+															</p>
+															<h1 class="text--big">VELVET</h1>
+															<p class="text--normal">Introducing VELVET Hair Fall
+																Solution Shampoo. Crafted with premium ingredients to
+																combat hair fall and promote healthy, strong hair
+																growth. Strengthen follicles, minimize breakage, and
+																enjoy thicker, fuller-looking hair. Experience
+																confidence with Second Face, where quality meets
+																effectiveness for your best hair days ahead.</p>
+														</div>
+														<p class="text__background">VELVET</p>
 													</div>
-													<p class="text__background">Valvet</p>
-												  </div>
-												  <div class="flex__item flex__item--right">
-													<img class="pokemon__img" src="assets/img/shampoo4.png" />
+													<div class="flex__item flex__item--right">
+														<img class="pokemon__img" src="assets/img/shampoo4.png" />
 
-												  </div>
+													</div>
 												</div>
-											  </div>
-											  
-											  <div class="slider__navi">
+											</div>
+
+											<div class="slider__navi">
 												<a href="#" class="slide-nav active" data-slide="1">pikachu</a>
 												<a href="#" class="slide-nav" data-slide="2">piplup</a>
 												<a href="#" class="slide-nav" data-slide="3">blaziken</a>
 												<a href="#" class="slide-nav" data-slide="4">dialga</a>
 												<a href="#" class="slide-nav" data-slide="5">zekrom</a>
-											  </div>
+											</div>
 											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonsliderlayer.tpl -->
 											<!-- <div class="jms-slider-wrapper">
 												<div class="responisve-container">
@@ -1327,86 +1799,94 @@ color: #000;
 										<div class="addon-box">
 
 											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonhtml.tpl -->
-											<p class="addon-desc">A friendly Organic store copy</p>
+											<!-- <p class="addon-desc">A friendly Organic store copy</p> -->
 											<div class="addon-title">
-												<h3>WELCOME TO STORE</h3>
+												<h3>WELCOME TO OUR WEB</h3>
 											</div>
 
 											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonhtml.tpl -->
 										</div>
 									</div>
 									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12" style="">
-										<div class="addon-box">
+										<div class="addon-box serv">
 
 											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 											<div class="feature-boxstyle2" style="text-align:center;">
+												<div>
+													<div class="image"><img src="assets/img/demo/service1.png"
+															alt="Joommasters.com" />
+														<div class="hover-image"></div>
+													</div>
 
-												<div class="image"><img src="assets/img/demo/service1.png"
-														alt="Joommasters.com" />
-													<div class="hover-image"></div>
+													<div class="include_content_s">
+
+														<h4>who we are</h4>
+														<p>Welcome to Second Face, your local destination for premium
+															cosmetics. We craft exceptional, innovative products that
+															enhance natural beauty.</p>
+													</div>
 												</div>
-
-												<div class="include_content_s">
-
-													<h4>who are we</h4>
-													<p>Organic products are grown under a system of agriculture without
-														the use of chemical fertilizers and pesticides</p>
-												</div>
-
-												<a href="#" target="_blank">read more</a>
+												<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modal1"
+													target="_blank">Contact Us</a>
 											</div>
 
 											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 										</div>
 									</div>
 									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 box-2" style="">
-										<div class="addon-box">
+										<div class="addon-box  serv">
 
 											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 											<div class="feature-boxstyle2" style="text-align:center;">
+												<div>
+													<div class="image"><img src="assets/img/demo/service2.png"
+															alt="Joommasters.com" />
+														<div class="hover-image"></div>
+													</div>
 
-												<div class="image"><img src="assets/img/demo/service2.png"
-														alt="Joommasters.com" />
-													<div class="hover-image"></div>
+													<div class="include_content_s">
+
+														<h4>How we work</h4>
+														<p>Second Face crafts quality cosmetics with fine ingredients,
+															rigorous R&D, and sustainable methods, ensuring superior
+															performance and ethical standards.</p>
+													</div>
 												</div>
-
-												<div class="include_content_s">
-
-													<h4>How we work</h4>
-													<p>Organic products are grown under a system of agriculture without
-														the use of chemical <br />fertilizers and pesticides</p>
-												</div>
-
-												<a href="#" target="_blank">read more</a>
+												<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modal1"
+													target="_blank">Contact Us</a>
 											</div>
 
 											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 										</div>
 									</div>
 									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 box-3" style="">
-										<div class="addon-box">
+										<div class="addon-box  serv">
 
 											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 											<div class="feature-boxstyle2" style="text-align:center;">
+												<div>
+													<div class="image"><img src="assets/img/demo/service3.png"
+															alt="Joommasters.com" />
+														<div class="hover-image"></div>
+													</div>
 
-												<div class="image"><img src="assets/img/demo/service3.png"
-														alt="Joommasters.com" />
-													<div class="hover-image"></div>
+													<div class="include_content_s">
+
+														<h4>OUR MISSION</h4>
+														<p>Second Face aims to lead in quality cosmetics with
+															excellence,
+															innovation, and sustainability, enhancing natural beauty
+															through
+															superior, ethical products.</p>
+													</div>
 												</div>
-
-												<div class="include_content_s">
-
-													<h4>Quality products</h4>
-													<p>Organic products are grown under a system of agriculture without
-														the use of chemical <br />fertilizers and pesticides</p>
-												</div>
-
-												<a href="#" target="_blank">read more</a>
+												<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modal1"
+													target="_blank">Contact Us</a>
 											</div>
 
 										</div>
 									</div>
-									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 pt_70 cartransiton"
+									<!-- <div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 pt_70 cartransiton"
 										style="">
 										<div class="addon-box">
 
@@ -1468,12 +1948,12 @@ color: #000;
 											</div>
 
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
 						<div class="jms-row  pt_80 pb_80"
-							style="background-image:url('assets/img/demo/bghotdeal.jpg');background-size:cover;background-attachment:fixed;background-position:50% 50%;">
+							style="background-image:url('assets/img/serv_bg.jpeg');background-size:cover;background-attachment:fixed;background-position:50% 50%;">
 							<div class="container">
 								<div class="row">
 									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 block-hotdeal"
@@ -1502,11 +1982,9 @@ color: #000;
 
 
 															<div class="preview">
-																<a href="index42af.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1#/1-size-s/16-color-yellow"
-																	class="product-image">
+																<a href="#;" class="product-image">
 																	<img class="img-responsive product-img1 img-fluid"
-																		src="img/p/7/1/71-large_default.jpg" alt=""
-																		data-full-size-image-url="http://prestashop17.joommasters.com/organicshop/img/p/7/1/71-large_default.jpg">
+																		src="assets/img/shampoo5.png">
 																</a>
 
 
@@ -1514,55 +1992,50 @@ color: #000;
 
 
 																	<span class="textonly">Only</span>
-																	<span itemprop="price"
-																		class="price new">$28.98</span>
-
-
-
+																	<span itemprop="price" class="price new">Rs:
+																		370/-</span>
 																</div>
-
 															</div>
-
-
-
 															<div class="product-info">
-																<p class="addon-desc">Natural and Organic Products</p>
+																<p class="addon-desc">HERBAL TREATMENT CONDITIONING
+																	SHAMPOO</p>
 																<div class="addon-title slider-title">
-																	<h3>DEAL OF THE DAY</h3>
+																	<h3>VELVEL</h3>
 																</div>
-
-
-																<a href="index42af.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1#/1-size-s/16-color-yellow"
-																	class="product-link">Fresh Organic Package</a>
-
 																<div class="description_short">
-																	<p>Long printed dress with thin adjustable straps.
-																		V-neckline and wiring under the bust with
-																		ruffles at the bottom of the dress.</p>
+																	<p>Introducing Second Face Herbal
+																		Shampoo, crafted with premium herbal extracts
+																		for a
+																		nourishing and gentle cleansing experience. Our
+																		high-quality formula revitalizes your hair while
+																		maintaining its natural balance. Experience the
+																		purity
+																		of nature with Second Face, where quality meets
+																		botanical excellence for healthier, more vibrant
+																		hair.
+																	</p>
 																</div>
-																<div class="countdown" id="countdown-1">2018-12-28
-																	00:00:00</div>
+																<!-- <div class="countdown" id="countdown-1">2018-12-28
+																	00:00:00</div> -->
 
 																<div class="hotdeal-viewall">
-																	<a href="index8ede.php?fc=module&amp;module=hotdeals&amp;controller=allproduct&amp;id_lang=1"
-																		class="btn btn-other">Shop Now</a>
+																	<a href="#;" class=" btn-other"
+																		data-bs-toggle="modal"
+																		data-bs-target="#modal1">Contact Now</a>
 																</div>
 															</div>
 														</div>
 													</div>
 
 													<div class="item">
-														<div class="product-preview"
-															itemtype="http://schema.org/Product" data-id-product="4"
+														<div class="product-preview" itemtype="#;" data-id-product="4"
 															data-id-product-attribute="16">
 
 
 															<div class="preview">
-																<a href="index2a66.php?id_product=4&amp;id_product_attribute=16&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1#/1-size-s/7-color-beige"
-																	class="product-image">
+																<a href="#;" class="product-image">
 																	<img class="img-responsive product-img1 img-fluid"
-																		src="img/p/7/6/76-large_default.jpg" alt=""
-																		data-full-size-image-url="http://prestashop17.joommasters.com/organicshop/img/p/7/6/76-large_default.jpg">
+																		src="assets/img/shampoo5.png" alt="">
 																</a>
 
 
@@ -1570,8 +2043,8 @@ color: #000;
 
 
 																	<span class="textonly">Only</span>
-																	<span itemprop="price"
-																		class="price new">$38.24</span>
+																	<span itemprop="price" class="price new">Rs:
+																		370/-</span>
 
 
 
@@ -1588,31 +2061,35 @@ color: #000;
 																</div>
 
 
-																<a href="index2a66.php?id_product=4&amp;id_product_attribute=16&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1#/1-size-s/7-color-beige"
-																	class="product-link">Fresh Organic Innisfe</a>
+																<!-- <a href="index2a66.php?id_product=4&amp;id_product_attribute=16&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1#/1-size-s/7-color-beige"
+																	class="product-link">Fresh Organic Innisfe</a> -->
 
 																<div class="description_short">
-																	<p>Lorem ipsum dolor sit amet, consectetur
-																		adipiscing elit, sed do eiusmod tempor
-																		incididunt ut labore et dolore magna aliqua.</p>
+																	<p>Introducing Second Face Herbal
+																		Shampoo, crafted with premium herbal extracts
+																		for a
+																		nourishing and gentle cleansing experience. Our
+																		high-quality formula revitalizes your hair while
+																		maintaining its natural balance. Experience the
+																		purity
+																		of nature with Second Face, where quality meets
+																		botanical excellence for healthier, more vibrant
+																		hair.
+																	</p>
 																</div>
-																<div class="countdown" id="countdown-2">2019-03-23
-																	00:00:00</div>
+																<!-- <div class="countdown" id="countdown-2">2019-03-23
+																	00:00:00</div> -->
 
 																<div class="hotdeal-viewall">
-																	<a href="#;	"
-																		class="btn btn-other">Contact Now</a>
+																	<a href="#;" class=" btn-other"
+																		data-bs-toggle="modal"
+																		data-bs-target="#modal1">Contact Now</a>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-
-
-
-
-
 										</div>
 									</div>
 								</div>
@@ -1760,7 +2237,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$99.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -1868,7 +2346,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$30.50</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -2019,12 +2498,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$99.00</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$89.10</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -2080,7 +2561,7 @@ color: #000;
 																			data-id-product-attribute="19">
 																			<div class="preview">
 
-																				<a href="index42af.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1#/1-size-s/16-color-yellow"
+																				<a href="#;"
 																					class="product-image image_blur">
 																					<img class=" product-img1 img-fluid"
 																						src="img/p/7/1/71-large_default.jpg"
@@ -2145,8 +2626,7 @@ color: #000;
 																								style="background-color: #5D9CEC"><span
 																									class="sr-only">Blue</span></a>
 																						</li>
-																						<li> <a href="index42af.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1#/1-size-s/16-color-yellow"
-																								class="color"
+																						<li> <a href="#;" class="color"
 																								title="Yellow"
 																								style="background-color: #F1C40F"><span
 																									class="sr-only">Yellow</span></a>
@@ -2169,9 +2649,9 @@ color: #000;
 																			<div class="product-info">
 
 
-																				<a href="index4718.php?id_product=5&amp;id_product_attribute=0&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1"
+																				<!-- <a href="index4718.php?id_product=5&amp;id_product_attribute=0&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Fresh Organic
-																					Package</a>
+																					Package</a> -->
 
 
 																				<div class="product-price-and-shipping">
@@ -2180,12 +2660,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$30.50</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$28.98</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -2307,7 +2789,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$50.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -2440,9 +2923,9 @@ color: #000;
 																			<div class="product-info">
 
 
-																				<a href="index1ace.php?id_product=4&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
+																				<!-- <a href="index1ace.php?id_product=4&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Fresh Organic
-																					Innisfe</a>
+																					Innisfe</a> -->
 
 
 																				<div class="product-price-and-shipping">
@@ -2451,12 +2934,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$50.99</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$38.24</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -2588,12 +3073,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$30.00</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$25.50</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -2724,7 +3211,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$25.99</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -2879,7 +3367,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$68.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -3016,7 +3505,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$26.99</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -3156,9 +3646,9 @@ color: #000;
 																			<div class="product-info">
 
 
-																				<a href="index1ace.php?id_product=4&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
+																				<!-- <a href="index1ace.php?id_product=4&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Fresh Organic
-																					Innisfe</a>
+																					Innisfe</a> -->
 
 
 																				<div class="product-price-and-shipping">
@@ -3167,12 +3657,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$50.99</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$38.24</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -3309,7 +3801,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$26.99</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -3443,7 +3936,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$25.99</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -3592,7 +4086,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$99.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -3740,12 +4235,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$16.51</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$13.21</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -3902,12 +4399,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$99.00</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$89.10</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -4047,7 +4546,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$16.51</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -4166,7 +4666,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$50.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -4322,7 +4823,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$99.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -4474,7 +4976,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$68.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -4633,12 +5136,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$99.00</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$89.10</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -4782,12 +5287,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$20.50</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$16.40</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -4909,7 +5416,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$50.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -5019,7 +5527,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$30.50</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -5143,12 +5652,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$30.00</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$25.50</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -5204,7 +5715,7 @@ color: #000;
 																			data-id-product-attribute="19">
 																			<div class="preview">
 
-																				<a href="index42af.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1#/1-size-s/16-color-yellow"
+																				<a href="#;"
 																					class="product-image image_blur">
 																					<img class=" product-img1 img-fluid"
 																						src="img/p/7/1/71-large_default.jpg"
@@ -5269,8 +5780,7 @@ color: #000;
 																								style="background-color: #5D9CEC"><span
 																									class="sr-only">Blue</span></a>
 																						</li>
-																						<li> <a href="index42af.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1#/1-size-s/16-color-yellow"
-																								class="color"
+																						<li> <a href="#;" class="color"
 																								title="Yellow"
 																								style="background-color: #F1C40F"><span
 																									class="sr-only">Yellow</span></a>
@@ -5293,9 +5803,9 @@ color: #000;
 																			<div class="product-info">
 
 
-																				<a href="index4718.php?id_product=5&amp;id_product_attribute=0&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1"
+																				<!-- <a href="index4718.php?id_product=5&amp;id_product_attribute=0&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Fresh Organic
-																					Package</a>
+																					Package</a> -->
 
 
 																				<div class="product-price-and-shipping">
@@ -5304,12 +5814,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$30.50</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$28.98</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -5457,12 +5969,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$16.51</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$13.21</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -5596,9 +6110,9 @@ color: #000;
 																			<div class="product-info">
 
 
-																				<a href="index1ace.php?id_product=4&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
+																				<!-- <a href="index1ace.php?id_product=4&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Fresh Organic
-																					Innisfe</a>
+																					Innisfe</a> -->
 
 
 																				<div class="product-price-and-shipping">
@@ -5607,12 +6121,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$50.99</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$38.24</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -5775,12 +6291,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$99.00</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$89.10</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -5924,12 +6442,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$20.50</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$16.40</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -6051,7 +6571,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$50.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -6161,7 +6682,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$30.50</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -6285,12 +6807,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$30.00</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$25.50</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -6346,7 +6870,7 @@ color: #000;
 																			data-id-product-attribute="19">
 																			<div class="preview">
 
-																				<a href="index42af.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1#/1-size-s/16-color-yellow"
+																				<a href="#;"
 																					class="product-image image_blur">
 																					<img class=" product-img1 img-fluid"
 																						src="img/p/7/1/71-large_default.jpg"
@@ -6411,8 +6935,7 @@ color: #000;
 																								style="background-color: #5D9CEC"><span
 																									class="sr-only">Blue</span></a>
 																						</li>
-																						<li> <a href="index42af.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1#/1-size-s/16-color-yellow"
-																								class="color"
+																						<li> <a href="#;" class="color"
 																								title="Yellow"
 																								style="background-color: #F1C40F"><span
 																									class="sr-only">Yellow</span></a>
@@ -6435,9 +6958,9 @@ color: #000;
 																			<div class="product-info">
 
 
-																				<a href="index4718.php?id_product=5&amp;id_product_attribute=0&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1"
+																				<!-- <a href="index4718.php?id_product=5&amp;id_product_attribute=0&amp;rewrite=printed-summer-dress&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Fresh Organic
-																					Package</a>
+																					Package</a> -->
 
 
 																				<div class="product-price-and-shipping">
@@ -6446,12 +6969,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$30.50</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$28.98</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -6599,12 +7124,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$16.51</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$13.21</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -6738,9 +7265,9 @@ color: #000;
 																			<div class="product-info">
 
 
-																				<a href="index1ace.php?id_product=4&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
+																				<!-- <a href="index1ace.php?id_product=4&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Fresh Organic
-																					Innisfe</a>
+																					Innisfe</a> -->
 
 
 																				<div class="product-price-and-shipping">
@@ -6749,12 +7276,14 @@ color: #000;
 																					<span class="sr-only">Regular
 																						price</span>
 																					<span
-																						class="regular-price old price">$50.99</span>
+																						class="regular-price old price">Rs:
+																						370/-</span>
 
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$38.24</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -6909,7 +7438,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$68.00</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -7040,7 +7570,8 @@ color: #000;
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
-																						class="price new">$25.99</span>
+																						class="price new">Rs:
+																						370/-</span>
 
 
 																				</div>
@@ -7101,14 +7632,13 @@ color: #000;
 								</div>
 							</div>
 						</div>
-						<div class="jms-row pb_80 jackInTheBox wow">
+						<!-- <div class="jms-row pb_80 jackInTheBox wow">
 							<div class="container">
 								<div class="row">
 									<div class="layout-column col-lg-6 col-md-6 col-sm-12 col-xs-12 banner-left fadeInLeft wow"
 										style="">
 										<div class="addon-box">
 
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonbanner.tpl -->
 											<div class="jms-banner">
 
 												<a href="http://www.joommasters.com/" target="_blank">
@@ -7126,14 +7656,12 @@ color: #000;
 												</div>
 											</div>
 
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonbanner.tpl -->
 										</div>
 									</div>
 									<div class="layout-column col-lg-6 col-md-6 col-sm-12 col-xs-12 banner-right fadeInRight wow"
 										style="">
 										<div class="addon-box">
 
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonbanner.tpl -->
 											<div class="jms-banner">
 
 												<a href="http://www.joommasters.com/" target="_blank">
@@ -7151,12 +7679,11 @@ color: #000;
 												</div>
 											</div>
 
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonbanner.tpl -->
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="jms-row"
 							style="background-image:url('assets/img/demo/bgtestimonial.jpg');background-size:cover;background-attachment:fixed;background-position:50% 50%;">
 							<div class="container">
@@ -7270,13 +7797,12 @@ color: #000;
 								</div>
 							</div>
 						</div>
-						<div class="jms-row center block_blog pt_75 pb_76  fadeInUp wow">
+						<!-- <div class="jms-row center block_blog pt_75 pb_76  fadeInUp wow">
 							<div class="container">
 								<div class="row">
 									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12" style="">
 										<div class="addon-box">
 
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonblog.tpl -->
 											<script type="text/javascript">
 												var blog_items = 3,
 													blog_itemsDesktop = 3,
@@ -7496,12 +8022,11 @@ color: #000;
 
 											</div>
 
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonblog.tpl -->
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_body.tpl -->
 
@@ -7530,7 +8055,7 @@ color: #000;
 			</div>
 
 			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_footer.tpl -->
-			<div class="jms-row newsletter-block green">
+			<div class="jms-row newsletter-block ">
 				<div class="container">
 					<div class="row">
 						<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 center pt_78 pb_67" style="">
@@ -7544,17 +8069,15 @@ color: #000;
 										<h3>Our Newsletter</h3>
 										<p>Subscribe now to save 15 percents on any of our products</p>
 									</div>
-									<form action="http://prestashop17.joommasters.com/organicshop/index.php#footer"
-										method="post" id="newsletter-input">
+									<form action="javascript:;" method="post" id="newsletter-input">
 										<div class="form-group">
-											<input name="email" type="text" class="form-control newsletter-input"
-												value="" placeholder="Your email address"
+											<input name="email2" id="email2" type="text"
+												class="form-control newsletter-input" placeholder="Your email address"
 												aria-labelledby="block-newsletter-label">
 											<button type="submit" name="submitNewsletter"
 												class="newsletter-btn  btn-shopnow btn">
 												<span>Subscribe</span>
 											</button>
-											<input type="hidden" name="action" value="0" />
 										</div>
 									</form>
 								</div>
@@ -7565,7 +8088,7 @@ color: #000;
 					</div>
 				</div>
 			</div>
-			<div class="jms-row pt_80 pb_36">
+			<div class="jms-row pt_80 pb_36 green">
 				<div class="container">
 					<div class="row">
 						<div class="layout-column col-lg-4 col-md-4 col-sm-6 col-xs-12" style="">
@@ -7577,11 +8100,11 @@ color: #000;
 								</div>
 								<div class="contact-info">
 									<ul>
-										<li class="address-info"><i class="fa fa-paper-plane-o"
-												aria-hidden="true"></i>123 Jupiters Rhjn Suite 120, NewYork City</li>
-										<li><i class="fa fa-phone" aria-hidden="true"></i>+11 3544 1235</li>
-										<li><i class="fa fa-envelope-o" aria-hidden="true"></i>Support@demo.com</li>
-										<li><i class="fa fa-clock-o" aria-hidden="true"></i> 8.00am - 8.30pm, Everyday
+										<li class="address-info"><i class="fa-solid fa-paper-plane"></i>123 Jupiters
+											Rhjn Suite 120, NewYork City</li>
+										<li><i class="fa-solid fa-phone"></i>+11 3544 1235</li>
+										<li><i class="fa-solid fa-envelope"></i>Support@demo.com</li>
+										<li><i class="fa-solid fa-clock-rotate-left"></i> 8.00am - 8.30pm, Everyday
 										</li>
 									</ul>
 								</div>
@@ -7667,14 +8190,14 @@ color: #000;
 					</div>
 				</div>
 			</div>
-			<div class="jms-row footer_bottom pt_25 pb_25">
+			<div class="jms-row footer_bottom pt_25  green">
 				<div class="container">
 					<div class="row">
 						<div class="layout-column col-lg-6 col-md-6 col-sm-8 col-xs-12" style="">
 							<div class="addon-box">
 
 								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonhtml.tpl -->
-								<p>Copyright © 2018 <a href="#">Organic Store.</a> All Rights Reserved.</p>
+								<p>Copyright © 2024 <a href="javascript:;">VELVET Website.</a> All Rights Reserved.</p>
 								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonhtml.tpl -->
 							</div>
 						</div>
@@ -7684,16 +8207,19 @@ color: #000;
 								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonsocial.tpl -->
 								<div id="social_block">
 									<ul class="find-us">
-										<li class="divider"><a href="https://www.facebook.com/joommasters2015"
-												class="facebook hint" aria-label="facebook"><span
-													class="fa fa-facebook"></span></a></li>
-										<li class="divider"><a href="#" class="twitter hint" aria-label="twitter"><span
-													class="fa fa-twitter"></span></a></li>
-										<li class="divider"><a href="#" class="gplus hint" aria-label="gplus"><span
-													class="fa fa-google-plus"></span></a></li>
+										<li class="divider"><a href="#;" class="facebook hint" aria-label="facebook">
+												<span class=""><i class="fa-brands fa-facebook-f"></i></span></a>
+										</li>
+										<li class="divider"><a href="#;" class="twitter hint" aria-label="twitter">
+												<span class=""><i class="fa-brands fa-twitter"></i></span></a>
+										</li>
 										<li class="divider">
-											<a href="#" class="instagram hint" aria-label="instagram">
-												<span class="fa fa-instagram"></span>
+											<a href="#;" class="gplus hint" aria-label="gplus"><span class=""><i
+														class="fa-brands fa-google-plus-g"></i></span></a>
+										</li>
+										<li class="divider">
+											<a href="#;" class="instagram hint" aria-label="instagram">
+												<span class=""><i class="fa-brands fa-instagram"></i></span>
 											</a>
 										</li>
 									</ul>
@@ -7757,7 +8283,36 @@ color: #000;
 
 			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_footer.tpl -->
 
-
+			<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header justify-content-center">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+								<i class="fa-solid fa-xmark"></i>
+							</button>
+							<div class="text-center">
+								<h2>Get A Free Quote</h2>
+								<!-- <h2>in Just <span>$35</span></h2> -->
+							</div>
+						</div>
+						<div class="modal-body">
+							<form id="modal_form">
+								<input type="text" id="name" name="name" class="form-control" placeholder="Name"
+									required>
+								<input type="email" id="email" name="email" class="form-control" placeholder="Email"
+									required>
+								<input type="tel" id="phone" name="phone" class="form-control"
+									placeholder="Phone Number" required>
+								<textarea class="form-control" id="message" name="message" placeholder="Message"
+									rows="5" required></textarea>
+								<div class="text-center">
+									<button type="submit" class="btn-other">Get Started</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</footer>
 
@@ -7790,76 +8345,161 @@ color: #000;
 	<script type="text/javascript" src="modules/ps_imageslider/js/responsiveslides.min.js"></script>
 	<script type="text/javascript" src="modules/ps_imageslider/js/homeslider.js"></script>
 	<script type="text/javascript" src="modules/ps_searchbar/ps_searchbar.js"></script>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	<script type="text/javascript" src="themes/jms_organic/modules/ps_shoppingcart/ps_shoppingcart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+		crossorigin="anonymous"></script>
 	<script type="text/javascript" src="themes/jms_organic/modules/jmspagebuilder/views/js/off-canvas.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
-<script> 
+	<script>
 
-$('.slide-nav').on('click', function(e) {
-  e.preventDefault();
-  // get current slide
-  var current = $('.flex--active').data('slide'),
-    // get button data-slide
-    next = $(this).data('slide');
+		// subscription script start
+		document.addEventListener('DOMContentLoaded', (event) => {
+			emailjs.init('VGlEdIbHlx42d-4wD'); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
 
-  $('.slide-nav').removeClass('active');
-  $(this).addClass('active');
+			document.getElementById('newsletter-input').addEventListener('submit', function (event) {
+				event.preventDefault();
 
-  if (current === next) {
-    return false;
-  } else {
-    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-    $('.flex--active').addClass('animate--end');
-    setTimeout(function() {
-      $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-      $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-    }, 800);
-  }
-});
+				// Get the email value
+				const email = document.getElementById('email2').value;
 
-// Autoslide feature
-var autoSlideInterval = setInterval(function() {
-  var current = $('.flex--active').data('slide');
-  var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+				// Validate email
+				if (!validateEmail(email)) {
+					alert('Please enter a valid email address.');
+					return;
+				}
 
-  $('.slide-nav[data-slide=' + next + ']').click();
-}, 5000); // Change slide every 5 seconds
+				// Send email
+				emailjs.send('service_kwg8rrf', 'template_iom2bcl', { email2: email })
+					.then(function (response) {
+						alert('Subscription successful!');
+					}, function (error) {
+						alert('Subscription failed. Please try again.');
+					});
+			});
 
-// Pause autoslide on hover
-$('.slider__warpper, .slide-nav').hover(function() {
-  clearInterval(autoSlideInterval);
-}, function() {
-  autoSlideInterval = setInterval(function() {
-    var current = $('.flex--active').data('slide');
-    var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+			function validateEmail(email) {
+				const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				return re.test(String(email).toLowerCase());
+			}
+		});
+		// subscription script end
 
-    $('.slide-nav[data-slide=' + next + ']').click();
-  }, 5000); // Change slide every 5 seconds
-});
+		// contact us script start
+		document.addEventListener('DOMContentLoaded', (event) => {
+			emailjs.init('VGlEdIbHlx42d-4wD'); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
 
-// $('.slide-nav').on('click', function(e) {
-//   e.preventDefault();
-//   // get current slide
-//   var current = $('.flex--active').data('slide'),
-//     // get button data-slide
-//     next = $(this).data('slide');
+			document.getElementById('modal_form').addEventListener('submit', function (event) {
+				event.preventDefault();
 
-//   $('.slide-nav').removeClass('active');
-//   $(this).addClass('active');
+				// Get the form values
+				const name = document.getElementById('name').value;
+				const email = document.getElementById('email').value;
+				const phone = document.getElementById('phone').value;
+				const message = document.getElementById('message').value;
 
-//   if (current === next) {
-//     return false;
-//   } else {
-//     $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-//     $('.flex--active').addClass('animate--end');
-//     setTimeout(function() {
-//       $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-//       $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-//     }, 800);
-//   }
-// });
-</script>
+				// Validate email
+				if (!validateEmail(email)) {
+					alert('Please enter a valid email address.');
+					return;
+				}
 
+				// Send email
+				const templateParams = {
+					name: name,
+					email: email,
+					phone: phone,
+					message: message
+				};
+
+				emailjs.send('service_0g219gb', 'template_9fo10xn', templateParams)
+					.then(function (response) {
+						alert('Subscription successful!');
+					}, function (error) {
+						alert('Subscription failed. Please try again.');
+					});
+			});
+
+			function validateEmail(email) {
+				const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				return re.test(String(email).toLowerCase());
+			}
+		});
+		// contact us script end
+		// $('.slide-nav').on('click', function(e) {
+		//   e.preventDefault();
+		//   // get current slide
+		//   var current = $('.flex--active').data('slide'),
+		//     // get button data-slide
+		//     next = $(this).data('slide');
+
+		//   $('.slide-nav').removeClass('active');
+		//   $(this).addClass('active');
+
+		//   if (current === next) {
+		//     return false;
+		//   } else {
+		//     $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+		//     $('.flex--active').addClass('animate--end');
+		//     setTimeout(function() {
+		//       $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+		//       $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+		//     }, 800);
+		//   }
+		// });
+
+		// // Autoslide feature
+		// var autoSlideInterval = setInterval(function() {
+		//   var current = $('.flex--active').data('slide');
+		//   var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+		//   $('.slide-nav[data-slide=' + next + ']').click();
+		// }, 5000); // Change slide every 5 seconds
+
+		// // Pause autoslide on hover
+		// $('.slider__warpper, .slide-nav').hover(function() {
+		//   clearInterval(autoSlideInterval);
+		// }, function() {
+		//   autoSlideInterval = setInterval(function() {
+		//     var current = $('.flex--active').data('slide');
+		//     var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+		//     $('.slide-nav[data-slide=' + next + ']').click();
+		//   }, 5000); // Change slide every 5 seconds
+		// });
+
+		$('.slide-nav').on('click', function (e) {
+			e.preventDefault();
+			// get current slide
+			var current = $('.flex--active').data('slide'),
+				// get button data-slide
+				next = $(this).data('slide');
+
+			$('.slide-nav').removeClass('active');
+			$(this).addClass('active');
+
+			if (current === next) {
+				return false;
+			} else {
+				$('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+				$('.flex--active').addClass('animate--end');
+				setTimeout(function () {
+					$('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+					$('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+				}, 800);
+			}
+		});
+	</script>
+
+	<!-- Modal -->
 
 
 

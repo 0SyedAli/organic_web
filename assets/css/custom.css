@@ -22,7 +22,9 @@ html,
 html a {
   -webkit-font-smoothing: antialiased;
 }
-
+a {
+  text-decoration: none;
+}
 html {
   -ms-overflow-style: scrollbar;
 }
@@ -6761,7 +6763,7 @@ footer .style3 .contact-block::after {
 }
 
 #back-to-top {
-  bottom: 20%;
+  bottom: 7%;
   background-color: #fff;
   cursor: pointer;
   display: none;
@@ -6769,7 +6771,7 @@ footer .style3 .contact-block::after {
   height: 45px;
   line-height: 1.6;
   position: fixed;
-  right: 20px;
+  right: 25px;
   text-align: center;
   width: 45px;
   z-index: 1000;
