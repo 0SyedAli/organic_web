@@ -457,14 +457,8 @@
     padding-bottom: 0; }
   .block-menu {
     top: 108px; }
-  .headertop-right {
-    float: right;
-    top: 86px;
-    margin-right: 37px;
-    padding-top: 0;
-    text-align: center; }
-  .headertop-left {
-    padding-top: 95px; }
+
+
   .btn-group.jms_ajax_search .dropdown-menu {
     margin-top: 16px; }
   #cart_block.btn-group .dropdown-menu {
@@ -615,11 +609,7 @@
     top: 24px; }
   .nav.nav-tabs li a {
     margin-left: 10px; }
-  .headertop .row {
-    display: block;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    margin-bottom: 17px; }
+  
   #jms_ajax_search {
     line-height: 1.5; }
   .logo_left {

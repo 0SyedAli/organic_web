@@ -293,15 +293,18 @@
 			color: #FFF;
 			font-weight: 600;
 		}
+
 		#newsletter_block_left h3 {
 			font-size: 35px;
 			font-weight: 700;
-			padding-bottom: 0!important;
+			padding-bottom: 0 !important;
 		}
+
 		#newsletter_block_left h3 span {
 			font-weight: 600;
-    font-size: 40px;
+			font-size: 40px;
 		}
+
 		#newsletter_block_left h3,
 		#newsletter_block_left p {
 			color: #000;
@@ -798,7 +801,9 @@
 			margin-top: 60px;
 			margin-bottom: 60px;
 		}
-
+		.slider__warpper .text--big {
+			padding-bottom: 30px;
+		}
 		@media only screen and (max-width: 991px) {
 			.flex__content {
 				width: 75%;
@@ -807,6 +812,7 @@
 			.slider__warpper .text--big {
 				font-size: 70px;
 				padding-bottom: 0px;
+				margin: 0;
 			}
 
 			.slider__warpper .flex__content .text--sub {
@@ -831,15 +837,79 @@
 			}
 		}
 
-		@media only screen and (max-width: 630px) {}
+		@media only screen and (max-width: 700px) {
+			.my_own_slider .flex__content {
+				margin-left: 40px;
+			}
 
-		@media only screen and (max-width: 575px) {}
+			.my_own_slider .flex__item,
+			.my_own_slider .addon-box,
+			.my_own_slider .flex__container {
+				height: 400px;
+			}
+		}
 
-		@media only screen and (max-width: 450px) {}
+		@media only screen and (max-width: 620px) {
+			.slider__warpper .flex__content .text--normal {
+				margin-top: 25px;
+				font-size: 12px;
+				line-height: 18px;
+			}
+		}
 
-		@media only screen and (max-width: 415px) {}
+		@media only screen and (max-width: 575px) {
 
-		@media only screen and (max-width: 360px) {}
+			.flex__item--left,
+			.flex__item--right {
+				width: 100%;
+			}
+
+			.my_own_slider {
+				height: 800px;
+			}
+			.flex__item--right img {
+				max-height: 320px;
+			}
+		}
+
+		@media only screen and (max-width: 450px) {
+			.slider__warpper .flex__content .text--normal {
+				margin-top: 8px;
+			}
+			.slider__warpper .flex__content .text--sub {
+				margin-bottom: 8px;
+			}
+		}
+
+		@media only screen and (max-width: 415px) {
+			.cta-btn {
+				height: 42px;
+				display: inline-block;
+				padding: 7px 20px 7px 20px;
+			}
+
+			#nav-icon4 {
+				width: 40px;
+				height: 40px;
+			}
+
+			#nav-icon4 .bars {
+				width: 16px;
+				top: 15px;
+				left: 11px;
+				height: 16px;
+			}
+
+			.nav-cta-btn {
+				margin: 0;
+			}
+		}
+
+		@media only screen and (max-width: 380px) {
+			.slider__warpper .flex__content .text--sub {
+				font-size: 12px;
+			}
+		}
 
 		@media only screen and (max-width: 330px) {}
 	</style>
@@ -1174,7 +1244,7 @@
 			<div class="jms-row pt_8 pb_8 headertop navtopo">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="layout-column col-lg-3 col-md-2 col-sm-2 col-xs-2 headertop-left" style="">
+						<div class="layout-column col-3 col-sm-6 headertop-left" style="">
 							<!-- <div class="addon-box">
 
 								<div class="btn-group compact-hidden jms_ajax_search dropdown" id="jms_ajax_search">
@@ -1206,39 +1276,8 @@
 								</a>
 							</div>
 						</div>
-						<div class="layout-column col-lg-6 col-md-8 col-sm-8 col-xs-8 logo-center center" style="">
-							<div class="jms-megamenu-wrap">
-								<!-- <a id="open-button" class="open-button hidden-lg hidden-md" href="javascript:;">
-									<span class="hamburger-icon-inner">
-										<span class="line line-1"></span>
-										<span class="line line-2"></span>
-										<span class="line line-3"></span>
-									</span>
-								</a> -->
-								<!-- <div id="jms-megamenu-container" class="navbar clearfix">
-									<div class="jms-megamenu">
-										<ul class="nav level0">
-											<li class="menu-item mega menu-align-left" data-id="1" data-level="0"
-												data-title="1" data-align="left"><a href="javascript:;"
-													target="_self"><span>Home</span><em class="caret"></em></a>
-											</li>
-											<li class="menu-item mega " data-id="5" data-level="0" data-title="1"
-												data-class=""><a href="javascript:;" target="_self"><span>Blog</span><em
-														class="caret"></em></a>
-											</li>
-											<li class="menu-item mega" data-id="6" data-level="0" data-title="1"><a
-													href="javascript:;" target="_self"><span>Pages</span><em
-														class="caret"></em></a>
 
-											</li>
-											<li class="menu-item" data-id="7" data-level="0" data-title="1"><a
-													href="javascript:;" target="_self"><span>Contact</span></a></li>
-										</ul>
-									</div>
-								</div> -->
-							</div>
-						</div>
-						<div class="layout-column col-lg-3 col-md-2 col-sm-2 col-xs-2 headertop-right " style="">
+						<div class="layout-column  col-9 col-sm-6 headertop-right " style="">
 							<div class="addon-box">
 
 								<!-- <div class="btn-group compact-hidden blockcart cart-preview inactive dropdown js-dropdown  "
@@ -8076,7 +8115,8 @@
 								<div class="block_newsletter newsletter-box" id="newsletter_block_left">
 									<div class="textnews">
 										<h3>Second Face<br><span>Bulk Quantity Deals Only</span></h3>
-										<p>We offer competitive per-piece rates for bulk orders. Feel free to contact us for further details.
+										<p>We offer competitive per-piece rates for bulk orders. Feel free to contact us
+											for further details.
 										</p>
 									</div>
 									<form action="javascript:;" method="post" id="newsletter-input">
