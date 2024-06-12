@@ -51,867 +51,13 @@
 	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/off-canvas.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/theme-responsive.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/huz.css" type="text/css" media="all">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 		type="text/css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-		@font-face {
-			font-family: 'Lunema';
-			src: url(./assets/font/LunemaRegular.otf);
-		}
-
-		a {
-			color: #ef71acc7;
-			text-decoration: none;
-		}
-
-		#social_block ul li a {
-			font-size: 20px !important;
-			color: #FFF !important;
-		}
-
-		.btn-other {
-			font-family: "Poppins";
-		}
-
-		.btn-group.module-group-box .dropdown-toggle::after {
-			display: none !important;
-		}
-
-		.feature-boxstyle2 a::before {
-			right: 20px !important;
-		}
-
-		.hotdeal .description_short p {
-			margin-bottom: 6px;
-			font-weight: 400;
-			font-size: 14px;
-			padding: 10px 0;
-			color: #000;
-			font-family: 'Poppins';
-		}
-
-		.block-hotdeal .addon-box {
-			border-radius: 10px;
-			border: 2px solid #ef71acc7;
-			box-shadow: -2px 0px 20px rgb(255 151 255) !important;
-		}
-
-		.hotdeal .product-info .addon-desc {
-			color: #ef71acc7 !important;
-			font-family: "Poppins", sans-serif !important;
-			font-weight: 600;
-			text-transform: uppercase !important;
-		}
-
-		.hotdeal .addon-title h3 {
-			padding-bottom: 10px;
-		}
-
-		#newsletter_block_left .newsletter-btn.btn-shopnow {
-			padding: 10px 30px;
-			border-radius: 30px;
-		}
-
-		.svg-inline--fa {
-			display: inline-block;
-			font-size: inherit;
-			height: 1em;
-			overflow: visible;
-			vertical-align: -.125em;
-		}
-
-		#nav-icon4 {
-			width: 50px;
-			height: 50px;
-			border-radius: 25px;
-			position: relative;
-			margin: 0;
-			-webkit-transform: rotate(0deg);
-			-moz-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			transform: rotate(0deg);
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
-			transition: .5s ease-in-out;
-			cursor: pointer;
-			z-index: 999999;
-			background: #000;
-		}
-
-		#nav-icon4 .bars {
-			width: 20px;
-			display: block;
-			position: relative;
-			top: 18px;
-			left: 15px;
-			height: 20px;
-		}
-
-		#nav-icon4 span {
-			display: block;
-			position: absolute;
-			height: 2px;
-			width: 100%;
-			background: #fff;
-			border-radius: 0;
-			opacity: 1;
-			right: 0;
-			-webkit-transform: rotate(0deg);
-			-moz-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			transform: rotate(0deg);
-			-webkit-transition: .25s ease-in-out;
-			-moz-transition: .25s ease-in-out;
-			-o-transition: .25s ease-in-out;
-			transition: .25s ease-in-out;
-		}
-
-		#nav-icon4 span:nth-child(1) {
-			top: 0;
-			-webkit-transform-origin: left center;
-			-moz-transform-origin: left center;
-			-o-transform-origin: left center;
-			transform-origin: right center;
-		}
-
-		#nav-icon4 span:nth-child(2) {
-			top: 10px;
-			width: 50%;
-			-webkit-transform-origin: left center;
-			-moz-transform-origin: left center;
-			-o-transform-origin: left center;
-			transform-origin: right center;
-		}
-
-		#nav-icon4:hover {
-			background: rgba(180, 180, 180, .8);
-			transform: translate(0, -3px);
-		}
-
-		/* modal start */
-		#modal1 .btn-close {
-			position: absolute;
-			top: -6px;
-			right: -2px;
-			background: #00f0ff;
-			opacity: 1;
-			color: #000;
-			z-index: 1;
-			border-radius: 50%;
-			height: 13px;
-			width: 13px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.modal-header {
-			border-bottom: unset;
-		}
-
-		.modal-content {
-			background: #0E0E0E;
-			padding: 0 30px;
-		}
-
-		div#modal1 form textarea {
-			resize: none;
-		}
-
-		div#modal1 form input,
-		div#modal1 form textarea {
-			margin: 0 0 10px 0;
-			border: 2px solid #b5b3b3;
-			padding: 10px 10px;
-			background: #2e2e2e;
-			color: #000;
-			background-color: #FFF;
-			font-size: 16px;
-			font-family: "Poppins";
-			border-radius: 6px;
-			padding: 12px 17px;
-			height: unset;
-		}
-
-		div#modal1 form .btn-other {
-			padding: 8px 30px;
-			margin: 12px 0 20px;
-		}
-
-		div#modal1 form input::placeholder,
-		div#modal1 form textarea::placeholder {
-			color: #b5b3b3;
-		}
-
-		div#modal1 p {
-			margin: 0;
-			padding: 10px 0 0 0;
-			color: #898989;
-		}
-
-		div#modal1 h2 {
-			font-size: 33px;
-			line-height: 40px;
-			margin: 20px 0 -20px 0;
-			font-weight: 700;
-		}
-
-		div#modal1 .btn3 {
-			margin: 20px 0 20px 0;
-		}
-
-
-		div#modal1 .modal-content {
-			background: #FFF;
-			box-shadow: #ef71acc7 0px -1px 14px 2px;
-		}
-
-		/* modal end */
-		.contact-info ul li {
-			color: #FFF;
-		}
-
-		footer h3 {
-			color: #FFF;
-		}
-
-		footer ul li:hover a {
-			color: #FFF;
-			font-weight: 600;
-		}
-
-		footer ul li a {
-			color: #FFF;
-		}
-
-		.footer_bottom a {
-			color: #FFF;
-			font-weight: 600;
-		}
-
-		#newsletter_block_left h3 {
-			font-size: 35px;
-			font-weight: 700;
-			padding-bottom: 0 !important;
-		}
-
-		#newsletter_block_left h3 span {
-			font-weight: 600;
-			font-size: 40px;
-		}
-
-		#newsletter_block_left h3,
-		#newsletter_block_left p {
-			color: #000;
-		}
-
-		.block-hotdeal::after,
-		.newsletter-block::before,
-		.newsletter-block::after {
-			display: none;
-		}
-
-		.addon-box.serv .feature-boxstyle2 a {
-			margin-top: 0;
-		}
-
-		.addon-box.serv {
-			height: 100%;
-		}
-
-		.addon-box.serv .feature-boxstyle2 {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			height: 100%;
-		}
-
-		.header_logo {
-			width: 100%;
-			text-align: center;
-			display: block;
-			font-family: "Poppins";
-			font-size: 24px;
-			font-weight: 600;
-			display: flex;
-			align-items: center;
-			gap: 20px;
-			text-decoration: underline;
-			color: rgb(13, 13, 202);
-		}
-
-		.header_logo:hover {
-			color: rgb(13, 13, 202);
-			text-decoration: underline;
-		}
-
-		.header_logo img {
-			width: 70px !important;
-
-		}
-
-		.jms-row.category_tab {
-			display: none;
-		}
-
-		#testimonial {
-			display: none;
-		}
-
-		.fraction-slider {
-			height: 500px !important;
-		}
-
-		.fraction-slider .fs_obj {
-			object-fit: contain;
-		}
-
-		.jms-slide-content span {
-			color: #ef71acc7 !important;
-		}
-
-		.btn-shopnow {
-			background: #f70071 !important;
-			color: #FFF !important;
-			border: 2px solid #f70071 !important;
-		}
-
-		.btn-shopnow:hover {
-			background: transparent !important;
-			color: #f70071 !important;
-			border: 2px solid #f70071 !important;
-		}
-
-		.jms-slide-content .text-medium {
-			font-size: 19px;
-			padding-left: 50px;
-		}
-
-		.jms-megamenu ul li a::before {
-			content: "";
-			background: #f70071;
-			position: absolute;
-			left: 7px;
-			height: 2px;
-			width: 0;
-			bottom: 7px;
-			transition: 0.7s;
-		}
-
-		.jms-megamenu ul li:hover a::before {
-			width: 80%;
-		}
-
-		.slider__warpper .flex__content .text--sub {
-			font-weight: 600;
-			font-family: 'Neue Einstellung';
-			padding-right: 70px;
-			letter-spacing: 3px;
-			font-size: 15px;
-		}
-
-		.slider__warpper .flex__content .text--normal {
-			font-family: "Poppins";
-			color: #FFF;
-		}
-
-		/* btn header start */
-
-
-		.cta-btn {
-			height: 50px;
-			display: inline-block;
-			padding: 10px 34px 10px 34px;
-			position: relative;
-			font-size: 17px;
-			line-height: 30px;
-			letter-spacing: .6px;
-			text-decoration: none;
-			background: transparent;
-			overflow: hidden;
-			border-radius: 25px;
-			border: 0;
-			font-family: 'Lunema';
-			text-align: center;
-			-webkit-transition: all .25s ease-in-out;
-			-moz-transition: all .25s ease-in-out;
-			-ms-transition: all .25s ease-in-out;
-			-o-transition: all .25s ease-in-out;
-			transition: all .25s ease-in-out
-		}
-
-		.nav-cta-btn {
-			position: absolute;
-			right: 64px;
-			top: 0;
-			z-index: 22;
-			-webkit-box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
-			box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
-			z-index: 999999;
-			color: #000;
-			margin-right: 20px;
-		}
-
-		.cta-btn span {
-			z-index: 1;
-			position: relative;
-			color: #000
-		}
-
-		.cta-btn-bg,
-		.btn span,
-		.nav-cta-btn span {
-			-webkit-transition: all .25s ease-in-out;
-			-moz-transition: all .25s ease-in-out;
-			-ms-transition: all .25s ease-in-out;
-			-o-transition: all .25s ease-in-out;
-			transition: all .25s ease-in-out
-		}
-
-		.cta-btn:hover {
-			cursor: pointer;
-			transform: translate(0, -3px);
-		}
-
-		.cta-btn:active,
-		.cta-btn:hover {
-			outline: 0
-		}
-
-		.cta-btn:hover span,
-		.nav-cta-btn:hover span {
-			color: #fff
-		}
-
-		@keyframes btnHover {
-			0% {
-				background-position-x: 0
-			}
-
-			100% {
-				background-position-x: 600%
-			}
-		}
-
-		.cta-btn.nav-cta-btn:hover {
-			background: transparent;
-			-webkit-transform: scale(1.1);
-			-ms-transform: scale(1.1);
-			transform: scale(1.1);
-			-webkit-transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
-			-o-transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
-			transition: all 0.4s cubic-bezier(.165, .84, .44, 1);
-			background-color: #e8e8e842;
-		}
-
-		/* btn header end */
-
-		/* new slider  */
-
-		*,
-		*:before,
-		*:after {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-		}
-
-		.slider__navi {
-			position: absolute;
-			top: 50%;
-			right: 20px;
-			transform: translateY(-50%);
-			-webkit-transform: translateY(-50%);
-			-moz-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
-			-o-transform: translateY(-50%);
-			z-index: 999;
-		}
-
-		.slider__navi a {
-			display: block;
-			height: 6px;
-			width: 20px;
-			margin: 20px 0;
-			text-indent: -9999px;
-			box-shadow: none;
-			border: none;
-			background: rgba(0, 0, 0, 0.2);
-		}
-
-		.slider__navi a.active {
-			background: rgba(255, 255, 255, 1);
-		}
-
-		body {
-			position: relative;
-			font-size: 100%;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: 400;
-			min-height: 100vh;
-		}
-
-		.flex__container {
-			position: absolute;
-			top: 0;
-			left: 0;
-			display: flex;
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			-webkit-flex-flow: row wrap;
-			-moz-flex-flow: row wrap;
-			-ms-flex-flow: row wrap;
-			-o-flex-flow: row wrap;
-			flex-flow: row wrap;
-			-webkit-justify-content: flex-start;
-			-moz-justify-content: flex-start;
-			-ms-justify-content: flex-start;
-			-o-justify-content: flex-start;
-			justify-content: flex-start;
-			height: 600px;
-			width: 100%;
-			z-index: 1;
-		}
-
-		.flex__container.flex--active {
-			z-index: 2;
-		}
-
-		.text--sub {
-			font-size: 12px;
-			letter-spacing: 0.5rem;
-			text-transform: uppercase;
-			margin-bottom: 40px;
-		}
-
-		.text--big {
-			font-family: 'Poppins', sans-serif;
-			font-size: 7.5em;
-			font-weight: 700;
-			line-height: 110px;
-			margin-left: -8px;
-		}
-
-		.flex--pikachu .text--big,
-		.flex--blaziken .text--big {
-			color: #FFF;
-		}
-
-		.flex--zekrom .text--big,
-		.flex--zekrom .text--sub,
-		.flex--zekrom .text--normal {
-			color: #000;
-		}
-
-		.flex--dialga .text--big,
-		.flex--dialga .text--sub,
-		.flex--dialga .text--normal {
-			color: #000;
-		}
-
-		.text--normal {
-			font-size: 13px;
-			color: rgba(255, 255, 255, 0.8);
-			line-height: 22px;
-			margin-top: 25px;
-		}
-
-		.flex--pikachu .text__background {
-			color: rgb(0 0 0 / 17%);
-		}
-
-		.text__background {
-			font-family: 'Poppins', sans-serif;
-			position: absolute;
-			left: 72px;
-			bottom: -60px;
-			color: rgba(0, 0, 0, 0.05);
-			font-size: 170px;
-			font-weight: 700;
-		}
-
-		.flex__item {
-			height: 600px;
-			color: #fff;
-			transition: transform 0.1s linear;
-		}
-
-		.flex__item--left {
-			display: flex;
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			align-items: center;
-			-webkit-align-items: center;
-			-moz-align-items: center;
-			-ms-align-items: center;
-			width: 60%;
-			transform-origin: left bottom;
-			transition: transform 0.1s linear 0.4s;
-			opacity: 0;
-			position: relative;
-			overflow: hidden;
-		}
-
-		.flex__item--right {
-			width: 40%;
-			transform-origin: right center;
-			transition: transform 0.1s linear 0s;
-			opacity: 0;
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.flex--preStart .flex__item--left,
-		.flex--preStart .flex__item--right,
-		.flex--active .flex__item--left,
-		.flex--active .flex__item--right {
-			opacity: 1;
-		}
-
-		/* Piplup */
-
-		.flex--piplup .flex__item--left {
-			background: #3e9fe6;
-		}
-
-		.flex--piplup .flex__item--right {
-			background: #d3eaef;
-		}
-
-		/* Pikachu */
-
-		.flex--pikachu .flex__item--left {
-			background: #4a2600cf;
-		}
-
-		.flex--pikachu .flex__item--right {
-			background: #ae7b5247;
-		}
-
-		/* Blaziken */
-
-		.flex--blaziken .flex__item--left {
-			background: #f64f37;
-		}
-
-		.flex--blaziken .flex__item--right {
-			background: #ffebcd;
-		}
-
-		/* Dialga */
-
-		.flex--dialga .flex__item--left {
-			background: #c0c0c0;
-		}
-
-		.flex--dialga .flex__item--right {
-			background: #c0c0c038;
-		}
-
-		/* Zekrom */
-
-		.flex--zekrom .flex__item--left {
-			background: #FFD700;
-		}
-
-		.flex--zekrom .flex__item--right {
-			background: #FAFAD2;
-		}
-
-		.flex__content {
-			margin-left: 80px;
-			width: 55%;
-			opacity: 1;
-			transform: translate3d(0, 0, 0);
-			transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
-		}
-
-		.addon-box.serv .feature-boxstyle2 a {
-			color: #696969 !important;
-			text-decoration: none;
-		}
-
-		.pokemon__img {
-			/* position: absolute;
-	bottom: 20px;
-	right: 15%; */
-			max-height: 40vw;
-			opacity: 1;
-			transform: translate3d(0, 0, 0);
-			transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
-		}
-
-		/* Animate-START point */
-
-		.flex__container.animate--start .flex__content {
-			transform: translate3d(0, -200%, 0);
-			opacity: 0;
-		}
-
-		.flex__container.animate--start .pokemon__img {
-			transform: translate3d(-200px, 0, 0);
-			opacity: 0;
-		}
-
-		/* Animate-END point */
-
-		.flex__container.animate--end .flex__item--left {
-			transform: scaleY(0);
-		}
-
-		.flex__container.animate--end .flex__item--right {
-			transform: scaleX(0);
-		}
-
-		.flex__container.animate--end .flex__content {
-			transform: translate3d(0, 200%, 0);
-			opacity: 0;
-		}
-
-		.flex__container.animate--end .pokemon__img {
-			transform: translate3d(200px, 0, 0);
-			opacity: 0;
-		}
-
-		.my_own_slider {
-			height: 600px;
-		}
-
-		.my_own_slider .addon-box {
-			height: 600px;
-		}
-
-		.product-image {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.product-img1 {
-			width: 160px !important;
-			margin-top: 60px;
-			margin-bottom: 60px;
-		}
-		.slider__warpper .text--big {
-			padding-bottom: 30px;
-		}
-		@media only screen and (max-width: 991px) {
-			.flex__content {
-				width: 75%;
-			}
-
-			.slider__warpper .text--big {
-				font-size: 70px;
-				padding-bottom: 0px;
-				margin: 0;
-			}
-
-			.slider__warpper .flex__content .text--sub {
-				padding-right: 0;
-			}
-		}
-
-		@media only screen and (max-width: 767px) {
-
-			.slider__warpper .flex__content .text--sub {
-				padding-right: 0;
-				margin: 0 0 20px 0;
-			}
-
-			.slider__warpper .text--big {
-				font-size: 50px;
-				line-height: 100%;
-			}
-
-			.slider__warpper .flex__content .text--normal {
-				margin-top: 25px;
-			}
-		}
-
-		@media only screen and (max-width: 700px) {
-			.my_own_slider .flex__content {
-				margin-left: 40px;
-			}
-
-			.my_own_slider .flex__item,
-			.my_own_slider .addon-box,
-			.my_own_slider .flex__container {
-				height: 400px;
-			}
-		}
-
-		@media only screen and (max-width: 620px) {
-			.slider__warpper .flex__content .text--normal {
-				margin-top: 25px;
-				font-size: 12px;
-				line-height: 18px;
-			}
-		}
-
-		@media only screen and (max-width: 575px) {
-
-			.flex__item--left,
-			.flex__item--right {
-				width: 100%;
-			}
-
-			.my_own_slider {
-				height: 800px;
-			}
-			.flex__item--right img {
-				max-height: 320px;
-			}
-		}
-
-		@media only screen and (max-width: 450px) {
-			.slider__warpper .flex__content .text--normal {
-				margin-top: 8px;
-			}
-			.slider__warpper .flex__content .text--sub {
-				margin-bottom: 8px;
-			}
-		}
-
-		@media only screen and (max-width: 415px) {
-			.cta-btn {
-				height: 42px;
-				display: inline-block;
-				padding: 7px 20px 7px 20px;
-			}
-
-			#nav-icon4 {
-				width: 40px;
-				height: 40px;
-			}
-
-			#nav-icon4 .bars {
-				width: 16px;
-				top: 15px;
-				left: 11px;
-				height: 16px;
-			}
-
-			.nav-cta-btn {
-				margin: 0;
-			}
-		}
-
-		@media only screen and (max-width: 380px) {
-			.slider__warpper .flex__content .text--sub {
-				font-size: 12px;
-			}
-		}
-
-		@media only screen and (max-width: 330px) {}
 	</style>
 
 
@@ -1021,125 +167,10 @@
 			<ul class="nav nav-pills nav-stacked level0">
 				<li class="menu-item mega menu-align-left" data-id="1" data-level="0" data-title="1" data-align="left">
 					<a href="#" target="_self">Home<em class="fa fa-angle-right"></em></a>
-					<!-- <ul class="dropdown-menu">
-						<li class="menu-item" data-id="232" data-level="1" data-title="1"><a
-								href="index-2.html?settingpanel=1&amp;jpb_homepage=1&amp;jpb_skin=default"
-								target="_self">Home 1 </a></li>
-						<li class="menu-item" data-id="233" data-level="1" data-title="1"><a
-								href="index-2.html?settingpanel=1&amp;jpb_homepage=2&amp;jpb_skin=color2"
-								target="_self">Home 2 </a></li>
-						<li class="menu-item" data-id="234" data-level="1" data-title="1"><a
-								href="index-2.html?settingpanel=1&amp;jpb_homepage=3&amp;jpb_skin=color3"
-								target="_self">Home 3</a></li>
-					</ul> -->
+
 				</li>
-				<!-- <li class="menu-item mega  menu-align-center" data-id="3" data-level="0" data-title="1" data-class=""
-					data-align="center"><a href="indexfa90.html?id_category=3&amp;controller=category&amp;id_lang=1"
-						target="_self">Shop<em class="fa fa-angle-right"></em></a>
-					<ul class="dropdown-menu">
-						<li class="menu-item group" data-id="260" data-level="1" data-group="1" data-title="1"><a
-								href="indexe734.html?id_category=12&amp;controller=category&amp;id_lang=1"
-								target="_self">Organic Skin</a></li>
-						<li class="menu-item" data-id="261" data-level="1" data-title="1"><a href="#"
-								target="_self">Suspend Tempor</a></li>
-						<li class="menu-item" data-id="262" data-level="1" data-title="1"><a href="#"
-								target="_self">Vestibulum Quam</a></li>
-						<li class="menu-item" data-id="263" data-level="1" data-title="1"><a href="#"
-								target="_self">Dolor Elementum</a></li>
-						<li class="menu-item" data-id="264" data-level="1" data-title="1"><a href="#"
-								target="_self">Aenean Auctor</a></li>
-						<li class="menu-item group" data-id="266" data-level="1" data-group="1" data-title="1"><a
-								href="indexd9ce.html?id_category=13&amp;controller=category&amp;id_lang=1"
-								target="_self">organic hair </a></li>
-						<li class="menu-item" data-id="267" data-level="1" data-title="1"><a href="#"
-								target="_self">Blandit Viverra</a></li>
-						<li class="menu-item" data-id="268" data-level="1" data-title="1"><a href="#"
-								target="_self">Porta Cursus</a></li>
-						<li class="menu-item" data-id="269" data-level="1" data-title="1"><a href="#"
-								target="_self">Praesent Enim</a></li>
-						<li class="menu-item" data-id="270" data-level="1" data-title="1"><a href="#"
-								target="_self">Nunc Aliquam</a></li>
-						<li class="menu-item group" data-id="272" data-level="1" data-group="1" data-title="1"><a
-								href="indexd9ce.html?id_category=13&amp;controller=category&amp;id_lang=1"
-								target="_self">organic other</a></li>
-						<li class="menu-item" data-id="273" data-level="1" data-title="1"><a href="#"
-								target="_self">Varius Lobortis</a></li>
-						<li class="menu-item" data-id="274" data-level="1" data-title="1"><a href="#"
-								target="_self">Diam Rhoncus</a></li>
-						<li class="menu-item" data-id="275" data-level="1" data-title="1"><a href="#"
-								target="_self">Congue Tellus</a></li>
-						<li class="menu-item" data-id="276" data-level="1" data-title="1"><a href="#"
-								target="_self">Malesua Fames</a></li>
-					</ul>
-				</li>
-				<li class="menu-item mega " data-id="5" data-level="0" data-title="1" data-class=""><a
-						href="index1977.html?fc=module&amp;module=jmsblog&amp;controller=post&amp;post_id=1"
-						target="_self">Blog<em class="fa fa-angle-right"></em></a>
-					<ul class="dropdown-menu">
-						<li class="menu-item" data-id="287" data-level="1" data-title="1"><a
-								href="indexb3e5.html?fc=module&amp;module=jmsblog&amp;controller=category&amp;category_id=1"
-								target="_self">Blog Category</a></li>
-						<li class="menu-item" data-id="294" data-level="1" data-title="1"><a
-								href="index1977.html?fc=module&amp;module=jmsblog&amp;controller=post&amp;post_id=1"
-								target="_self">Blog Single Post</a></li>
-						<li class="menu-item" data-id="298" data-level="1" data-title="1"><a
-								href="indexd0b5.html?fc=module&amp;module=jmsblog&amp;controller=categories"
-								target="_self">Blog Categories</a></li>
-						<li class="menu-item" data-id="305" data-level="1" data-title="1"><a
-								href="indexff52.html?fc=module&amp;module=jmsblog&amp;controller=tag&amp;tag=organic"
-								target="_self">Blog Tags</a></li>
-						<li class="menu-item" data-id="306" data-level="1" data-title="1"><a
-								href="indexc1c9.html?fc=module&amp;module=jmsblog&amp;controller=archive&amp;archive=2018"
-								target="_self">Blog Archives</a></li>
-					</ul>
-				</li>
-				<li class="menu-item mega" data-id="6" data-level="0" data-title="1"><a
-						href="indexfa90.html?id_category=3&amp;controller=category&amp;id_lang=1"
-						target="_self">Pages<em class="fa fa-angle-right"></em></a>
-					<ul class="dropdown-menu">
-						<li class="menu-item" data-id="249" data-level="1" data-title="1"><a
-								href="index30e7.html?id_cms=6&amp;controller=cms&amp;id_lang=1"
-								target="_self">Typography</a></li>
-						<li class="menu-item mega" data-id="250" data-level="1" data-title="1"><a
-								href="indexe734.html?id_category=12&amp;controller=category&amp;id_lang=1"
-								target="_self">Product Pages</a>
-							<ul class="dropdown-menu">
-								<li class="menu-item" data-id="251" data-level="2" data-title="1"><a
-										href="indexe734.html?id_category=12&amp;controller=category&amp;id_lang=1"
-										target="_self">Product List</a></li>
-								<li class="menu-item" data-id="252" data-level="2" data-title="1"><a
-										href="indexc27f.html?id_product=13&amp;id_product_attribute=0&amp;rewrite=demo-default-product-&amp;controller=product&amp;id_lang=1"
-										target="_self">Product Details</a></li>
-							</ul>
-						</li>
-						<li class="menu-item" data-id="253" data-level="1" data-title="1"><a
-								href="indexac29.html?id_cms=4&amp;controller=cms&amp;id_lang=1" target="_self">About
-								Us</a></li>
-						<li class="menu-item" data-id="254" data-level="1" data-title="1"><a
-								href="index6237.html?controller=new-products" target="_self">New Products</a></li>
-						<li class="menu-item" data-id="256" data-level="1" data-title="1"><a
-								href="index8bf5.html?controller=search&amp;orderby=position&amp;orderway=desc&amp;search_query=fresh"
-								target="_self">Search Page</a></li>
-						<li class="menu-item" data-id="257" data-level="1" data-title="1"><a
-								href="indexc485.html?controller=prices-drop" target="_self">Prices drop</a></li>
-						<li class="menu-item" data-id="258" data-level="1" data-title="1"><a
-								href="index6a2f.html?controller=404" target="_self">404 Page</a></li>
-						<li class="menu-item" data-id="307" data-level="1" data-title="1"><a
-								href="index7e4b.html?controller=best-sales" target="_self">Best Sales</a></li>
-						<li class="menu-item" data-id="372" data-level="1" data-title="1"><a
-								href="index11f6.html?controller=stores" target="_self">Our Store</a></li>
-						<li class="menu-item" data-id="378" data-level="1" data-title="1"><a
-								href="indexcc05.html?controller=sitemap" target="_self">Site map</a></li>
-					</ul>
-				</li>
-				<li class="menu-item" data-id="7" data-level="0" data-title="1"><a
-						href="index0684.html?controller=contact" target="_self">Contact</a></li> -->
+
 			</ul>
-
-			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsmegamenu/views/templates/hook/jmsmegamenu-mobile.tpl -->
-
-			<!-- begin module:ps_customersignin/ps_customersignin.tpl -->
-			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_customersignin/ps_customersignin.tpl -->
 			<div class="user-info btn-group ">
 				<span class="btn-name">Customer signin</span>
 
@@ -1155,14 +186,6 @@
 
 				</ul>
 			</div>
-
-			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_customersignin/ps_customersignin.tpl -->
-			<!-- end module:ps_customersignin/ps_customersignin.tpl -->
-
-			<!-- begin module:ps_languageselector/ps_languageselector.tpl -->
-			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_languageselector/ps_languageselector.tpl -->
-			<!-- Block languages module -->
-
 			<div class="btn-group compact-hidden languages-info">
 				<span class="btn-name">Languages</span>
 				<ul>
@@ -1204,13 +227,6 @@
 
 				</ul>
 			</div>
-
-			<!-- /Block languages module -->
-			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_languageselector/ps_languageselector.tpl -->
-			<!-- end module:ps_languageselector/ps_languageselector.tpl -->
-
-			<!-- begin module:ps_currencyselector/ps_currencyselector.tpl -->
-			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_currencyselector/ps_currencyselector.tpl -->
 			<div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info">
 				<span class="btn-name">Currency</span>
 				<ul>
@@ -1227,10 +243,6 @@
 					</li>
 				</ul>
 			</div>
-
-			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_currencyselector/ps_currencyselector.tpl -->
-			<!-- end module:ps_currencyselector/ps_currencyselector.tpl -->
-
 		</nav>
 
 	</div>
@@ -1238,38 +250,10 @@
 
 
 		<header id="header">
-
-
-			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_header.tpl -->
 			<div class="jms-row pt_8 pb_8 headertop navtopo">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="layout-column col-3 col-sm-6 headertop-left" style="">
-							<!-- <div class="addon-box">
-
-								<div class="btn-group compact-hidden jms_ajax_search dropdown" id="jms_ajax_search">
-									<a href="#" class="btn-xs icon dropdown-toggle" title="Search"
-										data-toggle="dropdown">
-										<div class="box_search"><span class="ajaxsearchicon"></span></div>
-									</a>
-									<div class="dropdown-menu search-box" role="menu">
-										<form method="get"
-											action="http://prestashop17.joommasters.com/organicshop/index.php?controller=search"
-											class="searchbox" id="searchbox">
-											<input type="hidden" name="controller" value="search" />
-											<input type="hidden" name="orderby" value="position" />
-											<input type="hidden" name="orderway" value="desc" />
-											<input type="text" id="ajax_search" name="search_query"
-												placeholder="Search everything..." class="form-control ajax_search" />
-
-											<button type="submit" name="submit_search"
-												class="button-search ajaxsearchicon"> </button>
-										</form>
-										<div id="search_result">
-										</div>
-									</div>
-								</div>
-							</div> -->
 							<div class="addon-box">
 								<a href="/" class="header_logo" title="Jms_Organic"><img class="logo img-responsive"
 										src="assets/img/logo.png" alt="Jms_Organic" />
@@ -1278,158 +262,17 @@
 						</div>
 
 						<div class="layout-column  col-9 col-sm-6 headertop-right " style="">
-							<div class="addon-box">
-
-								<!-- <div class="btn-group compact-hidden blockcart cart-preview inactive dropdown js-dropdown  "
-									id="cart_block"
-									data-refresh-url="index22d1.php?fc=module&amp;module=ps_shoppingcart&amp;controller=ajax&amp;id_lang=1">
-									<a href="#" class="dropdown-toggle cart-icon" data-toggle="dropdown">
-										<span class="ajax_cart_quantity">0</span>
-										<span class="shoppingcart"></span>
-									</a>
-									<a href="#" class="d-none btn-xs tab-title dropdown-toggle" data-toggle="dropdown">
-										<span>
-											<span class="box-cart ajax_cart_quantity">0 item(s) in your cart <i
-													class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></span>
-										</span>
-									</a>
-									<div class="dropdown-menu shoppingcart-box">
-										<div class="shoppingcart-content">
-											<span class="ajax_cart_no_product">There is no product</span>
-											<ul class="list products cart_block_list">
-											</ul>
-										</div>
-										<div class="cart-prices">
-											<div class="checkout-info">
-												<div class="products cart-prices-line">
-													<span class="label">Subtotal</span>
-													<span class="value">$0.00</span>
-												</div>
-												<div class=" cart-prices-line">
-													<span class="label"></span>
-													<span class="value"></span>
-												</div>
-												<div class="shipping cart-prices-line">
-													<span class="label">Shipping</span>
-													<span class="value">Free</span>
-												</div>
-												<div class="tax cart-prices-line">
-													<span class="label">Taxes</span>
-													<span class="value">$0.00</span>
-												</div>
-												<div class="cart-button">
-													<a id="button_order_cart" class="btn-other btn"
-														href="indexb379.php?controller=cart&amp;action=show"
-														title="Check out" rel="nofollow">
-														Check out
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div> -->
+							<div class="addon-box d-flex align-items-center">
 								<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modal1"
 									class="cta-btn nav-cta-btn">Contact Us</a>
 							</div>
-							<div class="addon-box">
+							<!-- <div class="addon-box">
 								<div id="nav-icon4" class="open svg-inline--fa">
 									<div class="bars">
 										<span></span><span></span>
 									</div>
 								</div>
-								<!-- <div class="btn-group module-group-box dropdown">
-									<a title="Search" data-toggle="dropdown" class="dropdown-toggle" href="#">
-										<i class="modulegroup"></i>
-									</a>
-									<div role="menu" class="dropdown-menu">
-
-										<div class="user-info btn-group ">
-											<span class="btn-name">Customer signin</span>
-
-											<a href="index6714.html?controller=my-account"
-												title="Log in to your customer account" rel="nofollow"
-												class="logout hidden-sm-down">
-												<span class="hidden-sm-down text-top">Login/Register</span>
-											</a>
-											<ul>
-												<li><a href="index6714.html?controller=my-account"
-														title="View my customer account" class="account"
-														rel="nofollow">Account </a></li>
-												<li><a href="indexbb4d.php?controller=order"
-														title="View my customer account" class="account"
-														rel="nofollow">Checkout </a></li>
-
-											</ul>
-										</div>
-
-										<div class="btn-group compact-hidden languages-info">
-											<span class="btn-name">Languages</span>
-											<ul>
-												<li class="current">
-													<a href="index5e5b.php?id_lang=1" class="dropdown-item">
-														<span class="image_language"><img alt="en" src="img/l/1.jpg"
-																width="16" /><span>
-																English
-
-													</a>
-												</li>
-												<li>
-													<a href="index8d06.php?id_lang=2" class="dropdown-item">
-														<span class="image_language"><img alt="fr" src="img/l/2.jpg"
-																width="16" /><span>
-																Français
-
-													</a>
-												</li>
-												<li>
-													<a href="index608e.php?id_lang=3" class="dropdown-item">
-														<span class="image_language"><img alt="de" src="img/l/3.jpg"
-																width="16" /><span>
-																Deutsch
-
-													</a>
-												</li>
-												<li>
-													<a href="index24f2.php?id_lang=4" class="dropdown-item">
-														<span class="image_language"><img alt="it" src="img/l/4.jpg"
-																width="16" /><span>
-																Italiano
-
-													</a>
-												</li>
-												<li>
-													<a href="index701c.php?id_lang=5" class="dropdown-item">
-														<span class="image_language"><img alt="pt" src="img/l/5.jpg"
-																width="16" /><span>
-																Português PT
-
-													</a>
-												</li>
-
-											</ul>
-										</div>
-										<div id="_desktop_currency_selector"
-											class="btn-group compact-hidden currency-info">
-											<span class="btn-name">Currency</span>
-											<ul>
-
-												<li>
-													<a title="Euro" rel="nofollow"
-														href="indexc55c.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=2"
-														class="dropdown-item">
-														EUR €</a>
-												</li>
-												<li class="current">
-													<a title="US Dollar" rel="nofollow"
-														href="indexeb63.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=1"
-														class="dropdown-item">
-														USD $</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div> -->
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -1439,39 +282,33 @@
 					<div class="row">
 						<div class="layout-column col-lg-12 col-md-12 col-sm-11 col-xs-12" style="">
 							<div class="addon-box">
-
-								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsmegamenu/views/templates/hook/jmsmegamenu.tpl -->
-
-
 								<script type="text/javascript">
 									var jmmm_event = 'hover';
 									var jmmm_duration = 200;	
 								</script>
-								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsmegamenu/views/templates/hook/jmsmegamenu.tpl -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_header.tpl -->
-
-			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmswishlist/jmswishlist_top.tpl -->
 			<script type="text/javascript">
 				var loggin_required = 'You must be logged in to manage your wishlist.';
 				var added_to_wishlist = 'The product was successfully added to your wishlist.';
 				var mywishlist_url = 'indexa711.php?fc=module&amp;module=jmswishlist&amp;controller=mywishlist&amp;id_lang=1';
 			</script>
 
-			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmswishlist/jmswishlist_top.tpl -->
-
-
 		</header>
 
 
 
 		<div id="wrapper">
-
+			<a href="https://wa.me/03118449006" target="_blank" class="wa_screen wa_logo ">
+				<div class="white">
+					<div>
+						<i class="fas fa-phone"></i>
+					</div>
+				</div>
+			</a>
 
 
 			<div id="content-wrapper">
@@ -1482,16 +319,34 @@
 
 					<section id="content" class="page-home">
 
-
-
-						<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_body.tpl -->
 						<div class="jms-row my_own_slider">
 							<div class="container-fluid px-0">
 								<div class="row">
 									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12" style="">
 										<div class="addon-box">
 											<div class="slider__warpper">
-												<div class="flex__container flex--pikachu flex--active" data-slide="1">
+												<div class="flex__container flex--piplup  flex--active" data-slide="1">
+													<div class="flex__item flex__item--left">
+														<div class="flex__content">
+															<p class="text--sub">ANTI DANDRUFF CONDITIONING SHAMPOO</p>
+															<h1 class="text--big">VELVET</h1>
+															<p class="text--normal">Introducing VELVET Anti-Dandruff
+																Shampoo. Formulated with premium ingredients, our
+																shampoo effectively targets and eliminates dandruff
+																while nourishing the scalp. Experience relief from
+																flakes and itchiness with our high-quality solution.
+																Trust Second Face for a healthier, flake-free scalp and
+																revitalized hair.</p>
+														</div>
+														<p class="text__background">VELVET</p>
+													</div>
+													<div class="flex__item flex__item--right">
+														<img class="pokemon__img" src="assets/img/shampoo2.png" />
+
+													</div>
+												</div>
+												<div class="flex__container flex--pikachu animate--start"
+													data-slide="2">
 													<div class="flex__item flex__item--left">
 														<div class="flex__content">
 															<p class="text--sub">THICK AND LONG HAIR CONDITIONING
@@ -1512,26 +367,7 @@
 
 													</div>
 												</div>
-												<div class="flex__container flex--piplup animate--start" data-slide="2">
-													<div class="flex__item flex__item--left">
-														<div class="flex__content">
-															<p class="text--sub">ANTI DANDRUFF CONDITIONING SHAMPOO</p>
-															<h1 class="text--big">VELVET</h1>
-															<p class="text--normal">Introducing VELVET Anti-Dandruff
-																Shampoo. Formulated with premium ingredients, our
-																shampoo effectively targets and eliminates dandruff
-																while nourishing the scalp. Experience relief from
-																flakes and itchiness with our high-quality solution.
-																Trust Second Face for a healthier, flake-free scalp and
-																revitalized hair.</p>
-														</div>
-														<p class="text__background">VELVET</p>
-													</div>
-													<div class="flex__item flex__item--right">
-														<img class="pokemon__img" src="assets/img/shampoo3.png" />
 
-													</div>
-												</div>
 												<div class="flex__container flex--blaziken animate--start"
 													data-slide="3">
 													<div class="flex__item flex__item--left">
@@ -1551,7 +387,7 @@
 														<p class="text__background">VELVET</p>
 													</div>
 													<div class="flex__item flex__item--right">
-														<img class="pokemon__img" src="assets/img/shampoo2.png" />
+														<img class="pokemon__img" src="assets/img/shampoo3.png" />
 
 													</div>
 												</div>
@@ -1573,7 +409,7 @@
 														<p class="text__background">VELVET</p>
 													</div>
 													<div class="flex__item flex__item--right">
-														<img class="pokemon__img" src="assets/img/shampoo5.png" />
+														<img class="pokemon__img" src="assets/img/shampoo4.png" />
 
 													</div>
 												</div>
@@ -1594,7 +430,7 @@
 														<p class="text__background">VELVET</p>
 													</div>
 													<div class="flex__item flex__item--right">
-														<img class="pokemon__img" src="assets/img/shampoo4.png" />
+														<img class="pokemon__img" src="assets/img/shampoo5.png" />
 
 													</div>
 												</div>
@@ -1607,233 +443,6 @@
 												<a href="#" class="slide-nav" data-slide="4">dialga</a>
 												<a href="#" class="slide-nav" data-slide="5">zekrom</a>
 											</div>
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonsliderlayer.tpl -->
-											<!-- <div class="jms-slider-wrapper">
-												<div class="responisve-container">
-													<div class="slider">
-														<div class="fs_loader"></div>
-														<div class="slide "
-															style="background: url(assets/img/cover_bg1.webp) no-repeat left top;background-size:cover;">
-															<div class=" jms-slide-content" data-position="343,450"
-																data-fontsize="60" data-lineheight="78px"
-																data-in="right" data-out="right" data-delay="1000"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="1300"
-																style="font-size: 60px; font-style:normal; color: #ffffff; line-height:78px;">
-																<span class="text-large">Valvet Shampoo</span>
-															</div>
-															<div class=" jms-slide-content py-3" data-position="429,434"
-																data-fontsize="16" data-lineheight="45px"
-																data-in="right" data-out="right" data-delay="1500"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="2000"
-																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
-															</div>
-															<div class=" jms-slide-content pt-4" data-position="517,638"
-																data-fontsize="14" data-lineheight="26px"
-																data-in="right" data-out="left" data-delay="2200"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="2700"
-																style="font-size: 14px; font-style:normal; color: #ffffff; line-height:26px;">
-																<a href="#" title="Contact us"
-																	class="btn-shopnow btn">Contact us
-																</a>
-															</div>
-
-															<img class=" jms-slide-content"
-																src="assets/img/shampoo1.png"
-																alt="" data-position="143,1089" data-in="fade"
-																data-out="fade" data-delay="200" data-ease-in="linear"
-																data-ease-out="linear" data-time="900" data-step="0"
-																data-special="" width="402" height="677" />
-														</div>
-														<div class="slide "
-															style="background: url(modules/jmsslider/views/img/slides/a676cfbdcf7d965f89414a03a703ad2c.jpg) no-repeat left top;background-size:cover;">
-															<div class=" jms-slide-content" data-position="348,319"
-																data-fontsize="60" data-lineheight="78px"
-																data-in="right" data-out="right" data-delay="0"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="700"
-																style="font-size: 60px; font-style:normal; color: #ffffff; line-height:78px;">
-																<span class="text-large">Valvet Shampoo</span>
-															</div>
-															<div class=" jms-slide-content" data-position="433,333"
-																data-fontsize="16" data-lineheight="45px"
-																data-in="bottom" data-out="bottom" data-delay="500"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="1200"
-																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
-															</div>
-															<div class=" jms-slide-content" data-position="517,537"
-																data-fontsize="15" data-lineheight="26px"
-																data-in="bottom" data-out="bottom" data-delay="1000"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="1700"
-																style="font-size: 15px; font-style:normal; color: #111111; line-height:26px;">
-																<a href="#" title="Contact us"
-																	class="btn-shopnow btn">Contact Us
-																</a>
-
-
-															</div>
-
-															<img class=" jms-slide-content"
-																src="modules/jmsslider/views/img/layers/organie12.png"
-																alt="" data-position="196,1029" data-in="bottomLeft"
-																data-out="bottomLeft" data-delay="0"
-																data-ease-in="linear" data-ease-out="linear"
-																data-time="700" data-step="0" data-special=""
-																width="567" height="524" />
-														</div>
-														<div class="slide "
-															style="background: url(modules/jmsslider/views/img/slides/a676cfbdcf7d965f89414a03a703ad2c.jpg) no-repeat left top;background-size:cover;">
-															<div class=" jms-slide-content" data-position="343,450"
-																data-fontsize="60" data-lineheight="78px"
-																data-in="bottomRight" data-out="bottomRight"
-																data-delay="200" data-ease-in="linear"
-																data-ease-out="linear" data-step="0" data-special=""
-																data-time="700"
-																style="font-size: 60px; font-style:normal; color: #ffffff; line-height:78px;">
-																<span class="text-large">organic hair</span>
-															</div>
-															<div class=" jms-slide-content" data-position="429,434"
-																data-fontsize="16" data-lineheight="45px" data-in="top"
-																data-out="top" data-delay="500" data-ease-in="linear"
-																data-ease-out="linear" data-step="0" data-special=""
-																data-time="1200"
-																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
-															</div>
-															<div class=" jms-slide-content" data-position="517,638"
-																data-fontsize="15" data-lineheight="26px"
-																data-in="right" data-out="left" data-delay="1000"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="1700"
-																style="font-size: 15px; font-style:normal; color: #111111; line-height:26px;">
-																<a href="#" title="Contact us"
-																	class="btn-shopnow btn">Contact Us
-																</a>
-
-															</div>
-
-															<img class=" jms-slide-content"
-																src="modules/jmsslider/views/img/layers/img4.png" alt=""
-																data-position="175,1053" data-in="bottomLeft"
-																data-out="bottomLeft" data-delay="200"
-																data-ease-in="linear" data-ease-out="linear"
-																data-time="700" data-step="0" data-special=""
-																width="489" height="634" />
-														</div>
-														<div class="slide "
-															style="background: url(modules/jmsslider/views/img/slides/a676cfbdcf7d965f89414a03a703ad2c.jpg) no-repeat left top;background-size:cover;">
-															<div class=" jms-slide-content" data-position="343,450"
-																data-fontsize="60" data-lineheight="78px"
-																data-in="right" data-out="right" data-delay="1000"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="1700"
-																style="font-size: 60px; font-style:normal; color: #ffffff; line-height:78px;">
-																<span class="text-large">organic skin</span>
-															</div>
-															<div class=" jms-slide-content" data-position="429,434"
-																data-fontsize="16" data-lineheight="45px"
-																data-in="bottom" data-out="bottom" data-delay="1500"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="2200"
-																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
-															</div>
-															<div class=" jms-slide-content" data-position="517,638"
-																data-fontsize="15" data-lineheight="26px"
-																data-in="bottom" data-out="bottom" data-delay="2200"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="2700"
-																style="font-size: 15px; font-style:normal; color: #111111; line-height:26px;">
-																<a href="#" title="Contact us"
-																	class="btn-shopnow btn">Contact us	
-																</a>
-
-
-															</div>
-
-															<img class=" jms-slide-content"
-																src="modules/jmsslider/views/img/layers/img2.png" alt=""
-																data-position="277,1000" data-in="left" data-out="right"
-																data-delay="200" data-ease-in="linear"
-																data-ease-out="linear" data-time="700" data-step="0"
-																data-special="" width="548" height="365" />
-														</div>
-														<div class="slide "
-															style="background: url(modules/jmsslider/views/img/slides/a676cfbdcf7d965f89414a03a703ad2c.jpg) no-repeat left top;background-size:cover;">
-															<div class=" jms-slide-content" data-position="343,450"
-																data-fontsize="60" data-lineheight="78px"
-																data-in="right" data-out="right" data-delay="1000"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="1700"
-																style="font-size: 60px; font-style:normal; color: #ffffff; line-height:78px;">
-																<span class="text-large">organic skin</span>
-															</div>
-															<div class=" jms-slide-content" data-position="429,434"
-																data-fontsize="16" data-lineheight="45px"
-																data-in="bottom" data-out="bottom" data-delay="1500"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="2200"
-																style="font-size: 16px; font-style:normal; color: #ffffff; line-height:45px;">
-																<span class="text-medium center">THICK AND LONG HAIR CONDITIONING</span>
-															</div>
-															<div class=" jms-slide-content" data-position="517,638"
-																data-fontsize="15" data-lineheight="26px"
-																data-in="bottom" data-out="bottom" data-delay="2200"
-																data-ease-in="linear" data-ease-out="linear"
-																data-step="0" data-special="" data-time="2700"
-																style="font-size: 15px; font-style:normal; color: #111111; line-height:26px;">
-																<a href="#" title="Contact us"
-																	class="btn-shopnow btn">Contact us	
-																</a>
-
-
-															</div>
-
-															<img class=" jms-slide-content"
-																src="modules/jmsslider/views/img/layers/img2.png" alt=""
-																data-position="277,1000" data-in="left" data-out="right"
-																data-delay="200" data-ease-in="linear"
-																data-ease-out="linear" data-time="700" data-step="0"
-																data-special="" width="548" height="365" />
-														</div>
-													</div>
-												</div>
-											</div> -->
-
-
-											<!-- <script type="text/javascript">
-												var jmsslider_trans = "fade";
-												var jmsslider_end_animate = "fade";
-												var jmsslider_trans_in = "fade";
-												var jmsslider_trans_out = "fade";
-												var jmsslider_full_width = true;
-												var jmsslider_delay = 1000;
-												var jmsslider_duration = 7000;
-												var jmsslider_speed_in = 300;
-												var jmsslider_speed_out = 0;
-												var jmsslider_ease_in = "easeInCubic";
-												var jmsslider_ease_out = "easeOutExpo";
-
-												var jmsslider_navigation = false;
-												var jmsslider_pagination = true;
-
-												var jmsslider_autoplay = false;
-
-												var jmsslider_pausehover = false;
-
-												var jmsslider_bg_animate = true;
-												var jmsslider_bg_ease = "easeOutCubic";
-												var jmsslider_responsive = true;
-
-												var jmsslider_dimensions = "1920,970";
-											</script> -->
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonsliderlayer.tpl -->
 										</div>
 									</div>
 								</div>
@@ -1841,24 +450,17 @@
 						</div>
 						<div class="jms-row pt_72 pb_80 block-service fadeInUp wow">
 							<div class="container">
-								<div class="row">
+								<div class="row justify-content-center">
 									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 center service-title"
 										style="">
 										<div class="addon-box">
-
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonhtml.tpl -->
-											<!-- <p class="addon-desc">A friendly Organic store copy</p> -->
 											<div class="addon-title">
 												<h3>WELCOME TO OUR WEB</h3>
 											</div>
-
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonhtml.tpl -->
 										</div>
 									</div>
-									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12" style="">
+									<div class="layout-column col-lg-4 col-md-6 col-sm-12 col-xs-12" style="">
 										<div class="addon-box serv">
-
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 											<div class="feature-boxstyle2" style="text-align:center;">
 												<div>
 													<div class="image"><img src="assets/img/demo/service1.png"
@@ -1874,17 +476,16 @@
 															enhance natural beauty.</p>
 													</div>
 												</div>
-												<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modal1"
-													target="_blank">Contact Us</a>
+												<div class="position-relative serv_btn">
+													<a href="javascript:;" data-bs-toggle="modal"
+														data-bs-target="#modal1" class="cta-btn nav-cta-btn">Contact
+														Us</a>
+												</div>
 											</div>
-
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 										</div>
 									</div>
-									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 box-2" style="">
+									<div class="layout-column col-lg-4 col-md-6 col-sm-12 col-xs-12 box-2" style="">
 										<div class="addon-box  serv">
-
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 											<div class="feature-boxstyle2" style="text-align:center;">
 												<div>
 													<div class="image"><img src="assets/img/demo/service2.png"
@@ -1900,17 +501,16 @@
 															performance and ethical standards.</p>
 													</div>
 												</div>
-												<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modal1"
-													target="_blank">Contact Us</a>
+												<div class="position-relative serv_btn">
+													<a href="javascript:;" data-bs-toggle="modal"
+														data-bs-target="#modal1" class="cta-btn nav-cta-btn">Contact
+														Us</a>
+												</div>
 											</div>
-
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 										</div>
 									</div>
-									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 box-3" style="">
+									<div class="layout-column col-lg-4 col-md-6 col-sm-12 col-xs-12 box-3" style="">
 										<div class="addon-box  serv">
-
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonfeature2.tpl -->
 											<div class="feature-boxstyle2" style="text-align:center;">
 												<div>
 													<div class="image"><img src="assets/img/demo/service3.png"
@@ -1928,75 +528,15 @@
 															superior, ethical products.</p>
 													</div>
 												</div>
-												<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modal1"
-													target="_blank">Contact Us</a>
+												<div class="position-relative serv_btn">
+													<a href="javascript:;" data-bs-toggle="modal"
+														data-bs-target="#modal1" class="cta-btn nav-cta-btn">Contact
+														Us</a>
+												</div>
 											</div>
 
 										</div>
 									</div>
-									<!-- <div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 pt_70 cartransiton"
-										style="">
-										<div class="addon-box">
-
-											<div class="feature-box" style="text-align:center;">
-												<div class="include_content_s">
-
-													<h4>free shipping</h4>
-													<p>All order over $100</p>
-												</div>
-
-												<div class="image"><img src="assets/img/demo/service4.png"
-														alt="Joommasters.com" />
-													<div class="hover-image"></div>
-												</div>
-
-
-											</div>
-
-										</div>
-									</div>
-									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 pt_70 spinaround "
-										style="">
-										<div class="addon-box">
-
-											<div class="feature-box" style="text-align:center;">
-												<div class="include_content_s">
-
-													<h4>customer service</h4>
-													<p>Support 24/7</p>
-												</div>
-
-												<div class="image"><img src="assets/img/demo/service5.png"
-														alt="Joommasters.com" />
-													<div class="hover-image"></div>
-												</div>
-
-
-											</div>
-
-										</div>
-									</div>
-									<div class="layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12 pt_70 spinaround "
-										style="">
-										<div class="addon-box">
-
-											<div class="feature-box" style="text-align:center;">
-												<div class="include_content_s">
-
-													<h4>money back</h4>
-													<p>In about 30 days</p>
-												</div>
-
-												<div class="image"><img src="assets/img/demo/service6.png"
-														alt="Joommasters.com" />
-													<div class="hover-image"></div>
-												</div>
-
-
-											</div>
-
-										</div>
-									</div> -->
 								</div>
 							</div>
 						</div>
@@ -2024,22 +564,14 @@
 												<div class="hotdeal-carousel">
 
 													<div class="item">
-														<div class="product-preview"
-															itemtype="http://schema.org/Product" data-id-product="5"
-															data-id-product-attribute="19">
-
-
+														<div class="product-preview">
 															<div class="preview">
 																<a href="#;" class="product-image">
 																	<img class="img-responsive product-img1 img-fluid"
-																		src="assets/img/shampoo5.png">
+																		src="assets/img/shampoo4.png">
 																</a>
-
-
 																<div class="content_price">
-
-
-																	<span class="textonly">Only</span>
+																	<span class="textonly">Retail Price</span>
 																	<span itemprop="price" class="price new">Rs:
 																		370/-</span>
 																</div>
@@ -2063,9 +595,6 @@
 																		hair.
 																	</p>
 																</div>
-																<!-- <div class="countdown" id="countdown-1">2018-12-28
-																	00:00:00</div> -->
-
 																<div class="hotdeal-viewall">
 																	<a href="#;" class=" btn-other"
 																		data-bs-toggle="modal"
@@ -2076,58 +605,163 @@
 													</div>
 
 													<div class="item">
-														<div class="product-preview" itemtype="#;" data-id-product="4"
-															data-id-product-attribute="16">
-
-
+														<div class="product-preview">
 															<div class="preview">
 																<a href="#;" class="product-image">
 																	<img class="img-responsive product-img1 img-fluid"
-																		src="assets/img/shampoo5.png" alt="">
+																		src="assets/img/shampoo3.png">
 																</a>
-
-
 																<div class="content_price">
-
-
-																	<span class="textonly">Only</span>
+																	<span class="textonly">Retail Price</span>
 																	<span itemprop="price" class="price new">Rs:
 																		370/-</span>
-
-
-
 																</div>
-
 															</div>
-
-
-
 															<div class="product-info">
-																<p class="addon-desc">Natural and Organic Products</p>
+																<p class="addon-desc">HAIR DAMAGE REPAIR CONDITIONING
+																	SHAMPOO</p>
 																<div class="addon-title slider-title">
-																	<h3>DEAL OF THE DAY</h3>
+																	<h3>VELVEL</h3>
 																</div>
-
-
-																<!-- <a href="index2a66.php?id_product=4&amp;id_product_attribute=16&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1#/1-size-s/7-color-beige"
-																	class="product-link">Fresh Organic Innisfe</a> -->
-
 																<div class="description_short">
-																	<p>Introducing Second Face Herbal
-																		Shampoo, crafted with premium herbal extracts
-																		for a
-																		nourishing and gentle cleansing experience. Our
-																		high-quality formula revitalizes your hair while
-																		maintaining its natural balance. Experience the
-																		purity
-																		of nature with Second Face, where quality meets
-																		botanical excellence for healthier, more vibrant
-																		hair.
+																	<p>Introducing VELVET Hair Damage
+																		Repair Shampoo, crafted to restore and
+																		rejuvenate
+																		damaged hair. Enriched with high-quality,
+																		natural
+																		ingredients, it ensures deep nourishment and
+																		repair.
+																		Strengthen and revitalize your hair with each
+																		wash for
+																		healthier, smoother, and more resilient locks.
+																		Experience the transformative power of quality
+																		care with
+																		Second Face.
 																	</p>
 																</div>
-																<!-- <div class="countdown" id="countdown-2">2019-03-23
-																	00:00:00</div> -->
-
+																<div class="hotdeal-viewall">
+																	<a href="#;" class=" btn-other"
+																		data-bs-toggle="modal"
+																		data-bs-target="#modal1">Contact Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item">
+														<div class="product-preview">
+															<div class="preview">
+																<a href="#;" class="product-image">
+																	<img class="img-responsive product-img1 img-fluid"
+																		src="assets/img/shampoo1.png">
+																</a>
+																<div class="content_price">
+																	<span class="textonly">Retail Price</span>
+																	<span itemprop="price" class="price new">Rs:
+																		370/-</span>
+																</div>
+															</div>
+															<div class="product-info">
+																<p class="addon-desc">THICK AND LONG HAIR CONDITIONING
+																	SHAMPOO</p>
+																<div class="addon-title slider-title">
+																	<h3>VELVEL</h3>
+																</div>
+																<div class="description_short">
+																	<p>Introducing VELVET Thick and Long
+																		Hair Shampoo. Our premium formula is designed to
+																		nourish
+																		and strengthen hair, promoting growth and
+																		vitality.
+																		Crafted with quality ingredients, our shampoo
+																		supports
+																		thicker, longer locks with each use. Experience
+																		the
+																		difference with Second Face, where quality meets
+																		excellence for your dream hair goals.
+																	</p>
+																</div>
+																<div class="hotdeal-viewall">
+																	<a href="#;" class=" btn-other"
+																		data-bs-toggle="modal"
+																		data-bs-target="#modal1">Contact Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item">
+														<div class="product-preview">
+															<div class="preview">
+																<a href="#;" class="product-image">
+																	<img class="img-responsive product-img1 img-fluid"
+																		src="assets/img/shampoo2.png">
+																</a>
+																<div class="content_price">
+																	<span class="textonly">Retail Price</span>
+																	<span itemprop="price" class="price new">Rs:
+																		370/-</span>
+																</div>
+															</div>
+															<div class="product-info">
+																<p class="addon-desc">ANTI DANDRUFF CONDITIONING SHAMPOO
+																</p>
+																<div class="addon-title slider-title">
+																	<h3>VELVEL</h3>
+																</div>
+																<div class="description_short">
+																	<p>Introducing VELVET Anti-Dandruff
+																		Shampoo. Formulated with premium ingredients,
+																		our
+																		shampoo effectively targets and eliminates
+																		dandruff
+																		while nourishing the scalp. Experience relief
+																		from
+																		flakes and itchiness with our high-quality
+																		solution.
+																		Trust Second Face for a healthier, flake-free
+																		scalp and
+																		revitalized hair.
+																	</p>
+																</div>
+																<div class="hotdeal-viewall">
+																	<a href="#;" class=" btn-other"
+																		data-bs-toggle="modal"
+																		data-bs-target="#modal1">Contact Now</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item">
+														<div class="product-preview">
+															<div class="preview">
+																<a href="#;" class="product-image">
+																	<img class="img-responsive product-img1 img-fluid"
+																		src="assets/img/shampoo5.png">
+																</a>
+																<div class="content_price">
+																	<span class="textonly">Retail Price</span>
+																	<span itemprop="price" class="price new">Rs:
+																		370/-</span>
+																</div>
+															</div>
+															<div class="product-info">
+																<p class="addon-desc">HAIR FALL SOLUTION CONDITIONING
+																	SHAMPOO</p>
+																<div class="addon-title slider-title">
+																	<h3>VELVEL</h3>
+																</div>
+																<div class="description_short">
+																	<p>Introducing VELVET Hair Fall
+																		Solution Shampoo. Crafted with premium
+																		ingredients to
+																		combat hair fall and promote healthy, strong
+																		hair
+																		growth. Strengthen follicles, minimize breakage,
+																		and
+																		enjoy thicker, fuller-looking hair. Experience
+																		confidence with Second Face, where quality meets
+																		effectiveness for your best hair days ahead.
+																	</p>
+																</div>
 																<div class="hotdeal-viewall">
 																	<a href="#;" class=" btn-other"
 																		data-bs-toggle="modal"
@@ -3306,13 +1940,9 @@
 
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
 																</div>
 
 																<div class="item ajax_block_product">
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="8"
@@ -3896,13 +2526,9 @@
 
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
 																</div>
 
 																<div class="item ajax_block_product">
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="3"
@@ -4031,10 +2657,6 @@
 
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="14"
@@ -4181,13 +2803,10 @@
 
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
 
 																</div>
 
 																<div class="item ajax_block_product">
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="9"
@@ -4337,10 +2956,6 @@
 
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="13"
@@ -4500,13 +3115,9 @@
 
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
 																</div>
 
 																<div class="item ajax_block_product">
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="1"
@@ -4641,10 +3252,6 @@
 
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="11"
@@ -4753,25 +3360,15 @@
 																					</div>
 
 																				</div>
-
-
-
 																			</div>
-
-
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
 																</div>
 															</div>
 														</div>
 														<div role="tabpanel" class="tab-pane fade" id="category-12">
 															<div class="categorytab-carousel">
-
 																<div class="item ajax_block_product">
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="14"
@@ -7462,8 +6059,6 @@
 
 																					</div>
 																				</div>
-
-
 																				<a class="addToWishlist product-btn "
 																					onclick="WishlistCart('wishlist_block_list', 'add', '8', false, 1); return false;"
 																					data-id-product="8"
@@ -7471,28 +6066,18 @@
 																					<span class="fa fa-heart-o"></span>
 																					<span class="fa fa-heart"></span>
 																				</a>
-
 																			</div>
-
 																			<div class="product-info">
-
-
 																				<a href="index3bf1.php?id_product=8&amp;id_product_attribute=0&amp;rewrite=fresh-american-beef&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Spot
 																					corrector</a>
-
-
 																				<div class="product-price-and-shipping">
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
 																						class="price new">Rs:
 																						370/-</span>
-
-
 																				</div>
-
-
 																				<div class="list_info">
 																					<div class="list_description">
 																						<p>Lorem ipsum dolor sit amet,
@@ -7523,26 +6108,15 @@
 																								class="fa fa-heart-o"></span>
 																						</a>
 																					</div>
-
 																				</div>
-
-
-
 																			</div>
-
-
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
-
-																	<!-- begin catalog/_partials/miniatures/product.tpl -->
 																	<div class="ajax_block_product ">
 																		<div class="product-miniature js-product-miniature product-preview item-gutter-30"
 																			data-id-product="3"
 																			data-id-product-attribute="13">
 																			<div class="preview">
-
 																				<a href="index52ad.php?id_product=3&amp;id_product_attribute=13&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1#/1-size-s/13-color-orange"
 																					class="product-image image_blur">
 																					<img class=" product-img1 img-fluid"
@@ -7551,14 +6125,11 @@
 																						data-full-size-image-url="img/p/7/7/77-large_default.jpg" />
 																					<div class="cover"></div>
 																				</a>
-
 																				<div class="coner-topleft">
 
 																					<ul class="product-flags">
 																					</ul>
-
 																				</div>
-
 																				<div class="product-button">
 																					<a data-link-action="quickview"
 																						class="quick-view product-btn hidden-xs"
@@ -7581,8 +6152,6 @@
 																							of Stock</span>
 																					</a>
 																				</div>
-
-
 																				<div class="color_to_pick_list">
 																					<div class="variant-links">
 																						<li> <a href="index52ad.php?id_product=3&amp;id_product_attribute=13&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1#/1-size-s/13-color-orange"
@@ -7591,11 +6160,8 @@
 																								style="background-color: #F39C11"><span
 																									class="sr-only">Orange</span></a>
 																						</li>
-
 																					</div>
 																				</div>
-
-
 																				<a class="addToWishlist product-btn "
 																					onclick="WishlistCart('wishlist_block_list', 'add', '3', false, 1); return false;"
 																					data-id-product="3"
@@ -7605,26 +6171,17 @@
 																				</a>
 
 																			</div>
-
 																			<div class="product-info">
-
-
 																				<a href="indexc5f5.php?id_product=3&amp;id_product_attribute=0&amp;rewrite=printed-dress&amp;controller=product&amp;id_lang=1"
 																					class="product-link">Fresh
 																					Cleanser</a>
-
-
 																				<div class="product-price-and-shipping">
 
 																					<span class="sr-only">Price</span>
 																					<span itemprop="price"
 																						class="price new">Rs:
 																						370/-</span>
-
-
 																				</div>
-
-
 																				<div class="list_info">
 																					<div class="list_description">
 																						<p>Lorem ipsum dolor sit amet,
@@ -7646,7 +6203,6 @@
 																								of Stock</span>
 
 																						</a>
-
 																						<a class="addToWishlist product-btn "
 																							onclick="WishlistCart('wishlist_block_list', 'add', '3', false, 1); return false;"
 																							data-id-product="3"
@@ -7655,92 +6211,27 @@
 																								class="fa fa-heart-o"></span>
 																						</a>
 																					</div>
-
 																				</div>
-
-
-
 																			</div>
-
-
 																		</div>
 																	</div>
-																	<!-- end catalog/_partials/miniatures/product.tpl -->
-
 																</div>
 															</div>
 														</div>
-
 													</div>
 												</div>
 											</div>
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addoncategorytab.tpl -->
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- <div class="jms-row pb_80 jackInTheBox wow">
-							<div class="container">
-								<div class="row">
-									<div class="layout-column col-lg-6 col-md-6 col-sm-12 col-xs-12 banner-left fadeInLeft wow"
-										style="">
-										<div class="addon-box">
-
-											<div class="jms-banner">
-
-												<a href="http://www.joommasters.com/" target="_blank">
-													<img src="assets/img/demo/banner1.jpg" alt="Joommasters.com" />
-												</a>
-
-												<div class="banner-content">
-													<div class="banner-box">
-														<div class="box-content">
-															<p>Beauty Best Product</p>
-															<h4>Organic Skin</h4>
-															<a href="#">Shop now</a>
-														</div>
-													</div>
-												</div>
-											</div>
-
-										</div>
-									</div>
-									<div class="layout-column col-lg-6 col-md-6 col-sm-12 col-xs-12 banner-right fadeInRight wow"
-										style="">
-										<div class="addon-box">
-
-											<div class="jms-banner">
-
-												<a href="http://www.joommasters.com/" target="_blank">
-													<img src="assets/img/demo/banner2.jpg" alt="Joommasters.com" />
-												</a>
-
-												<div class="banner-content">
-													<div class="banner-box">
-														<div class="box-content">
-															<p>Suggested Products</p>
-															<h4>Organic Hair</h4>
-															<a href="#">Shop now</a>
-														</div>
-													</div>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> -->
 						<div class="jms-row"
 							style="background-image:url('assets/img/demo/bgtestimonial.jpg');background-size:cover;background-attachment:fixed;background-position:50% 50%;">
 							<div class="container">
 								<div class="row">
 									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12" style="">
 										<div class="addon-box">
-
-											<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addontestimonial.tpl -->
-
 											<script type="text/javascript">
 												var testi_items = 3,
 													testi_itemsDesktop = 1,
@@ -7752,10 +6243,7 @@
 												var auto_play_testi = false;
 
 											</script>
-
-
 											<div class="addon-title">
-
 											</div>
 											<div id="testimonial">
 												<div class="testimonial-carousel">
@@ -7782,10 +6270,7 @@
 																</span>
 															</div>
 														</div>
-
 													</div>
-
-
 													<div class="testimonial-box">
 														<div class="testimonial-img">
 															<img src="modules/jmstestimonials/views/img/resized_e824a28443fe42b1cffaaaf680e3b70e.jpg"
@@ -7808,10 +6293,7 @@
 																</span>
 															</div>
 														</div>
-
 													</div>
-
-
 													<div class="testimonial-box">
 														<div class="testimonial-img">
 															<img src="modules/jmstestimonials/views/img/resized_54b06279b960d5a361f639f39fdad01b.jpg"
@@ -7839,282 +6321,30 @@
 
 												</div>
 											</div>
-											<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addontestimonial.tpl -->
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- <div class="jms-row center block_blog pt_75 pb_76  fadeInUp wow">
-							<div class="container">
-								<div class="row">
-									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12" style="">
-										<div class="addon-box">
-
-											<script type="text/javascript">
-												var blog_items = 3,
-													blog_itemsDesktop = 3,
-													blog_itemsDesktopSmall = 2,
-													blog_itemsTablet = 2,
-													blog_itemsMobile = 1;
-												var p_nav_blog = false;
-												var p_pag_blog = false;
-												var auto_play_blog = true;
-											</script>
-
-											<p class="addon-desc">Update with us</p>
-											<div class="addon-title">
-												<h3>FROM OUR BLOG</h3>
-											</div>
-											<div class="blog-carousel">
-
-
-												<div class="blog-item">
-													<div class="top-info">
-														<div class="post-thumb view-blog">
-															<a href="index019f.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=1&amp;controller=post&amp;id_lang=1"
-																class="preview-image">
-																<img src="modules/jmsblog/views/img/8ccd9ebef4bc9ccfc0c70db3d3f1f9c9.jpg"
-																	alt=" Organic Foundation For A Healthy Skin"
-																	class="img-responsive img-fluid" />
-															</a>
-															<a href="index019f.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=1&amp;controller=post&amp;id_lang=1"
-																class="quickview">
-																<i class="fa-icon" aria-hidden="true"></i>
-															</a>
-														</div>
-
-														<div class="post-created">
-															<span>Mar 24</span>
-															<span>2018</span>
-														</div>
-													</div>
-													<div class="post-info">
-														<h4 class="post-title">
-															<a
-																href="index019f.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=1&amp;controller=post&amp;id_lang=1">
-																Organic Foundation For A Healthy Skin</a>
-														</h4>
-														<ul class="post-meta">
-															<li class="post-views">
-																<i class="fa fa-eye" aria-hidden="true"></i>5623 Views
-															</li>
-
-															<li class="post-comments">
-																<i class="fa fa-comment-o" aria-hidden="true"></i>0
-																Comments
-															</li>
-														</ul>
-
-														<div class="post-intro">
-															<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper
-																nisi. Aenean vulputate eleifend tellus. ivamus elementum
-																semper ...
-														</div>
-
-														<a class="read-more"
-															href="index019f.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=1&amp;controller=post&amp;id_lang=1">Read
-															more</a>
-													</div>
-												</div>
-
-
-												<div class="blog-item">
-													<div class="top-info">
-														<div class="post-thumb view-blog">
-															<a href="indexb29a.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=3&amp;controller=post&amp;id_lang=1"
-																class="preview-image">
-																<img src="modules/jmsblog/views/img/58ab0309e058a3522043b5ee12aa29e5.jpg"
-																	alt="Hello world! welcome to store of food"
-																	class="img-responsive img-fluid" />
-															</a>
-															<a href="indexb29a.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=3&amp;controller=post&amp;id_lang=1"
-																class="quickview">
-																<i class="fa-icon" aria-hidden="true"></i>
-															</a>
-														</div>
-
-														<div class="post-created">
-															<span>Jan 8</span>
-															<span>2018</span>
-														</div>
-													</div>
-													<div class="post-info">
-														<h4 class="post-title">
-															<a
-																href="indexb29a.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=3&amp;controller=post&amp;id_lang=1">Hello
-																world! welcome to store of food</a>
-														</h4>
-														<ul class="post-meta">
-															<li class="post-views">
-																<i class="fa fa-eye" aria-hidden="true"></i>2521 Views
-															</li>
-
-															<li class="post-comments">
-																<i class="fa fa-comment-o" aria-hidden="true"></i>0
-																Comments
-															</li>
-														</ul>
-
-														<div class="post-intro">
-															<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper
-																nisi. Aenean vulputate eleifend tellus. ivamus elementum
-																semper ...
-														</div>
-
-														<a class="read-more"
-															href="indexb29a.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=3&amp;controller=post&amp;id_lang=1">Read
-															more</a>
-													</div>
-												</div>
-
-
-												<div class="blog-item">
-													<div class="top-info">
-														<div class="post-thumb view-blog">
-															<a href="index3fa0.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=2&amp;controller=post&amp;id_lang=1"
-																class="preview-image">
-																<img src="modules/jmsblog/views/img/4f0c0cf5e1b4a781fb770b08749bedea.jpg"
-																	alt="Fresh fruits are very good for your health"
-																	class="img-responsive img-fluid" />
-															</a>
-															<a href="index3fa0.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=2&amp;controller=post&amp;id_lang=1"
-																class="quickview">
-																<i class="fa-icon" aria-hidden="true"></i>
-															</a>
-														</div>
-
-														<div class="post-created">
-															<span>Jan 7</span>
-															<span>2018</span>
-														</div>
-													</div>
-													<div class="post-info">
-														<h4 class="post-title">
-															<a
-																href="index3fa0.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=2&amp;controller=post&amp;id_lang=1">Fresh
-																fruits are very good for your health</a>
-														</h4>
-														<ul class="post-meta">
-															<li class="post-views">
-																<i class="fa fa-eye" aria-hidden="true"></i>2641 Views
-															</li>
-
-															<li class="post-comments">
-																<i class="fa fa-comment-o" aria-hidden="true"></i>0
-																Comments
-															</li>
-														</ul>
-
-														<div class="post-intro">
-															<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper
-																nisi. Aenean vulputate eleifend tellus. ivamus elementum
-																semper ...
-														</div>
-
-														<a class="read-more"
-															href="index3fa0.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=2&amp;controller=post&amp;id_lang=1">Read
-															more</a>
-													</div>
-												</div>
-
-
-												<div class="blog-item">
-													<div class="top-info">
-														<div class="post-thumb view-blog">
-															<a href="indexc0aa.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=4&amp;controller=post&amp;id_lang=1"
-																class="preview-image">
-																<img src="modules/jmsblog/views/img/4f8a55eff4b9726967833cf0a6361887.jpg"
-																	alt="Vestibulum mattis erat"
-																	class="img-responsive img-fluid" />
-															</a>
-															<a href="indexc0aa.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=4&amp;controller=post&amp;id_lang=1"
-																class="quickview">
-																<i class="fa-icon" aria-hidden="true"></i>
-															</a>
-														</div>
-
-														<div class="post-created">
-															<span>Jan 2</span>
-															<span>2018</span>
-														</div>
-													</div>
-													<div class="post-info">
-														<h4 class="post-title">
-															<a
-																href="indexc0aa.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=4&amp;controller=post&amp;id_lang=1">Vestibulum
-																mattis erat</a>
-														</h4>
-														<ul class="post-meta">
-															<li class="post-views">
-																<i class="fa fa-eye" aria-hidden="true"></i>2267 Views
-															</li>
-
-															<li class="post-comments">
-																<i class="fa fa-comment-o" aria-hidden="true"></i>0
-																Comments
-															</li>
-														</ul>
-
-														<div class="post-intro">
-															<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper
-																nisi. Aenean vulputate eleifend tellus. ivamus elementum
-																semper ...
-														</div>
-
-														<a class="read-more"
-															href="indexc0aa.php?fc=module&amp;module=jmsblog&amp;category_slug=news&amp;post_id=4&amp;controller=post&amp;id_lang=1">Read
-															more</a>
-													</div>
-												</div>
-
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> -->
-
-						<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_body.tpl -->
-
-
 					</section>
-
-
-
-
-
-
 				</section>
-
-
 			</div>
-
-
-
-
 		</div>
-
 		<footer id="footer">
 
 			<div class="back-to-top" id="back-to-top">
 				<span class="fa fa-angle-up"></span>
 			</div>
 
-			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_footer.tpl -->
 			<div class="jms-row newsletter-block ">
 				<div class="container">
 					<div class="row">
 						<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 center pt_78 pb_67" style="">
 							<div class="addon-box">
 
-								<!-- begin module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
-								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
-
 								<div class="block_newsletter newsletter-box" id="newsletter_block_left">
 									<div class="textnews">
-										<h3>Second Face<br><span>Bulk Quantity Deals Only</span></h3>
+										<h3><span>Bulk Quantity Deals Only</span></h3>
 										<p>We offer competitive per-piece rates for bulk orders. Feel free to contact us
 											for further details.
 										</p>
@@ -8131,131 +6361,56 @@
 										</div>
 									</form>
 								</div>
-								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
-								<!-- end module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="jms-row pt_80 pb_36 green">
+			<div class="jms-row pt_50 pb_36 green">
 				<div class="container">
 					<div class="row">
-						<div class="layout-column col-12" style="">
+						<div class="layout-column col-12">
 							<div class="addon-box">
 
-								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addoncontactinfo.tpl -->
 								<div class="addon-title">
 									<h3>Contact </h3>
 								</div>
 								<div class="contact-info">
-									<ul class="d-flex justify-content-around">
+									<ul
+										class="d-flex justify-content-between justify-content-lg-around flex-column flex-md-row">
 										<li class="address-info"><i class="fa-solid fa-paper-plane"></i>Pakistan</li>
-										<li><i class="fa-solid fa-phone"></i>+923072357068,
-											+923486828061</li>
+										<li><i class="fa-solid fa-phone"></i>+923072357068 | +923486828061</li>
 										<li><i class="fa-solid fa-envelope"></i>Secondface26@gmail.com</li>
-										<!-- <li><i class="fa-solid fa-clock-rotate-left"></i> 8.00am - 8.30pm, Everyday -->
 										</li>
 									</ul>
 								</div>
 
-								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addoncontactinfo.tpl -->
 							</div>
 						</div>
-						<!-- <div class="layout-column col-lg-3 col-md-3 col-sm-6 col-xs-12  pdxs_30" style="">
-							<div class="addon-box">
-								<div class="addon-title">
-									<h3>Information</h3>
-								</div>
-								<ul>
-									<li><a title="Specials" href="indexc485.html?controller=prices-drop">Specials</a>
-									</li>
-									<li><a title="New Products" href="index6237.html?controller=new-products">New
-											Products</a></li>
-									<li><a title="Best Sellers" href="index7e4b.html?controller=best-sales">Best
-											Sellers</a></li>
-									<li><a title="conditions" href="index0684.html?controller=contact">Conditions</a>
-									</li>
-								</ul>
-							</div>
-						</div> -->
-						<!-- <div class="layout-column col-lg-3 col-md-3 col-sm-6 col-xs-12 pdsm_30 pdxs_30" style="">
-							<div class="addon-box">
 
-								<div id="block_myaccount_infos" class="links wrapper">
-									<h3 class="myaccount-title">Your account
-									</h3>
-									<ul class="account-list">
-										<li>
-											<a href="index5d6a.php?controller=identity" title="Personal info"
-												rel="nofollow">
-												Personal info
-											</a>
-										</li>
-										<li>
-											<a href="indexc027.php?controller=history" title="Orders" rel="nofollow">
-												Orders
-											</a>
-										</li>
-										<li>
-											<a href="indexe29a.php?controller=order-slip" title="Credit slips"
-												rel="nofollow">
-												Credit slips
-											</a>
-										</li>
-										<li>
-											<a href="index721b.php?controller=addresses" title="Addresses"
-												rel="nofollow">
-												Addresses
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div> -->
-						<!-- <div class="layout-column col-lg-2 col-md-2 col-sm-6 col-xs-12 pdsm_30 pdxs_30" style="">
-							<div class="addon-box">
-
-								<div class="addon-title">
-									<h3>Our Services</h3>
-								</div>
-								<ul>
-									<li><a title="Checkout" href="#">Checkout</a></li>
-									<li><a title="Help & Support" href="#">Help & Support</a></li>
-									<li><a title="Affiliates" href="#">Affiliates</a></li>
-									<li><a title="My wishlists" href="#">My wishlists</a></li>
-								</ul>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
 			<div class="jms-row footer_bottom pt_25  green">
 				<div class="container">
 					<div class="row">
-						<div class="layout-column col-lg-6 col-md-6 col-sm-8 col-xs-12" style="">
+						<div class="layout-column col-lg-6 col-md-6 col-12 col-xs-12" style="">
 							<div class="addon-box">
-
-								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonhtml.tpl -->
 								<p>Copyright © 2024 <a href="javascript:;">VELVET Website.</a> All Rights Reserved.</p>
-								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonhtml.tpl -->
 							</div>
 						</div>
-						<div class="layout-column col-lg-6 col-md-6 col-sm-4 col-xs-12" style="">
+						<div class="layout-column col-lg-6 col-md-6 col-12 col-xs-12" style="">
 							<div class="addon-box">
-
-								<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonsocial.tpl -->
 								<div id="social_block">
 									<ul class="find-us">
-										<li class="divider"><a href="#;" class="facebook hint" aria-label="facebook">
-												<span class=""><i class="fa-brands fa-facebook-f"></i></span></a>
+										<li class="divider"><a href="#;" class="youtube hint" aria-label="youtube">
+												<span class=""><i class="fa-brands fa-youtube"></i></span></a>
 										</li>
-										<li class="divider"><a href="#;" class="twitter hint" aria-label="twitter">
+										<!-- <li class="divider"><a href="#;" class="twitter hint" aria-label="twitter">
 												<span class=""><i class="fa-brands fa-twitter"></i></span></a>
-										</li>
+										</li> -->
 										<li class="divider">
-											<a href="#;" class="gplus hint" aria-label="gplus"><span class=""><i
-														class="fa-brands fa-google-plus-g"></i></span></a>
+											<a href="mailto:secondface26@gmail.com" class="gmail hint" aria-label="gmail"><span class=""><i class="fa-regular fa-envelope"></i></span></a>
 										</li>
 										<li class="divider">
 											<a href="#;" class="instagram hint" aria-label="instagram">
@@ -8264,75 +6419,20 @@
 										</li>
 									</ul>
 								</div>
-
-								<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/addonsocial.tpl -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
-				<a id="jmstools-arrow" class="pull-right"><i class="fa fa-cog"></i></a>
-				<div id="jmstools-content" class="pull-left">
-					<form action="http://prestashop17.joommasters.com/organicshop/index.php" method="POST">
-
-						<div class="form-group">
-							<label>Home Page</label>
-							<select name="jpb_homepage" id="jmshomepage">
-								<option value="1" selected="selected">Jms Organic - Home 1</option>
-								<option value="2">Jms Organic - Home 2</option>
-								<option value="3">Jms Organic - Home 3</option>
-
-							</select>
-						</div>
-
-						<div class="form-group">
-							<label>Product Box Hover</label>
-							<select name="jpb_phover" id="jmsphover">
-								<option value="image_blur" selected="selected">Image Blur</option>
-								<option value="image_swap">Image Swap</option>
-
-							</select>
-						</div>
-
-						<div class="form-group">
-							<label>Product Box Color Pick</label>
-							<select name="jpb_pcolor">
-								<option value="1">Show</option>
-								<option value="0" selected="selected">Hide</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label>Direction</label>
-							<select name="jpb_rtl">
-								<option value="0" selected="selected">LTR</option>
-								<option value="1">RTL</option>
-							</select>
-						</div>
-						<input id="jmsskin" type="hidden" name="jpb_skin" value="" />
-
-						<div class="form-group btn-action">
-							<button type="submit" class="btn  btn-default btn-active" name="apply"
-								value="1">Apply</button>
-							<a class="btn  btn-default btn-active" href="index6217.php?settingreset=1">Reset</a>
-						</div>
-						<input type="hidden" name="settingpanel" value="1" />
-					</form>
-				</div>
-			</div> -->
-
-			<!-- end /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmspagebuilder/views/templates/hook/jmspagebuilder_footer.tpl -->
-
 			<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
+					<div class="modal-content modal-modal1">
 						<div class="modal-header justify-content-center">
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 								<i class="fa-solid fa-xmark"></i>
 							</button>
 							<div class="text-center">
-								<h2>Get A Free Quote</h2>
-								<!-- <h2>in Just <span>$35</span></h2> -->
+								<h2>Get Connected</h2>
 							</div>
 						</div>
 						<div class="modal-body">
@@ -8345,8 +6445,15 @@
 									placeholder="Phone Number" required>
 								<textarea class="form-control" id="message" name="message" placeholder="Message"
 									rows="5" required></textarea>
-								<div class="text-center">
+								<div class="text-center position-relative">
 									<button type="submit" class="btn-other">Get Started</button>
+									<a href="https://wa.me/03118449006" target="_blank" class="wa_logo">
+										<div class="white">
+											<div>
+												<i class="fas fa-phone"></i>
+											</div>
+										</div>
+									</a>
 								</div>
 							</form>
 						</div>
@@ -8473,48 +6580,10 @@
 				return re.test(String(email).toLowerCase());
 			}
 		});
-		// contact us script end
-		// $('.slide-nav').on('click', function(e) {
-		//   e.preventDefault();
-		//   // get current slide
-		//   var current = $('.flex--active').data('slide'),
-		//     // get button data-slide
-		//     next = $(this).data('slide');
 
-		//   $('.slide-nav').removeClass('active');
-		//   $(this).addClass('active');
 
-		//   if (current === next) {
-		//     return false;
-		//   } else {
-		//     $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-		//     $('.flex--active').addClass('animate--end');
-		//     setTimeout(function() {
-		//       $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-		//       $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-		//     }, 800);
-		//   }
-		// });
+		// auto slider start
 
-		// // Autoslide feature
-		// var autoSlideInterval = setInterval(function() {
-		//   var current = $('.flex--active').data('slide');
-		//   var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
-
-		//   $('.slide-nav[data-slide=' + next + ']').click();
-		// }, 5000); // Change slide every 5 seconds
-
-		// // Pause autoslide on hover
-		// $('.slider__warpper, .slide-nav').hover(function() {
-		//   clearInterval(autoSlideInterval);
-		// }, function() {
-		//   autoSlideInterval = setInterval(function() {
-		//     var current = $('.flex--active').data('slide');
-		//     var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
-
-		//     $('.slide-nav[data-slide=' + next + ']').click();
-		//   }, 5000); // Change slide every 5 seconds
-		// });
 
 		$('.slide-nav').on('click', function (e) {
 			e.preventDefault();
@@ -8537,17 +6606,103 @@
 				}, 800);
 			}
 		});
+
+		// Autoslide feature
+		var autoSlideInterval = setInterval(function () {
+			var current = $('.flex--active').data('slide');
+			var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+			$('.slide-nav[data-slide=' + next + ']').click();
+		}, 5000); // Change slide every 5 seconds
+
+		// Pause autoslide on hover
+		$('.slider__warpper, .slide-nav').hover(function () {
+			clearInterval(autoSlideInterval);
+		}, function () {
+			autoSlideInterval = setInterval(function () {
+				var current = $('.flex--active').data('slide');
+				var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+				$('.slide-nav[data-slide=' + next + ']').click();
+			}, 5000); // Change slide every 5 seconds
+		});
+
+		// auto slider end
+
+
+
+
+
+		// contact us script end
+		// $('.slide-nav').on('click', function (e) {
+		// 	e.preventDefault();
+		// 	// get current slide
+		// 	var current = $('.flex--active').data('slide'),
+		// 		// get button data-slide
+		// 		next = $(this).data('slide');
+
+		// 	$('.slide-nav').removeClass('active');
+		// 	$(this).addClass('active');
+
+		// 	if (current === next) {
+		// 		return false;
+		// 	} else {
+		// 		$('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+		// 		$('.flex--active').addClass('animate--end');
+		// 		setTimeout(function () {
+		// 			$('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+		// 			$('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+		// 		}, 800);
+		// 	}
+		// });
+
+		// // Autoslide feature
+		// var autoSlideInterval = setInterval(function () {
+		// 	var current = $('.flex--active').data('slide');
+		// 	var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+		// 	$('.slide-nav[data-slide=' + next + ']').click();
+		// }, 4000); // Change slide every 5 seconds
+
+		// // Pause autoslide on hover
+		// $('.slider__warpper, .slide-nav').hover(function () {
+		// 	clearInterval(autoSlideInterval);
+		// }, function () {
+		// 	autoSlideInterval = setInterval(function () {
+		// 		var current = $('.flex--active').data('slide');
+		// 		var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+		// 		$('.slide-nav[data-slide=' + next + ']').click();
+		// 	}, 4000); // Change slide every 5 seconds
+		// });
+
+		// $('.slide-nav').on('click', function (e) {
+		// 	e.preventDefault();
+		// 	// get current slide
+		// 	var current = $('.flex--active').data('slide'),
+		// 		// get button data-slide
+		// 		next = $(this).data('slide');
+
+		// 	$('.slide-nav').removeClass('active');
+		// 	$(this).addClass('active');
+
+		// 	if (current === next) {
+		// 		return false;
+		// 	} else {
+		// 		$('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+		// 		$('.flex--active').addClass('animate--end');
+		// 		setTimeout(function () {
+		// 			$('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+		// 			$('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+		// 		}, 800);
+		// 	}
+		// });
 	</script>
 
-	<!-- Modal -->
+
 
 
 
 </body>
 
-
-<!-- Mirrored from prestashop17.joommasters.com/organicshop/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 May 2024 17:45:59 GMT -->
-
 </html>
-
-<!-- end index.tpl -->

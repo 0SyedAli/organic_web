@@ -5330,12 +5330,12 @@ footer {
 
 .hotdeal .content_price {
   position: absolute;
-  top: 154px;
+  top: 64px;
   background: #ef71acc7;
   border-radius: 50%;
   text-align: center;
   padding: 13px 9px;
-  left: 47px;
+  left: 17px;
 }
 
 .hotdeal .content_price span {
@@ -6763,7 +6763,7 @@ footer .style3 .contact-block::after {
 }
 
 #back-to-top {
-  bottom: 7%;
+  bottom: 15%;
   background-color: #fff;
   cursor: pointer;
   display: none;

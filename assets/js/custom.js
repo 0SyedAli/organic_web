@@ -251,6 +251,9 @@ if($(".categorytab-carousel").length) {
 				},
 				320:{
 					items:1
+				},
+				200:{
+					items:1
 				}
 			},
 			rtl: rtl,
