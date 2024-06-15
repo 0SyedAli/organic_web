@@ -17,9 +17,7 @@ footer h3 {
     padding-bottom: 30px;
     font-weight: 700;
 }
-.hotdeal .preview {
-    position: relative;
-}
+
 .hotdeal .content_price {
     background-color: transparent;
     z-index: 1;
@@ -29,13 +27,12 @@ footer h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute; /* Ensure correct stacking context */
 }
 
 .hotdeal .content_price:before {
     content: "";
     position: absolute;
-    background-image: url("../img/price_tag.png");
+    background-image: url(../img/price_tag.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -441,6 +438,9 @@ footer ul li a {
 }
 
 .nav-cta-btn {
+    /* position: absolute;
+    right: 64px;
+    top: 0; */
     z-index: 22;
     -webkit-box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
     box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
@@ -553,13 +553,18 @@ body {
     top: 0;
     left: 0;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     -webkit-flex-flow: row wrap;
     -moz-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
     flex-flow: row wrap;
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
     justify-content: flex-start;
     height: 600px;
     width: 100%;
@@ -631,7 +636,13 @@ body {
 
 .flex__item--left {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     width: 60%;
     transform-origin: left bottom;
     transition: transform 0.1s linear 0.4s;
@@ -730,10 +741,14 @@ body {
 }
 
 .pokemon__img {
+    /* position: absolute;
+bottom: 20px;
+right: 15%; */
     max-height: 40vw;
     opacity: 1;
     transform: translate3d(0, 0, 0);
-    transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+    transition: opacity 0.43s 0.6s,
+        transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
 }
 
 /* Animate-START point */
@@ -816,15 +831,38 @@ body {
     letter-spacing: 1px !important;
     font-family: 'Poppins' !important;
 }
-
 .wa_screen .white {
     position: fixed;
     bottom: 6%;
     left: unset !important;
     top: unset !important;
     z-index: 9999;
-    right: 24px !important;
+    right: 24px!important;
 }
+/* 
+
+.wa_screen div {
+    width: 55px !important;
+    height: 55px !important;
+}
+
+.wa_screen .white::before {
+    top: 48px !important;
+    left: -25px !important;
+    border-width: 20px !important;
+    transform: rotate(-40deg) rotateX(-55deg) !important;
+}
+
+.wa_screen .white::after {
+    border-width: 13px !important;
+    transform: rotate(-39deg) rotateX(-51deg) !important;
+    top: 47px !important;
+    left: -8px !important;
+}
+
+.wa_screen .fas {
+    font-size: 28px!important;
+} */
 
 .wa_logo div {
     width: 42px;
@@ -880,15 +918,20 @@ body {
 }
 
 @keyframes ring {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     25% {
         transform: translateY(-3px);
     }
+
     50% {
         transform: translateY(3px);
     }
+
     75% {
         transform: translateY(-3px);
     }
@@ -898,6 +941,7 @@ body {
     .hotdeal .product-image::before {
         left: 70px;
     }
+
     .hotdeal .content_price {
         left: 0;
         top: 70px;
@@ -910,28 +954,35 @@ body {
         height: 70%;
         left: 160px;
     }
+
     .hotdeal .content_price {
         left: 60px;
         top: 60px;
     }
+
     .flex__content {
         width: 75%;
     }
+
     .slider__warpper .text--big {
         font-size: 70px;
         padding-bottom: 0px;
         margin: 0;
     }
+
     .slider__warpper .flex__content .text--sub {
         padding-right: 0;
     }
+
     .contact-info ul {
         padding-left: 0;
         text-align: center;
     }
+
     .pokemon__img {
         max-height: 50vw;
     }
+
     .block-service {
         padding-top: 30px !important;
     }
@@ -942,31 +993,39 @@ body {
         padding-right: 0;
         margin: 0 0 20px 0;
     }
+
     #newsletter_block_left h3 span {
         font-size: 35px;
     }
+
     .slider__warpper .text--big {
         font-size: 50px;
         line-height: 100%;
     }
+
     .slider__warpper .flex__content .text--normal {
         margin-top: 25px;
     }
+
     .service-title h3 {
         font-size: 38px !important;
     }
+
     .hotdeal .content_price {
         width: 120px;
         height: 120px;
         left: 40px;
         top: 50px;
     }
+
     .hotdeal .content_price span.price.new {
         font-size: 20px;
     }
+
     .hotdeal .product-image::before {
         left: 130px;
     }
+
     .product-img1 {
         width: 270px !important;
     }
@@ -976,9 +1035,11 @@ body {
     .my_own_slider .flex__content {
         margin-left: 40px;
     }
+
     .my_own_slider {
         height: 400px;
     }
+
     .my_own_slider .flex__item,
     .my_own_slider .addon-box,
     .my_own_slider .flex__container {
@@ -992,50 +1053,64 @@ body {
         font-size: 12px;
         line-height: 18px;
     }
+
 }
 
 @media only screen and (max-width: 575px) {
+
     .flex__item--left,
     .flex__item--right {
         width: 100%;
     }
+
     .my_own_slider {
         height: 800px;
     }
+
     .flex__item--right img {
         max-height: 320px;
     }
+
     #social_block .find-us {
         padding-left: 0;
     }
+
     #newsletter_block_left h3 {
         font-size: 30px;
     }
+
     #newsletter_block_left h3 span {
         font-size: 30px;
     }
+
     .service-title h3 {
         font-size: 35px !important;
         line-height: 40px;
         padding-bottom: 0;
     }
+
     .feature-boxstyle2 p {
         font-size: 14px;
     }
+
     .feature-boxstyle2 h4 {
         padding-bottom: 18px;
     }
+
     .hotdeal .content_price span.price.new {
         font-size: 16px;
         padding-top: 3px;
     }
+
     .hotdeal .content_price {
         width: 100px;
         height: 100px;
     }
+
     .block-service {
         padding-top: 20px !important;
     }
+
     .block-hotdeal {
         padding-right: 35px !important;
         padding-left: 35px !important;
@@ -1047,32 +1122,40 @@ body {
         left: 115px;
         top: 100px;
     }
+
     .hotdeal .content_price {
         width: 100px;
         height: 100px;
     }
+
     .hotdeal .content_price span {
         font-size: 13px;
     }
+
     .hotdeal .content_price {
         width: 100px;
         height: 100px;
+
         left: 0px;
         top: 30px;
     }
+
     .hotdeal .product-info {
         padding-top: 20px !important;
     }
+
     .block-hotdeal {
         padding-right: 25px !important;
         padding-left: 25px !important;
     }
+
 }
 
 @media only screen and (max-width: 450px) {
     .slider__warpper .flex__content .text--normal {
         margin-top: 8px;
     }
+
     .slider__warpper .flex__content .text--sub {
         margin-bottom: 8px;
     }
@@ -1084,19 +1167,23 @@ body {
         display: inline-block;
         padding: 7px 20px 7px 20px;
     }
+
     #nav-icon4 {
         width: 40px;
         height: 40px;
     }
+
     #nav-icon4 .bars {
         width: 16px;
         top: 15px;
         left: 11px;
         height: 16px;
     }
+
     .nav-cta-btn {
         margin: 0;
     }
+
     .product-img1 {
         width: 210px !important;
     }
@@ -1106,42 +1193,48 @@ body {
     .slider__warpper .flex__content .text--sub {
         font-size: 12px;
     }
+
     .block-hotdeal .addon-box {
         padding-top: 30px;
     }
+
     .hotdeal .content_price {
         width: 90px;
         height: 90px;
         left: 0px;
         top: 30px;
     }
+
     .product-img1 {
         width: 200px !important;
         margin-top: 50px;
     }
+
     .hotdeal .content_price span {
         font-size: 11px;
     }
+
     .hotdeal .content_price span.price.new {
         font-size: 13px;
         padding-top: 3px;
     }
+
     .hotdeal .description_short p {
         margin-bottom: 0;
         font-size: 13px;
         padding: 0;
         line-height: 18px;
     }
+
     .service-title h3 {
         font-size: 30px !important;
         line-height: 36px;
     }
+
     .block-hotdeal {
         padding-right: 15px !important;
         padding-left: 15px !important;
     }
 }
 
-@media only screen and (max-width: 330px) {
-    /* Add specific styles for very small screens here */
-}
+@media only screen and (max-width: 330px) {}
