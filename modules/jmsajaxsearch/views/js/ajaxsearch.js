@@ -1,7 +1,7 @@
 /**
 * 2007-2017 PrestaShop
 *
-* Jms Ajax Search
+
 *
 *  @author    Joommasters <joommasters@gmail.com>
 *  @copyright 2007-2017 Joommasters

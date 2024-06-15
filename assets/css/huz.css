@@ -1040,6 +1040,9 @@ body {
         padding-right: 35px !important;
         padding-left: 35px !important;
     }
+    .hotdeal .content_price span {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1054,6 +1057,7 @@ body {
     .hotdeal .content_price span {
         font-size: 13px;
     }
+   
     .hotdeal .content_price {
         width: 100px;
         height: 100px;
