@@ -17,9 +17,11 @@ footer h3 {
     padding-bottom: 30px;
     font-weight: 700;
 }
+
 .hotdeal .preview {
     position: relative;
 }
+
 .hotdeal .content_price {
     background-color: transparent;
     z-index: 1;
@@ -29,7 +31,8 @@ footer h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute; /* Ensure correct stacking context */
+    position: absolute;
+    /* Ensure correct stacking context */
 }
 
 .hotdeal .content_price:before {
@@ -53,6 +56,10 @@ footer h3 {
 .flex--zekrom p.text--normal,
 .flex--dialga p.text--normal {
     color: #000 !important;
+}
+
+#social_block ul li {
+    border-color: #FFF;
 }
 
 #social_block ul li a {
@@ -268,7 +275,23 @@ div#modal1 .modal-content {
 
 /* modal end */
 .contact-info ul li {
-    color: #fff;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.footer_bottom p {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.footer_bottom p a {
+    color: #000;
 }
 
 footer h3 {
@@ -879,16 +902,302 @@ body {
     color: #fff;
 }
 
+/* Default background settings */
+.serv_bg {
+    background-image: url("../img/serv_bg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Fallback for iOS devices */
+
+/* our website start */
+.our_website {
+    padding: 50px 0;
+}
+.our_website h3 {
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.our_website p {
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.who_we_are {
+    padding: 50px 15px;
+}
+
+.who_we_are .btn-other {
+    padding: 14px 40px !important;
+    background: #ef71acc7;
+    color: #FFF;
+    border: none;
+}
+
+/* our website end */
+/****************************************** header css start ******************************************************/
+.headertop {
+    background-image: url(./assets/img/header_bg.jpg);
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-head {
+    padding: 10px 0;
+}
+
+.top-head ul {
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+.footer_bottom .social-links {
+    display: flex;
+    justify-content: end;
+}
+
+.social-links ul {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.social-links ul li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFF;
+}
+
+.social-links ul li {}
+
+.social-links ul a {
+    color: #fff;
+}
+
+.top-head .search-box {
+    position: relative;
+    border-radius: 17px;
+    border: 2px solid #194379;
+}
+
+.top-head .search-box input {
+    color: #000;
+    padding: 3px 9px;
+    border: none;
+    border-radius: 17px;
+    font-weight: 600;
+}
+
+.top-head .search-box button {
+    position: absolute;
+    right: 0px;
+    background: #194379;
+    color: #ffff;
+    padding: 3px 9px;
+    border: none;
+    z-index: 2;
+    border-radius: 0 12px 12px 0px;
+}
+
+ul.top-right a {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+ul.top-right i {
+    font-size: 19px;
+}
+
+ul.top-right li {
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header ul.navbar-nav {
+    padding-left: 30px;
+}
+
+header ul.navbar-nav li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    color: #000;
+    position: relative;
+    transition: 0.5s;
+}
+
+header ul.navbar-nav li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ef71acc7;
+    height: 2px;
+    transition: 0.7s;
+}
+
+header ul.navbar-nav li a:hover::before {
+    right: 0;
+}
+
+header ul.navbar-nav li a:hover {
+    color: #0b4277;
+}
+
+.my-dropdown .my-drop-menu li a:active,
+.my-dropdown .my-drop-menu li a:focus {
+    background: transparent;
+}
+
+.my-dropdown .my-drop-menu li a:hover {
+    color: #000;
+}
+
+.my-dropdown .my-drop-menu li a:hover::before {
+    background: #000;
+}
+
+header ul.navbar-nav li button {
+    border: none;
+    background: transparent;
+    color: #000;
+    font-weight: 700;
+    font-size: 19px;
+
+}
+
+header ul.navbar-nav li {
+    padding: 0 10px;
+}
+
+header a.navbar-brand img {
+    width: 75px;
+    height: auto;
+    object-fit: contain;
+}
+
+header nav .row {
+    align-items: center;
+}
+
+header nav {
+    background-color: #fff;
+}
+
+header .left-head li i {
+    font-size: 30px;
+    color: #0b0c45;
+}
+
+header .left-head {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: relative;
+    margin: 0;
+}
+
+ul.left-head a.phone {
+    background: #ef71acc7;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+ul.left-head a.phone i {
+    color: #FFF;
+
+}
+
+
+
+.left-head .theme-btn {
+    background: #ef71acc7;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 23px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+a.imp-noti.theme-btn {
+    background: #ef71acc7;
+}
+
+a.req-quote.theme-btn {
+    background-color: transparent;
+    border: 2px solid #ef71acc7;
+    color: #ef71acc7;
+    font-weight: 600;
+}
+
+a.req-quote.theme-btn:hover {
+    background-color: #ef71acc7;
+    color: #FFF;
+}
+
+/* header css end **************************************************************************************/
+
+/* who we are start */
+
+.wwa_right img {
+    width: 75%;
+}
+/* who we are end */
+
+@media screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .serv_bg {
+        background-attachment: scroll;
+    }
+}
+
 @keyframes ring {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     25% {
         transform: translateY(-3px);
     }
+
     50% {
         transform: translateY(3px);
     }
+
     75% {
         transform: translateY(-3px);
     }
@@ -898,6 +1207,7 @@ body {
     .hotdeal .product-image::before {
         left: 70px;
     }
+
     .hotdeal .content_price {
         left: 0;
         top: 70px;
@@ -910,28 +1220,35 @@ body {
         height: 70%;
         left: 160px;
     }
+
     .hotdeal .content_price {
         left: 60px;
         top: 60px;
     }
+
     .flex__content {
         width: 75%;
     }
+
     .slider__warpper .text--big {
         font-size: 70px;
         padding-bottom: 0px;
         margin: 0;
     }
+
     .slider__warpper .flex__content .text--sub {
         padding-right: 0;
     }
+
     .contact-info ul {
         padding-left: 0;
         text-align: center;
     }
+
     .pokemon__img {
         max-height: 50vw;
     }
+
     .block-service {
         padding-top: 30px !important;
     }
@@ -942,31 +1259,39 @@ body {
         padding-right: 0;
         margin: 0 0 20px 0;
     }
+
     #newsletter_block_left h3 span {
         font-size: 35px;
     }
+
     .slider__warpper .text--big {
         font-size: 50px;
         line-height: 100%;
     }
+
     .slider__warpper .flex__content .text--normal {
         margin-top: 25px;
     }
+
     .service-title h3 {
         font-size: 38px !important;
     }
+
     .hotdeal .content_price {
         width: 120px;
         height: 120px;
         left: 40px;
         top: 50px;
     }
+
     .hotdeal .content_price span.price.new {
         font-size: 20px;
     }
+
     .hotdeal .product-image::before {
         left: 130px;
     }
+
     .product-img1 {
         width: 270px !important;
     }
@@ -976,9 +1301,11 @@ body {
     .my_own_slider .flex__content {
         margin-left: 40px;
     }
+
     .my_own_slider {
         height: 400px;
     }
+
     .my_own_slider .flex__item,
     .my_own_slider .addon-box,
     .my_own_slider .flex__container {
@@ -995,51 +1322,65 @@ body {
 }
 
 @media only screen and (max-width: 575px) {
+
     .flex__item--left,
     .flex__item--right {
         width: 100%;
     }
+
     .my_own_slider {
         height: 800px;
     }
+
     .flex__item--right img {
         max-height: 320px;
     }
+
     #social_block .find-us {
         padding-left: 0;
     }
+
     #newsletter_block_left h3 {
         font-size: 30px;
     }
+
     #newsletter_block_left h3 span {
         font-size: 30px;
     }
+
     .service-title h3 {
         font-size: 35px !important;
         line-height: 40px;
         padding-bottom: 0;
     }
+
     .feature-boxstyle2 p {
         font-size: 14px;
     }
+
     .feature-boxstyle2 h4 {
         padding-bottom: 18px;
     }
+
     .hotdeal .content_price span.price.new {
         font-size: 16px;
         padding-top: 3px;
     }
+
     .hotdeal .content_price {
         width: 100px;
         height: 100px;
     }
+
     .block-service {
         padding-top: 20px !important;
     }
+
     .block-hotdeal {
         padding-right: 35px !important;
         padding-left: 35px !important;
     }
+
     .hotdeal .content_price span {
         font-size: 13px;
     }
@@ -1050,23 +1391,27 @@ body {
         left: 115px;
         top: 100px;
     }
+
     .hotdeal .content_price {
         width: 100px;
         height: 100px;
     }
+
     .hotdeal .content_price span {
         font-size: 13px;
     }
-   
+
     .hotdeal .content_price {
         width: 100px;
         height: 100px;
         left: 0px;
         top: 30px;
     }
+
     .hotdeal .product-info {
         padding-top: 20px !important;
     }
+
     .block-hotdeal {
         padding-right: 25px !important;
         padding-left: 25px !important;
@@ -1077,6 +1422,7 @@ body {
     .slider__warpper .flex__content .text--normal {
         margin-top: 8px;
     }
+
     .slider__warpper .flex__content .text--sub {
         margin-bottom: 8px;
     }
@@ -1088,19 +1434,23 @@ body {
         display: inline-block;
         padding: 7px 20px 7px 20px;
     }
+
     #nav-icon4 {
         width: 40px;
         height: 40px;
     }
+
     #nav-icon4 .bars {
         width: 16px;
         top: 15px;
         left: 11px;
         height: 16px;
     }
+
     .nav-cta-btn {
         margin: 0;
     }
+
     .product-img1 {
         width: 210px !important;
     }
@@ -1110,36 +1460,44 @@ body {
     .slider__warpper .flex__content .text--sub {
         font-size: 12px;
     }
+
     .block-hotdeal .addon-box {
         padding-top: 30px;
     }
+
     .hotdeal .content_price {
         width: 90px;
         height: 90px;
         left: 0px;
         top: 30px;
     }
+
     .product-img1 {
         width: 200px !important;
         margin-top: 50px;
     }
+
     .hotdeal .content_price span {
         font-size: 11px;
     }
+
     .hotdeal .content_price span.price.new {
         font-size: 13px;
         padding-top: 3px;
     }
+
     .hotdeal .description_short p {
         margin-bottom: 0;
         font-size: 13px;
         padding: 0;
         line-height: 18px;
     }
+
     .service-title h3 {
         font-size: 30px !important;
         line-height: 36px;
     }
+
     .block-hotdeal {
         padding-right: 15px !important;
         padding-left: 15px !important;
