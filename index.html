@@ -84,75 +84,6 @@
 
 
 	<div id="fb-root"></div>
-	<script>
-
-		var redirect = 'no_redirect';
-		window.fbAsyncInit = function () {
-			FB.init({
-				appId: '293392564478667',
-				scope: 'email, user_birthday',
-				cookie: true,
-				status: true,
-				xfbml: true,
-				version: 'v2.1'
-			});
-		};
-
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "../../connect.facebook.net/en_US/sdk.js";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-
-		function pfFbLogin() {
-			FB.api('/me?fields=email,birthday,first_name,last_name,gender', function (response) {
-				$.ajax({
-					type: "POST",
-					url: prestashop['urls']['base_url'] + "modules/jmsfacebookconnect/ajax_facebookConnect.php",
-					data: {
-						firstname: response.first_name,
-						lastname: response.last_name,
-						email: response.email,
-						id: response.id,
-						gender: response.gender,
-						birthday: response.birthday
-					},
-					success: function (data) {
-
-						if (redirect == "no_redirect")
-							window.location.reload();
-
-						if (redirect == "authentication_page")
-							window.location.href = "index6714.html?controller=my-account";
-						if (redirect == "home_page")
-							window.location.href = "index.html";
-					}
-				});
-			});
-		}
-
-		function fb_login() {
-			FB.login(function (response) {
-				if (response.authResponse) {
-					access_token = response.authResponse.accessToken;
-					user_id = response.authResponse.userID;
-					pfFbLogin();
-				}
-			},
-				{
-					scope: 'public_profile,email'
-				});
-		}
-
-
-	</script>
-	<!-- end /home/joommasters/public_html/prestashop17/organicshop/modules/jmsfacebookconnect/views/templates/hook/header.tpl -->
-	<!-- end module:jmsfacebookconnect/views/templates/hook/header.tpl -->
-
-
-
 </head>
 
 <body id="index" class="lang-en country-us currency-usd layout-full-width page-index tax-display-disabled home_1    ">
@@ -160,103 +91,6 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM8GBFF2" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	<div class="preloader">
-		<div class="spinner6">
-			<div class="dot1"></div>
-			<div class="dot2"></div>
-			<div class="bounce1"></div>
-			<div class="bounce2"></div>
-			<div class="bounce3"></div>
-		</div>
-	</div>
-
-	<div class="menu-wrap hidden-lg hidden-md">
-		<button id="close-button" class="close-button"> Menu</button>
-		<nav id="off-canvas-menu">
-
-			<!-- begin /home/joommasters/public_html/prestashop17/organicshop/themes/jms_organic/modules/jmsmegamenu/views/templates/hook/jmsmegamenu-mobile.tpl -->
-			<ul class="nav nav-pills nav-stacked level0">
-				<li class="menu-item mega menu-align-left" data-id="1" data-level="0" data-title="1" data-align="left">
-					<a href="#" target="_self">Home<em class="fa fa-angle-right"></em></a>
-
-				</li>
-
-			</ul>
-			<div class="user-info btn-group ">
-				<span class="btn-name">Customer signin</span>
-
-				<a href="index6714.html?controller=my-account" title="Log in to your customer account" rel="nofollow"
-					class="logout hidden-sm-down">
-					<span class="hidden-sm-down text-top">Login/Register</span>
-				</a>
-				<ul>
-					<li><a href="index6714.html?controller=my-account" title="View my customer account" class="account"
-							rel="nofollow">Account </a></li>
-					<li><a href="indexbb4d.php?controller=order" title="View my customer account" class="account"
-							rel="nofollow">Checkout </a></li>
-
-				</ul>
-			</div>
-			<div class="btn-group compact-hidden languages-info">
-				<span class="btn-name">Languages</span>
-				<ul>
-					<li class="current">
-						<a href="index5e5b.php?id_lang=1" class="dropdown-item">
-							<span class="image_language"><img alt="en" src="img/l/1.jpg" width="16" /><span>
-									English
-
-						</a>
-					</li>
-					<li>
-						<a href="index8d06.php?id_lang=2" class="dropdown-item">
-							<span class="image_language"><img alt="fr" src="img/l/2.jpg" width="16" /><span>
-									Français
-
-						</a>
-					</li>
-					<li>
-						<a href="index608e.php?id_lang=3" class="dropdown-item">
-							<span class="image_language"><img alt="de" src="img/l/3.jpg" width="16" /><span>
-									Deutsch
-
-						</a>
-					</li>
-					<li>
-						<a href="index24f2.php?id_lang=4" class="dropdown-item">
-							<span class="image_language"><img alt="it" src="img/l/4.jpg" width="16" /><span>
-									Italiano
-
-						</a>
-					</li>
-					<li>
-						<a href="index701c.php?id_lang=5" class="dropdown-item">
-							<span class="image_language"><img alt="pt" src="img/l/5.jpg" width="16" /><span>
-									Português PT
-
-						</a>
-					</li>
-
-				</ul>
-			</div>
-			<div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info">
-				<span class="btn-name">Currency</span>
-				<ul>
-
-					<li>
-						<a title="Euro" rel="nofollow"
-							href="indexc55c.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=2" class="dropdown-item">
-							EUR €</a>
-					</li>
-					<li class="current">
-						<a title="US Dollar" rel="nofollow"
-							href="indexeb63.php?id_lang=1&amp;SubmitCurrency=1&amp;id_currency=1" class="dropdown-item">
-							USD $</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-	</div>
 	<div class="main-site">
 
 
@@ -285,7 +119,7 @@
 									</ul>
 								</div>
 								<div class="contact-headers">
-									<ul class="top-right d-flex align-items-center gap-3">
+									<ul class="top-right d-flex align-items-center">
 										<li class="d-flex gap-2">
 											<a href="tel:(833) 415-3312" class="d-flex align-items-center gap-2"><i
 													style="rotate: 5deg;" class="fa-solid fa-phone-volume"></i>
@@ -316,19 +150,20 @@
 					style="height: 100%;width: 1px; background: #21477f; position: absolute; right: 450px;}"></div> -->
 				<div class="container d-block">
 					<div class="row">
-						<div
-							class="col-12 col-lg-2 col-xl-3 col-sm-12 col-md-12 d-flex justify-content-between align-items-center">
+						<div class="col-12 col-lg-2 d-flex px-4 px-sm-0 justify-content-between align-items-center">
 							<a class="navbar-brand" href="index.php" style="font-size: 44px; font-weight: 600;">
 								<img class="img-fluid" src="assets/img/logo.png" alt="">
 								<!-- LOGO HERE -->
 							</a>
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-								data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-								aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
+							<button class="navbar-toggler" type="button" id="openMenuBtn">
+								<div id="nav-icon4" class="open svg-inline--fa">
+									<div class="bars">
+										<span></span><span></span>
+									</div>
+								</div>
 							</button>
 						</div>
-						<div class="col-12 col-lg-9">
+						<div class="col-12 col-lg-10">
 							<div class="collapse navbar-collapse" id="navbarNav">
 								<div class="main-header">
 									<ul class="navbar-nav ">
@@ -336,13 +171,13 @@
 											<a class="nav-link " href="#who_we_are">Who We Are</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="about.php">How We Work</a>
+											<a class="nav-link" href="#how_we_work">How We Work</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="portfolio.php">Our Mission</a>
+											<a class="nav-link" href="#our_mission">Our Mission</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="contact.php">Our Pricing</a>
+											<a class="nav-link" href="#our_pricing">Our Pricing</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="contact.php">Mail</a>
@@ -351,13 +186,13 @@
 								</div>
 								<ul class="left-head">
 									<li class="">
-										<a class="phone" href="tel:(833) 415-3312">
+										<a class="phone" href="https://wa.me/03486828061" target="_blank">
 											<i class="fa-brands fa-whatsapp"></i>
 										</a>
 									</li>
 									<li class="">
-										<a class="req-quote theme-btn" data-bs-toggle="modal"
-											data-bs-target="#exampleModal" href="javascript:void()">Let's Connect</a>
+										<a class="req-quote theme-btn" href="javascript:;" data-bs-toggle="modal"
+											data-bs-target="#modal1">Let's Connect</a>
 									</li>
 								</ul>
 							</div>
@@ -654,7 +489,7 @@
 							<div class="container">
 								<div class="who_we_are" id="who_we_are">
 									<div class="row align-items-center">
-										<div class="col-6">
+										<div class="col-12 col-lg-6">
 											<h3>Who We Are</h3>
 											<p>
 												Second Face is a leading company in the cosmetics industry, specializing
@@ -672,21 +507,23 @@
 												our
 												customers' expectations.
 											</p>
-											<a href="#;" class="d-inline-block btn-other" data-bs-toggle="modal"
-												data-bs-target="#modal1">Contact Now</a>
+											<div>
+												<a href="#;" class="d-inline-block btn-other" data-bs-toggle="modal"
+													data-bs-target="#modal1">Contact Now</a>
+											</div>
 										</div>
-										<div class="col-6">
-											<div class="wwa_right d-flex justify-content-end">
+										<div class="col-12 col-md-10 col-lg-6">
+											<div class="wwa_right d-flex justify-content-start justify-content-lg-end">
 												<img class="img-fluid" src="assets/img/who_we_are.jpeg" alt="">
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="who_we_are" id="who_we_are">
+								<div class="who_we_are" id="how_we_work">
 									<div class="row flex-row-reverse align-items-center">
-										<div class="col-6">
-											<h3>How We Work</h3>
-											<p>
+										<div class="col-12 col-lg-6">
+											<h3 class="text-end">How We Work</h3>
+											<p class="text-end">
 												Second Face is a leading company in the cosmetics industry, specializing
 												in
 												high-quality, bulk quantity shampoo. Our commitment to excellence is
@@ -702,19 +539,21 @@
 												our
 												customers' expectations.
 											</p>
-											<a href="#;" class="d-inline-block btn-other" data-bs-toggle="modal"
-												data-bs-target="#modal1">Contact Now</a>
+											<div class="text-end">
+												<a href="#;" class="d-inline-block btn-other" data-bs-toggle="modal"
+													data-bs-target="#modal1">Contact Now</a>
+											</div>
 										</div>
-										<div class="col-6">
-											<div class="wwa_right d-flex">
-												<img class="img-fluid" src="assets/img/who_we_are.jpeg" alt="">
+										<div class="col-12 col-md-10 col-lg-6">
+											<div class="wwa_right d-flex justify-content-end justify-content-lg-start">
+												<img class="img-fluid" src="assets/img/how_we_work.jpeg" alt="">
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="who_we_are" id="who_we_are">
+								<div class="who_we_are" id="our_mission">
 									<div class="row align-items-center">
-										<div class="col-6">
+										<div class="col-12 col-lg-6">
 											<h3>Our Mission</h3>
 											<p>
 												Second Face is a leading company in the cosmetics industry, specializing
@@ -732,19 +571,21 @@
 												our
 												customers' expectations.
 											</p>
-											<a href="#;" class="d-inline-block btn-other" data-bs-toggle="modal"
-												data-bs-target="#modal1">Contact Now</a>
+											<div>
+												<a href="#;" class="d-inline-block btn-other" data-bs-toggle="modal"
+													data-bs-target="#modal1">Contact Now</a>
+											</div>
 										</div>
-										<div class="col-6">
-											<div class="wwa_right d-flex justify-content-end">
-												<img class="img-fluid" src="assets/img/who_we_are.jpeg" alt="">
+										<div class="col-12 col-md-10 col-lg-6">
+											<div class="wwa_right d-flex justify-content-start justify-content-lg-end">
+												<img class="img-fluid" src="assets/img/our_mission.jpeg" alt="">
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</section>
-						<div class="jms-row  pt_80 pb_80 serv_bg">
+						<div class="jms-row  pt_80 pb_80 serv_bg" id="our_pricing">
 							<div class="container">
 								<div class="row">
 									<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 block-hotdeal"
@@ -6592,12 +6433,12 @@
 			<div class="jms-row footer_bottom pt_25  green">
 				<div class="container">
 					<div class="row">
-						<div class="layout-column col-lg-6 col-md-6 col-12 col-xs-12" style="">
+						<div class="layout-column col-lg-6 col-md-8 col-12 col-xs-12" style="">
 							<div class="addon-box">
 								<p>Copyright © 2024 <a href="javascript:;">VELVET Website.</a> All Rights Reserved.</p>
 							</div>
 						</div>
-						<div class="layout-column col-lg-6 col-md-6 col-12 col-xs-12" style="">
+						<div class="layout-column col-lg-6 col-md-4 col-12 col-xs-12" style="">
 							<div class="addon-box">
 								<!-- <div id="social_block">
 									<ul class="find-us">
@@ -6676,7 +6517,29 @@
 					</div>
 				</div>
 			</div>
-
+			<div id="offcanvasMenu">
+				<div class="ocm_head">
+					<img class="img-fluid" src="assets/img/logo.png" alt="">
+					<button id="closeMenuBtn">X</button>
+				</div>
+				<ul class="navbar-nav ">
+					<li class="nav-item">
+						<a class="nav-link " href="#who_we_are">Who We Are</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#how_we_work">How We Work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#our_mission">Our Mission</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#our_pricing">Our Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.php">Mail</a>
+					</li>
+				</ul>
+			</div>
 		</footer>
 
 	</div>
@@ -6713,7 +6576,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
-
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
 		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
 		crossorigin="anonymous"></script>
@@ -6844,7 +6706,42 @@
 		});
 
 		// auto slider end
+		document.addEventListener("DOMContentLoaded", function () {
+			var openMenuBtn = document.getElementById('openMenuBtn');
+			var closeMenuBtn = document.getElementById('closeMenuBtn');
+			var offcanvasMenu = document.getElementById('offcanvasMenu');
 
+			// Function to open the offcanvas menu
+			function openMenu() {
+				offcanvasMenu.classList.add('open');
+				document.addEventListener('click', closeMenuHandler);
+			}
+
+			// Function to close the offcanvas menu
+			function closeMenu() {
+				offcanvasMenu.classList.remove('open');
+				document.removeEventListener('click', closeMenuHandler);
+			}
+
+			// Toggle menu on open button click
+			openMenuBtn.addEventListener('click', function (event) {
+				event.stopPropagation(); // Prevents the click event from propagating to the document
+				openMenu();
+			});
+
+			// Close menu on close button click
+			closeMenuBtn.addEventListener('click', function (event) {
+				event.stopPropagation();
+				closeMenu();
+			});
+
+			// Close menu when clicking outside of it
+			function closeMenuHandler(event) {
+				if (!offcanvasMenu.contains(event.target) && event.target !== openMenuBtn) {
+					closeMenu();
+				}
+			}
+		});
 
 
 
