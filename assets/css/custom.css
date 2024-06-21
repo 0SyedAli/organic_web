@@ -22,9 +22,11 @@ html,
 html a {
   -webkit-font-smoothing: antialiased;
 }
+
 a {
   text-decoration: none;
 }
+
 html {
   -ms-overflow-style: scrollbar;
 }
@@ -6403,24 +6405,6 @@ footer h3 {
   padding-bottom: 26px;
 }
 
-footer ul li::before {
-  content: '\f178';
-  font-family: 'fontawesome';
-  position: absolute;
-  line-height: 35px;
-  -webkit-transition: all 400ms ease 0s;
-  -moz-transition: all 400ms ease 0s;
-  -o-transition: all 400ms ease 0s;
-  transition: all 400ms ease 0s;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-  margin-right: 10px;
-  color: #ef71acc7;
-}
-
 footer ul li a {
   color: #444;
   font-weight: 300;
@@ -6429,25 +6413,19 @@ footer ul li a {
   line-height: 2.2;
 }
 
-footer ul li:hover a {
-  padding-left: 27px;
-  -webkit-transition: all 400ms ease 0s;
-  -moz-transition: all 400ms ease 0s;
-  -o-transition: all 400ms ease 0s;
-  transition: all 400ms ease 0s;
-  color: #ef71acc7;
+footer ul li a::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  right: 100%;
+  bottom: -5px;
+  background: #000;
+  height: 2px;
+  transition: 0.7s;
 }
 
-footer ul li:hover::before {
-  -webkit-transition: all 400ms ease 0s;
-  -moz-transition: all 400ms ease 0s;
-  -o-transition: all 400ms ease 0s;
-  transition: all 400ms ease 0s;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  transform: scaleX(1);
+footer ul li a:hover::before {
+  right: 0;
 }
 
 footer .lnk_wishlist {

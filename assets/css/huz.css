@@ -16,6 +16,7 @@ footer h3 {
     font-size: 28px;
     padding-bottom: 30px;
     font-weight: 700;
+    font-family: "Poppins";
 }
 
 .hotdeal .preview {
@@ -50,7 +51,13 @@ footer h3 {
 }
 
 .hotdeal .content_price span.price.new {
-    font-family: "Neue Einstellung";
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.hotdeal .textonly {
+    padding-bottom: 5px;
+    font-family: cursive;
 }
 
 .flex--zekrom p.text--normal {
@@ -103,6 +110,7 @@ footer h3 {
 .hotdeal .addon-title h3 {
     padding-bottom: 10px;
     font-weight: 700;
+    font-family: "Poppins";
 }
 
 #newsletter_block_left .newsletter-btn.btn-shopnow {
@@ -277,7 +285,7 @@ div#modal1 .modal-content {
 }
 
 /* modal end */
-.contact-info ul li {
+.contact-info ul li a {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -305,7 +313,7 @@ header ul.navbar-nav li a::before {
 }
 
 .footer_bottom p a {
-    color: #000;
+    color: #ff0077;
 }
 
 footer h3 {
@@ -346,6 +354,15 @@ footer ul li::before {
 #newsletter_block_left h3,
 #newsletter_block_left p {
     color: #000;
+}
+
+#newsletter_block_left p {
+    font-weight: 300;
+    padding: 0 100px;
+    padding-top: 14px;
+    padding-bottom: 28px;
+    font-size: 17px;
+    font-family: 'Poppins';
 }
 
 .block-hotdeal::after,
@@ -446,7 +463,7 @@ footer ul li::before {
 
 .slider__warpper .flex__content .text--sub {
     font-weight: 600;
-    font-family: "Neue Einstellung";
+    font-family: "Poppins";
     padding-right: 70px;
     letter-spacing: 3px;
     font-size: 15px;
@@ -1005,12 +1022,13 @@ body {
     align-items: center;
     justify-content: center;
     border: 1px solid #FFF;
+    transition: .3s;
 }
 
-.top-head .social-links ul li {
-    width: 40px;
-    height: 40px;
+.social-links ul li:hover {
+    background-color: #ef71acc7;
 }
+
 
 .social-links ul li i {
     font-size: 20px;
@@ -1050,19 +1068,15 @@ body {
 }
 
 .top-right {
-    gap: 15px;
+    gap: 40px;
 }
 
 ul.top-right a {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 21px;
-}
-
-ul.top-right i {
-    font-size: 19px;
 }
 
 ul.top-right li {
@@ -1207,6 +1221,14 @@ a.req-quote.theme-btn {
     border: 2px solid #ef71acc7;
     color: #ef71acc7;
     font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 23px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    text-wrap: nowrap;
 }
 
 a.req-quote.theme-btn:hover {
@@ -1218,6 +1240,13 @@ a.req-quote.theme-btn:hover {
 .navbar .navbar-toggler {
     border: none;
     box-shadow: none !important;
+    z-index: 1;
+}
+
+.navbar-toggler-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navbar .offcanvas {
@@ -1240,6 +1269,7 @@ a.req-quote.theme-btn:hover {
     font-family: 'Playfair Display';
     padding: 5px 0;
     font-weight: 600;
+    color: #8a8a8a;
 }
 
 
@@ -1345,6 +1375,9 @@ a.req-quote.theme-btn:hover {
         width: 90%;
     }
 
+    #newsletter_block_left p {
+        padding: 25px 50px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -1386,9 +1419,7 @@ a.req-quote.theme-btn:hover {
         padding-top: 30px !important;
     }
 
-    .top-menu {
-        gap: 15px;
-    }
+
 
     .top-head .container,
     .top-head .container-md,
@@ -1396,10 +1427,7 @@ a.req-quote.theme-btn:hover {
         max-width: 900px;
     }
 
-    ul.top-right a {
-        font-size: 13px;
-        text-wrap: nowrap;
-    }
+
 
     .wwa_right {
         padding-top: 40px;
@@ -1417,6 +1445,15 @@ a.req-quote.theme-btn:hover {
         width: 35px;
         height: 35px;
     }
+
+    #newsletter_block_left h3 span {
+        font-size: 37px;
+    }
+
+    #newsletter_block_left p {
+        padding: 25px 0px;
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1426,7 +1463,17 @@ a.req-quote.theme-btn:hover {
     }
 
     #newsletter_block_left h3 span {
-        font-size: 35px;
+        font-size: 32px;
+    }
+
+    #newsletter_block_left p {
+        padding: 17px 0px;
+        font-size: 15px;
+    }
+
+    #newsletter_block_left .newsletter-input,
+    #newsletter_block_left .newsletter-btn.btn-shopnow {
+        height: 50px;
     }
 
     .slider__warpper .text--big {
@@ -1461,14 +1508,6 @@ a.req-quote.theme-btn:hover {
         width: 270px !important;
     }
 
-    .top-menu {
-        flex-direction: column;
-    }
-
-    ul.top-right a {
-        font-size: 15px;
-    }
-
     .contact-info ul {
         gap: 6px;
     }
@@ -1481,6 +1520,14 @@ a.req-quote.theme-btn:hover {
     .social-links ul {
         padding-left: 0;
 
+    }
+
+    ul.top-right a {
+        font-size: 11px;
+    }
+
+    .top-head {
+        padding: 5px 0;
     }
 }
 
@@ -1500,11 +1547,7 @@ a.req-quote.theme-btn:hover {
     }
 }
 
-@media only screen and (max-width: 650px) {
-    ul.top-right a {
-        font-size: 12.5px;
-    }
-}
+@media only screen and (max-width: 650px) {}
 
 @media only screen and (max-width: 620px) {
     .slider__warpper .flex__content .text--normal {
@@ -1579,10 +1622,7 @@ a.req-quote.theme-btn:hover {
     }
 
     .top-right {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 10px !important;
+        gap: 20px;
     }
 
     .wwa_right img {
@@ -1595,6 +1635,7 @@ a.req-quote.theme-btn:hover {
 }
 
 @media only screen and (max-width: 480px) {
+
     .hotdeal .product-image::before {
         left: 115px;
         top: 100px;
@@ -1669,7 +1710,22 @@ a.req-quote.theme-btn:hover {
     }
 
     header a.navbar-brand img {
-        width: 70px;
+        width: 60px;
+    }
+
+    #offcanvasMenu img {
+        width: 60px;
+    }
+
+    #offcanvasMenu .navbar-nav {
+        padding-top: 30px;
+    }
+
+    #offcanvasMenu .nav-link {
+        font-size: 20px;
+    }
+    #newsletter_block_left p {
+        padding: 10px 0;
     }
 }
 
@@ -1686,7 +1742,14 @@ a.req-quote.theme-btn:hover {
         padding: 25px 0px;
     }
 
+    a.req-quote.theme-btn {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
 
+    .navbar .navbar-toggler {
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 415px) {
@@ -1706,6 +1769,9 @@ a.req-quote.theme-btn:hover {
         width: 210px !important;
     }
 
+    .top-right {
+        gap: 14px;
+    }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1754,6 +1820,17 @@ a.req-quote.theme-btn:hover {
         padding-right: 15px !important;
         padding-left: 15px !important;
     }
+
+    .top-head ul {
+        flex-direction: column;
+        gap: 0;
+        text-align: end;
+        align-items: end !important;
+    }
+
+    ul.top-right a {
+        line-height: 15px;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -1761,7 +1838,7 @@ a.req-quote.theme-btn:hover {
         width: 100%;
     }
 
-    .contact-info ul li {
+    .contact-info ul li a {
         font-size: 13px;
     }
 
