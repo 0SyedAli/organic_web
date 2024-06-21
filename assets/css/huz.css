@@ -596,7 +596,7 @@ footer ul li::before {
 }
 
 .slider__navi a.active {
-    background: rgba(255, 255, 255, 1);
+    background: #ef71acc7;
 }
 
 body {
@@ -1311,6 +1311,25 @@ a.req-quote.theme-btn:hover {
     font-size: 12px;
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 11111;
+    /* Below the menu */
+}
+
+.overlay_menu #overlay {
+    opacity: 0.5;
+    visibility: visible;
+}
+
 /* offcanvas menu end */
 
 /* who we are start */
@@ -1724,6 +1743,7 @@ a.req-quote.theme-btn:hover {
     #offcanvasMenu .nav-link {
         font-size: 20px;
     }
+
     #newsletter_block_left p {
         padding: 10px 0;
     }
