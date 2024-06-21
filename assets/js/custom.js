@@ -4,12 +4,6 @@
  */
 /*fixed menu*/
 
-jQuery(document).ready(function ($) {
-  $(".jms-megamenu").jmsMegaMenu({
-    event: jmmm_event,
-    duration: jmmm_duration,
-  });
-});
 $("body").on("click", ".ajax-add-to-cart", function (event) {
   event.preventDefault();
   var query =

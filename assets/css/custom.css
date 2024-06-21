@@ -1,21 +1,3 @@
-@import url(product.css);
-@import url(product-list.css);
-@import url(authenication.css);
-@import url(cart.css);
-@import url(checkout.css);
-@import url(order-confirmation.css);
-@import url(stores.css);
-@import url(contact.css);
-@import url(pagenotfound.css);
-@import url(identity.css);
-@import url(my-account.css);
-@import url(addresses.css);
-@import url(order-slip.css);
-@import url(manufacturer.css);
-@import url(password.css);
-@import url(sitemap.css);
-@import url(cms.css);
-@import url(order-detail.css);
 @import url(slick.css);
 
 html,
