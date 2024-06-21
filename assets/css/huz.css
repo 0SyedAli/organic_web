@@ -108,6 +108,8 @@ footer h3 {
 #newsletter_block_left .newsletter-btn.btn-shopnow {
     padding: 10px 30px;
     border-radius: 30px;
+    font-family: 'Poppins';
+    font-weight: 600;
 }
 
 .svg-inline--fa {
@@ -192,13 +194,13 @@ footer h3 {
     position: absolute;
     top: -6px;
     right: -2px;
-    background: #00f0ff;
+    background: #000;
     opacity: 1;
-    color: #000;
+    color: #FFF;
     z-index: 1;
     border-radius: 50%;
-    height: 13px;
-    width: 13px;
+    height: 20px;
+    width: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,10 +251,11 @@ div#modal1 p {
 }
 
 div#modal1 h2 {
-    font-size: 33px;
+    font-size: 38px;
     line-height: 40px;
     margin: 20px 0 -20px 0;
-    font-weight: 700;
+    font-weight: 800;
+    font-family: "Poppins";
 }
 
 div#modal1 .btn3 {
@@ -262,6 +265,7 @@ div#modal1 .btn3 {
 div#modal1 .modal-content {
     background: #fff;
     box-shadow: #ef71acc7 0px -1px 14px 2px;
+
 }
 
 .modal-modal1 {
@@ -279,6 +283,17 @@ div#modal1 .modal-content {
     font-weight: 500;
     font-size: 15px;
     line-height: 21px;
+}
+
+header ul.navbar-nav li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ef71acc7;
+    height: 2px;
+    transition: 0.7s;
 }
 
 .footer_bottom p {
@@ -309,6 +324,10 @@ footer ul li a {
 .footer_bottom a {
     color: #fff;
     font-weight: 600;
+}
+
+footer ul li::before {
+    content: unset;
 }
 
 #newsletter_block_left h3 {
@@ -979,8 +998,8 @@ body {
 }
 
 .social-links ul li {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -988,7 +1007,18 @@ body {
     border: 1px solid #FFF;
 }
 
-.social-links ul li {}
+.top-head .social-links ul li {
+    width: 40px;
+    height: 40px;
+}
+
+.social-links ul li i {
+    font-size: 20px;
+}
+
+.top-head .social-links ul li i {
+    font-size: 17px;
+}
 
 .social-links ul a {
     color: #fff;
@@ -1133,6 +1163,11 @@ header .left-head {
     margin: 0;
 }
 
+.main-header li a {
+    padding: 0 !important;
+    margin: 7px;
+}
+
 ul.left-head a.phone {
     background: #ef71acc7;
     width: 40px;
@@ -1177,6 +1212,7 @@ a.req-quote.theme-btn {
 a.req-quote.theme-btn:hover {
     background-color: #ef71acc7;
     color: #FFF;
+    border-color: transparent;
 }
 
 .navbar .navbar-toggler {
@@ -1362,6 +1398,7 @@ a.req-quote.theme-btn:hover {
 
     ul.top-right a {
         font-size: 13px;
+        text-wrap: nowrap;
     }
 
     .wwa_right {
@@ -1370,6 +1407,15 @@ a.req-quote.theme-btn:hover {
 
     .wwa_right img {
         width: 70%;
+    }
+
+    .social-links ul {
+        gap: 8px;
+    }
+
+    .top-head .social-links ul li {
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -1542,6 +1588,10 @@ a.req-quote.theme-btn:hover {
     .wwa_right img {
         width: 90%;
     }
+
+    .social-links {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1568,6 +1618,7 @@ a.req-quote.theme-btn:hover {
 
     .hotdeal .product-info {
         padding-top: 20px !important;
+        padding-bottom: 20px !important;
     }
 
     .block-hotdeal {
@@ -1588,6 +1639,37 @@ a.req-quote.theme-btn:hover {
 
     .block-hotdeal .addon-box {
         padding-bottom: 10px;
+    }
+
+    div#modal1 form input,
+    div#modal1 form textarea {
+        padding: 8px 14px;
+    }
+
+    .modal-content {
+        background: #0e0e0e;
+        padding: 0 10px;
+    }
+
+    div#modal1 h2 {
+        margin: 20px 0 -30px 0;
+        font-size: 33px;
+    }
+
+    #nav-icon4 {
+        width: 40px;
+        height: 40px;
+    }
+
+    #nav-icon4 .bars {
+        width: 16px;
+        top: 15px;
+        left: 11px;
+        height: 16px;
+    }
+
+    header a.navbar-brand img {
+        width: 70px;
     }
 }
 
@@ -1614,17 +1696,7 @@ a.req-quote.theme-btn:hover {
         padding: 7px 20px 7px 20px;
     }
 
-    /* #nav-icon4 {
-        width: 40px;
-        height: 40px;
-    } */
 
-    /* #nav-icon4 .bars {
-        width: 16px;
-        top: 15px;
-        left: 11px;
-        height: 16px;
-    } */
 
     .nav-cta-btn {
         margin: 0;
@@ -1633,6 +1705,7 @@ a.req-quote.theme-btn:hover {
     .product-img1 {
         width: 210px !important;
     }
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -1687,7 +1760,30 @@ a.req-quote.theme-btn:hover {
     .wwa_right img {
         width: 100%;
     }
+
     .contact-info ul li {
         font-size: 13px;
+    }
+
+    #modal1 .btn-close {
+        top: -10px;
+        right: -4px;
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    div#modal1 h2 {
+        font-size: 28px;
+        margin: 5px 0 -40px 0;
+    }
+
+    .modal-content {
+        padding: 0;
+    }
+
+    div#modal1 form .btn-other {
+        margin-bottom: 5px;
     }
 }
