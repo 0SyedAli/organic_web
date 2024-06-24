@@ -944,6 +944,13 @@
 
 
 	</script>
+	<script src="https://unpkg.com/@vercel/speed-insights"></script>
+    <script>
+        // Ensure the script runs after the page has loaded
+        window.addEventListener('load', () => {
+            injectSpeedInsights();
+        });
+    </script>
 </body>
 
 </html>
