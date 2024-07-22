@@ -3,7 +3,9 @@
  * A template should always ship with an empty custom.js
  */
 /*fixed menu*/
-
+AOS.init({
+  once: true
+})
 $("body").on("click", ".ajax-add-to-cart", function (event) {
   event.preventDefault();
   var query =
@@ -128,21 +130,6 @@ jQuery(function ($) {
 $(window).load(function () {
   back_to_top();
 });
-
-// var initialLoad = true;
-// $(document).ready(function() {
-// 	if(initialLoad){
-// 		setTimeout(function() {
-// 			jQuery('.preloader').fadeOut();
-// 		}, 3000);
-// 		initialLoad = false;
-// 	}
-// });
-$(document).ready(function () {
-  $(".location_map").click(function (event) {
-    $(".location_map").toggleClass("open");
-  });
-});
 /**********************HOME PAGE **************************/
 $(window).load(function () {
   if ($(".slider").length > 0)
@@ -169,73 +156,6 @@ $(window).load(function () {
       fullscreen: true,
     });
 });
-
-if ($(".categorytab-carousel").length) {
-  var categorytabCarousel = $(".categorytab-carousel");
-  var rtl = false;
-  if ($("body").hasClass("rtl")) rtl = true;
-  categorytabCarousel.owlCarousel({
-    responsiveClass: true,
-    responsive: {
-      1199: {
-        items: cattab_itemsDesktop,
-      },
-      991: {
-        items: cattab_itemsDesktopSmall,
-      },
-      768: {
-        items: cattab_itemsTablet,
-      },
-      481: {
-        items: cattab_itemsMobile,
-      },
-      361: {
-        items: 1,
-      },
-      0: {
-        items: 1,
-      },
-    },
-    rtl: rtl,
-    margin: 0,
-    nav: navtab,
-    dots: pagtab,
-    autoplay: autotab,
-    slideSpeed: 800,
-  });
-}
-
-if ($(".blog-carousel").length) {
-  var blogCarousel = $(".blog-carousel");
-  var rtl = false;
-  if ($("body").hasClass("rtl")) rtl = true;
-  blogCarousel.owlCarousel({
-    responsiveClass: true,
-    responsive: {
-      1199: {
-        items: blog_itemsDesktop,
-      },
-      991: {
-        items: blog_itemsDesktopSmall,
-      },
-      768: {
-        items: blog_itemsTablet,
-      },
-      481: {
-        items: blog_itemsMobile,
-      },
-      0: {
-        items: 1,
-      },
-    },
-    rtl: rtl,
-    margin: 30,
-    nav: p_nav_blog,
-    dots: p_pag_blog,
-    autoplay: auto_play_blog,
-    slideSpeed: 800,
-  });
-}
 
 if ($(".hotdeal-carousel").length) {
   var hotdealCarousel = $(".hotdeal-carousel");
@@ -274,72 +194,6 @@ if ($(".hotdeal-carousel").length) {
     slideBy: 1,
     slideSpeed: 200,
     autoplayTimeout: 3500,
-  });
-}
-
-if ($(".testimonial-carousel").length) {
-  var testimonialCarousel = $(".testimonial-carousel");
-  var rtl = false;
-  if ($("body").hasClass("rtl")) rtl = true;
-  testimonialCarousel.owlCarousel({
-    responsiveClass: true,
-    responsive: {
-      1199: {
-        items: testi_itemsDesktop,
-      },
-      991: {
-        items: testi_itemsDesktopSmall,
-      },
-      768: {
-        items: testi_itemsTablet,
-      },
-      481: {
-        items: testi_itemsMobile,
-      },
-      0: {
-        items: 1,
-      },
-    },
-    rtl: rtl,
-    margin: 30,
-    nav: p_nav_testi,
-    dots: p_pag_testi,
-    autoplay: auto_play_testi,
-    slideSpeed: 800,
-  });
-}
-if ($(".producttab-carousel").length) {
-  var producttabCarousel = $(".producttab-carousel");
-  var rtl = false;
-  if ($("body").hasClass("rtl")) rtl = true;
-  producttabCarousel.owlCarousel({
-    responsiveClass: true,
-    responsive: {
-      1199: {
-        items: tab_itemsDesktop,
-      },
-      991: {
-        items: tab_itemsDesktopSmall,
-      },
-      768: {
-        items: tab_itemsTablet,
-      },
-      481: {
-        items: tab_itemsMobile,
-      },
-      361: {
-        items: 1,
-      },
-      0: {
-        items: 1,
-      },
-    },
-    rtl: rtl,
-    margin: 30,
-    nav: p_nav_tab,
-    dots: p_pag_tab,
-    autoplay: auto_play_tab,
-    slideSpeed: 800,
   });
 }
 
@@ -397,4 +251,177 @@ $(document).ready(function () {
     }
   });
   new WOW().init();
+});
+
+
+
+// subscription script start
+document.addEventListener('DOMContentLoaded', (event) => {
+  emailjs.init('e8f1HRfPLNjvCnOqO'); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+
+  document.getElementById('newsletter-input').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Get the email value
+    const email = document.getElementById('email2').value;
+
+    // Validate email
+    if (!validateEmail(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Send email
+    const templateParams = {
+      email: email // Ensure this key matches the placeholder in your EmailJS template
+    };
+
+    emailjs.send('service_i5p2ur8', 'template_qpf388g', templateParams)
+      .then(function (response) {
+        alert('Mail sent successfully!');
+        // Clear input field after successful email send
+        document.getElementById('newsletter-input').reset();
+      }, function (error) {
+        alert('Invalid email address. Please try again.');
+      });
+  });
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
+});
+
+// subscription script end
+
+// contact us script start
+document.addEventListener('DOMContentLoaded', (event) => {
+  emailjs.init('e8f1HRfPLNjvCnOqO'); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+
+  document.getElementById('modal_form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Get the form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    // Validate email
+    if (!validateEmail(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Send email
+    const templateParams = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message
+    };
+
+    emailjs.send('service_xrhegg3', 'template_qpf388g', templateParams)
+      .then(function (response) {
+        alert('Connection successful!');
+        // Clear input fields after successful email send
+        document.getElementById('modal_form').reset();
+      }, function (error) {
+        alert('Connection failed. Please try again.');
+      });
+  });
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
+});
+// contact us script end
+
+
+// auto slider start
+
+
+$('.slide-nav').on('click', function (e) {
+  e.preventDefault();
+  // get current slide
+  var current = $('.flex--active').data('slide'),
+    // get button data-slide
+    next = $(this).data('slide');
+
+  $('.slide-nav').removeClass('active');
+  $(this).addClass('active');
+
+  if (current === next) {
+    return false;
+  } else {
+    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+    $('.flex--active').addClass('animate--end');
+    setTimeout(function () {
+      $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+      $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+    }, 800);
+  }
+});
+
+// Autoslide feature
+var autoSlideInterval = setInterval(function () {
+  var current = $('.flex--active').data('slide');
+  var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+  $('.slide-nav[data-slide=' + next + ']').click();
+}, 5000); // Change slide every 5 seconds
+
+// Pause autoslide on hover
+$('.slider__warpper, .slide-nav').hover(function () {
+  clearInterval(autoSlideInterval);
+}, function () {
+  autoSlideInterval = setInterval(function () {
+    var current = $('.flex--active').data('slide');
+    var next = current + 1 > $('.flex__container').length ? 1 : current + 1;
+
+    $('.slide-nav[data-slide=' + next + ']').click();
+  }, 5000); // Change slide every 5 seconds
+});
+
+// auto slider end
+document.addEventListener("DOMContentLoaded", function () {
+  var openMenuBtn = document.getElementById('openMenuBtn');
+  var closeMenuBtn = document.getElementById('closeMenuBtn');
+  var offcanvasMenu = document.getElementById('offcanvasMenu');
+  var body = document.body;
+  var overlay = document.getElementById('overlay');
+
+  // Function to open the offcanvas menu
+  function openMenu() {
+    offcanvasMenu.classList.add('open');
+    body.classList.add('overlay_menu');
+    document.addEventListener('click', closeMenuHandler);
+  }
+
+  // Function to close the offcanvas menu
+  function closeMenu() {
+    offcanvasMenu.classList.remove('open');
+    body.classList.remove('overlay_menu');
+    document.removeEventListener('click', closeMenuHandler);
+  }
+
+  // Toggle menu on open button click
+  openMenuBtn.addEventListener('click', function (event) {
+    event.stopPropagation(); // Prevents the click event from propagating to the document
+    openMenu();
+  });
+
+  // Close menu on close button click
+  closeMenuBtn.addEventListener('click', function (event) {
+    event.stopPropagation();
+    closeMenu();
+  });
+
+  // Close menu when clicking outside of it
+  function closeMenuHandler(event) {
+    if (!offcanvasMenu.contains(event.target) && event.target !== openMenuBtn) {
+      closeMenu();
+    }
+  }
 });
